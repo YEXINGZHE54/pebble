@@ -1,0 +1,5 @@
+#!/bin/bash
+
+make
+#make clean
+#gcc -o run simple.c -lraphters_dynamic -L/user/lib/mysql -lmysqlclient
