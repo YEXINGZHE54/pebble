@@ -17,6 +17,14 @@ typedef struct stone_server_s stone_server_t;
 #define STONE_BOUNDARY_LEN_MAX 128
 #define TMP_DIR "/tmp/stone/"
 
+
+typedef struct
+{
+    int threads;
+    const char* name;
+    const char* pwd;
+} configuration;
+
 struct stone_item_s{
 	char *name;
 	void *value;
@@ -34,6 +42,7 @@ struct stone_server_s {
 };
 
 struct GLOBAL_RAPHTERS {
+    configuration *config;
     opool_t *mysql;
 	opool_t *redis;
     ngx_pool_t *pool;
