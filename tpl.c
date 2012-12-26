@@ -4,6 +4,9 @@
 #include "nginx.h"
 #include "app.h"
 #include <assert.h>
+#include <pthread.h>
+
+static pthread_mutex_t global_tpl_lock;
 
 int tpl_init (notifier_block *nb, unsigned long ev, void *d)
 {
@@ -27,6 +30,7 @@ int tpl_start (notifier_block *nb, unsigned long ev, void *d){
 }
 
 int module_tpl_init(void){
+    pthread_mutex_init(&global_tpl_lock, NULL);
     triger_set(NOTIFIER_INIT, 5, tpl_init);
     triger_set(NOTIFIER_START, 9, tpl_start);
     return 0;
@@ -494,7 +498,7 @@ failed:
 char *tpl_output ( stone_server_t *server, char *name )
 {
     ngx_command_t *cache_command, *dcommand;
-	stone_node_t *node;
+	stone_node_t *node, *tmp;
 	ngx_buf_t *tplbuf;
     char *str;
     ngx_pool_t *pool = server->pool;
@@ -509,9 +513,17 @@ char *tpl_output ( stone_server_t *server, char *name )
 	    if ( !str ) return NULL;
 	    node = parse_tpl ( cache_command, &str );
 	    if ( !node ) return NULL;
+        tmp = hasht_find ( globals_r.tpl, name );
+        if(tmp){
+            node = tmp;
+            goto tpl_found;
+        }
+        pthread_mutex_lock(&global_tpl_lock);
         hasht_insert ( globals_r.pool, globals_r.tpl, name, node );
+        pthread_mutex_unlock(&global_tpl_lock);
         cache_command->pool = pool;
     }
+tpl_found:
 	cache_command->data = node;
 	dcommand = command_clone( pool, cache_command );
 	tplbuf = ngx_create_temp_buf( pool, 4096 );
