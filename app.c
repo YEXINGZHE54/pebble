@@ -75,33 +75,9 @@ stone_server_t * stone_app_start(struct thread_info_t *threadInfo ){
 
 	server->pool = pool;
 	server->thread = threadInfo;
+    server->fcgx = threadInfo->fcgi_request;
     triger ( NOTIFIER_START, server );
 	// create request and response
-    /*
-	req = request_empty(pool);
-	if (req == NULL){
-			error_handler("Error while initializing server info!");
-			return NULL;
-	}
-	res = response_empty(pool);
-	if (res == NULL){
-			error_handler("Error while initializing server info!");
-			return NULL;
-	}
-	rc = stone_request_init(pool, req);
-	if (rc > 0){
-		error_handler("Error while initializing server info!");
-		return NULL;
-	}
-    
-    tpl_data = tpl_init_data_table ( pool, TPL_DATA_TABLE_SIZE );
-    if ( !tpl_data ) return NULL;
-
-	// bind them together
-	//server->req = req;
-	server->res = res;
-    server->tpl = tpl_data;
-    */
 	return server;
 }
 

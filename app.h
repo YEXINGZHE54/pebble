@@ -4,6 +4,7 @@
 typedef struct stone_server_s stone_server_t;
 
 #include <mysql/mysql.h>
+#include <fcgiapp.h>
 #include "hiredis/hiredis.h"
 #include "list.h"
 #include "request.h"
@@ -33,6 +34,7 @@ struct stone_item_s{
 typedef struct stone_item_s stone_item_t;
 
 struct stone_server_s {
+    struct FCGX_Request *fcgx;
 	stone_request_t *req;
 	ngx_pool_t *pool;
 	stone_response_t *res;

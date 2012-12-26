@@ -65,7 +65,7 @@ int response_send(notifier_block *nb, unsigned long ev, void *d) {
     res = server->res;
     for (cur_h = res->header_head; cur_h != NULL;) {
         //printf("%s: %s\n", cur_h->name, cur_h->value);
-		FCGX_FPrintF( server->thread->fcgi_request->out, "%s: %s\n", cur_h->name, cur_h->value);
+		FCGX_FPrintF( server->fcgx->out, "%s: %s\n", cur_h->name, cur_h->value);
 //         free(cur_h->name);
 //         free(cur_h->value);
 
@@ -74,11 +74,11 @@ int response_send(notifier_block *nb, unsigned long ev, void *d) {
         cur_h = next;
     }
     //printf("\n");
-    FCGX_PutS( "\n", server->thread->fcgi_request->out );
+    FCGX_PutS( "\n", server->fcgx->out );
     text_segment *cur_s;
     for (cur_s = res->segment_head; cur_s != NULL;) {
         //printf("%s", cur_s->text);
-		FCGX_PutS( cur_s->text, server->thread->fcgi_request->out );
+		FCGX_PutS( cur_s->text, server->fcgx->out );
 //         free(cur_s->text);
 
         text_segment *next = cur_s->next;
