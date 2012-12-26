@@ -498,7 +498,7 @@ failed:
 char *tpl_output ( stone_server_t *server, char *name )
 {
     ngx_command_t *cache_command, *dcommand;
-	stone_node_t *node, *tmp;
+	stone_node_t *node;
 	ngx_buf_t *tplbuf;
     char *str;
     ngx_pool_t *pool = server->pool;
@@ -508,18 +508,18 @@ char *tpl_output ( stone_server_t *server, char *name )
     node = hasht_find ( globals_r.tpl, name );
     if ( !node )
     { 
+        pthread_mutex_lock(&global_tpl_lock);
         cache_command->pool = globals_r.pool;
 	    str = tpl_load( cache_command, name );
-	    if ( !str ) return NULL;
+	    if ( !str ) goto release_tpl_lock;
 	    node = parse_tpl ( cache_command, &str );
-	    if ( !node ) return NULL;
-        tmp = hasht_find ( globals_r.tpl, name );
-        if(tmp){
-            node = tmp;
-            goto tpl_found;
-        }
-        pthread_mutex_lock(&global_tpl_lock);
+	    if ( !node ) goto release_tpl_lock;
         hasht_insert ( globals_r.pool, globals_r.tpl, name, node );
+        goto success;
+release_tpl_lock:
+        pthread_mutex_unlock(&global_tpl_lock);
+        return NULL;
+success:
         pthread_mutex_unlock(&global_tpl_lock);
         cache_command->pool = pool;
     }

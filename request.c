@@ -109,7 +109,7 @@ int request_start(notifier_block *nb, unsigned long ev, void *d){
     req = request_empty(server->pool);
     if(req == NULL)
         return NOTIFY_STOP;
-    rc = stone_request_init(server->pool, req, server->thread->fcgi_request );
+    rc = stone_request_init(server->pool, req, server->fcgx );
     if(rc != 0)
         return NOTIFY_STOP;
     server->req = req;
