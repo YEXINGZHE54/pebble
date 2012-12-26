@@ -4,6 +4,7 @@
 typedef struct stone_server_s stone_server_t;
 
 #include <mysql/mysql.h>
+#include <fcgiapp.h>
 #include "hiredis/hiredis.h"
 #include "list.h"
 #include "request.h"
@@ -17,6 +18,14 @@ typedef struct stone_server_s stone_server_t;
 #define STONE_BOUNDARY_LEN_MAX 128
 #define TMP_DIR "/tmp/stone/"
 
+
+typedef struct
+{
+    int threads;
+    const char* name;
+    const char* pwd;
+} configuration;
+
 struct stone_item_s{
 	char *name;
 	void *value;
@@ -25,6 +34,7 @@ struct stone_item_s{
 typedef struct stone_item_s stone_item_t;
 
 struct stone_server_s {
+    struct FCGX_Request *fcgx;
 	stone_request_t *req;
 	ngx_pool_t *pool;
 	stone_response_t *res;
@@ -34,6 +44,7 @@ struct stone_server_s {
 };
 
 struct GLOBAL_RAPHTERS {
+    configuration *config;
     opool_t *mysql;
 	opool_t *redis;
     ngx_pool_t *pool;

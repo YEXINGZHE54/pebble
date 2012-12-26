@@ -1,6 +1,6 @@
 //CFLAGS=-g -lraphters_dynamic -L/user/lib/mysql -lmysqlclient -lhiredis
 CFLAGS=-g -lfcgi -L/user/lib/mysql -lmysqlclient -lhiredis -lpthread
-OBJS=simple.o nginx.o sql.o cache.o json.o framework.o session.o tree.o app.o handler.o request.o response.o util.o tpl.o command.o list.o notifier.o module.o redis.o opool.o
+OBJS=simple.o nginx.o sql.o cache.o json.o framework.o session.o tree.o app.o handler.o request.o response.o util.o tpl.o command.o list.o notifier.o module.o redis.o opool.o ini.o
 run: $(OBJS)
 	gcc $(OBJS) -o run $(CFLAGS)
 nginx.o:nginx.c

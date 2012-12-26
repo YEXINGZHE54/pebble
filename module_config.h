@@ -3,7 +3,7 @@
 
 #define MODULE_DECLARE(name) extern int name(void);
 
-#define STONE_MODULE_MAX 8
+#define STONE_MODULE_MAX 9
 
 struct stone_module {
     int ( *init ) (void);
@@ -17,6 +17,7 @@ MODULE_DECLARE(module_handler_init);
 MODULE_DECLARE(module_request_init);
 MODULE_DECLARE(module_response_init);
 MODULE_DECLARE(module_session_init);
+MODULE_DECLARE(module_config_init);
 
 static struct stone_module stone_modules[STONE_MODULE_MAX]  = \
 {
@@ -28,6 +29,7 @@ static struct stone_module stone_modules[STONE_MODULE_MAX]  = \
     {.init = module_request_init},
     {.init = module_response_init},
     {.init = module_session_init},
+    {.init = module_config_init},
 };
 
 #endif
