@@ -467,7 +467,7 @@ parse_header:
             // Variable content starts here
             lpBuf += 2;
 			// maybe it comes an end
-			if ( *lpBuf == NULL ) return;
+			if ( *lpBuf == 0 ) return;
 
             // Find next boundary
             char *szNextBoundary = ngx_strnstr( lpBuf, req->env->Boundary, req->env->ContentLength - (lpBuf - query) );

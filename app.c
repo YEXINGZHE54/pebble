@@ -34,7 +34,7 @@ unsigned int app_init(){
     notifier_chain_init();
     module_init();
     int ret = triger( NOTIFIER_INIT, &globals_r );
-    if((ret & NOTIFIER_STOP) == NOTIFIER_STOP) exit(-1);
+    if((ret & NOTIFY_STOP) == NOTIFY_STOP) exit(-1);
 
 //	init_handlers(globals_r.pool);
 

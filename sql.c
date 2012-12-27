@@ -30,7 +30,8 @@ int mysql_pool_init(void **res_ptr, opool_t *opool){
 }
 
 int mysql_pool_destroy(void **res_ptr, opool_t *opool){
-    mysql_close(*res_ptr);
+    if(*res_ptr)
+        mysql_close(*res_ptr);
     return 0;
 }
 
@@ -47,7 +48,7 @@ int db_mysql_init(notifier_block *nb, unsigned long ev, void *d){
 		return NOTIFIER_STOP;
         //exit(1);
         */
-        opool = opool_create(data->pool, 4, mysql_pool_init);
+        opool = opool_create(data->pool, OPOOL_FLAG_LOCK, 4, mysql_pool_init, mysql_pool_destroy);
         if(!opool) return NOTIFY_STOP;
         data->mysql = opool;
     }else if( ev == NOTIFIER_THREAD ){
@@ -70,7 +71,7 @@ int db_mysql_deinit(notifier_block *nb, unsigned long ev, void *d){
         data = (struct GLOBAL_RAPHTERS*)d;
         //if ( data->con ) mysql_close(data->con);
         if(data->mysql){
-            opool_destroy(data->pool, data->mysql, mysql_pool_destroy);
+            opool_destroy(data->mysql);
         }
         data->mysql = NULL;
     }else if(ev == NOTIFIER_THREAD_EXIT){

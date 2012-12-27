@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "module.h"
 #include "module_config.h"
 

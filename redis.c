@@ -17,7 +17,8 @@ int redis_pool_init(void ** ptr, opool_t *opool){
 
 int redis_pool_destroy(void **ptr, opool_t *opool)
 {
-    redisFree(*ptr);
+    if(*ptr)
+        redisFree(*ptr);
     return 0;
 }
 
@@ -25,7 +26,7 @@ int redis_init(notifier_block *nb, unsigned long ev, void *d){
     struct GLOBAL_RAPHTERS *data;
     opool_t *opool;
     data = (struct GLOBAL_RAPHTERS*)d;
-    opool = opool_create(data->pool, 4, redis_pool_init);
+    opool = opool_create(data->pool, OPOOL_FLAG_LOCK, 4, redis_pool_init, redis_pool_destroy);
     if(!opool) return NOTIFY_STOP;
     data->redis = opool;
     return NOTIFY_DONE;
@@ -34,7 +35,7 @@ int redis_init(notifier_block *nb, unsigned long ev, void *d){
 int redis_deinit(notifier_block *nb, unsigned long ev, void *d){
     struct GLOBAL_RAPHTERS *data = d;
     if(data->redis){
-        opool_destroy(data->pool, data->redis, redis_pool_destroy);
+        opool_destroy(data->redis);
     }
     return NOTIFY_DONE;
 }
