@@ -28,8 +28,10 @@ enum notifier_event { NOTIFIER_INIT = 0, NOTIFIER_THREAD, NOTIFIER_START, \
         NOTIFIER_THREAD_EXIT, NOTIFIER_EXIT };
 
 void notifier_chain_init ( void );
+//set and unset is not thread_safe
 int triger_set ( enum notifier_event ev, uint priority, notifier_callback call );
 int triger_unset ( enum notifier_event ev, notifier_callback call );
+//triger function is thread_safe or not, depending on data
 int triger ( enum notifier_event ev, void * data );
 //int notifier_chain_register ( struct notifier_block **, struct notifier_block * );
 //int notifier_chain_unregister ( struct notifier_block **, struct notifier_block * );

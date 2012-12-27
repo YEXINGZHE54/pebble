@@ -39,7 +39,7 @@ static int notifier_chain_call ( struct notifier_block **nl, unsigned long ev, v
     {
         ret = nb->call ( nb, ev, data );
         if ( affected ) *affected = *affected + 1;
-        if ( ( ret & NOTIFIER_STOP ) == NOTIFIER_STOP ) break;
+        if ( ( ret & NOTIFY_STOP ) == NOTIFY_STOP ) break;
         total--;
         nb = nb->next;
     }
