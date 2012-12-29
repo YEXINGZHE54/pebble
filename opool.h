@@ -6,6 +6,7 @@
 
 typedef struct opool_s opool_t;
 typedef struct opool_node_s opool_node_t;
+typedef opool_node_t opool_iter;
 typedef int (*opool_fn)(void **, opool_t*);
 #define OPOOL_FLAG_DEFAULT  0x00
 #define OPOOL_FLAG_LOCK     0x01
@@ -29,5 +30,7 @@ struct opool_node_s{
 opool_t * opool_create(ngx_pool_t *pool, unsigned int flag, unsigned int n, opool_fn init_fn, opool_fn destroy_fn);
 int opool_destroy(opool_t*opool);
 void * opool_request(opool_t *opool);
+opool_iter *opool_requestAll(opool_t *p);
+void opool_releaseAll(opool_t *p, opool_iter *iter);
 int opool_release(opool_t *opool, void *data);
 #endif

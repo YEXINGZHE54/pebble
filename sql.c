@@ -41,6 +41,7 @@ int db_mysql_init(notifier_block *nb, unsigned long ev, void *d){
     struct thread_info_t *threadInfo;
     opool_t *opool;
     if ( ev == NOTIFIER_INIT ){
+        return NOTIFY_DONE;
         data = (struct GLOBAL_RAPHTERS*)d;
         /*
         mysql = mysql_init(NULL);
@@ -50,7 +51,7 @@ int db_mysql_init(notifier_block *nb, unsigned long ev, void *d){
         */
         opool = opool_create(data->pool, OPOOL_FLAG_LOCK, 4, mysql_pool_init, mysql_pool_destroy);
         if(!opool) return NOTIFY_STOP;
-        data->mysql = opool;
+        //data->mysql = opool;
     }else if( ev == NOTIFIER_THREAD ){
         threadInfo = d;
         my_init();
@@ -68,12 +69,13 @@ int db_mysql_deinit(notifier_block *nb, unsigned long ev, void *d){
     struct GLOBAL_RAPHTERS *data;
     struct thread_info_t *threadInfo;
     if (ev == NOTIFIER_EXIT){
+        return NOTIFY_DONE;
         data = (struct GLOBAL_RAPHTERS*)d;
         //if ( data->con ) mysql_close(data->con);
-        if(data->mysql){
-            opool_destroy(data->mysql);
-        }
-        data->mysql = NULL;
+        //if(data->mysql){
+        //    opool_destroy(data->mysql);
+        //}
+        //data->mysql = NULL;
     }else if(ev == NOTIFIER_THREAD_EXIT){
         mysql_thread_end();
     }

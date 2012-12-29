@@ -203,10 +203,11 @@ char * session_save ( ngx_command_t *cmd, char *sid )
 }
 
 int session_start(notifier_block *nb, unsigned long ev, void *d){
-    stone_server_t *server;
+    stone_server_t *server = d;
     ngx_command_t *command;
     char *text;
     command = command_create(server->pool, COMMAND_CACHE_REDIS);
+    command->resource = server->thread->redis;
     int rc = session_init(server, command);
     if(rc != SESSION_OK)
         return NOTIFY_STOP;	
@@ -225,6 +226,7 @@ int session_stop(notifier_block *nb, unsigned long ev, void *d){
     char *text, *result, *sid;
     int rc;
     command = command_create(server->pool, COMMAND_NODE_MJSON);
+    command->resource = server->thread->redis;
     rc = session_to_string( command, server->session, &text);
     if(rc != SESSION_OK) return NOTIFY_STOP;
 	command = command_create(server->pool, COMMAND_CACHE_REDIS);

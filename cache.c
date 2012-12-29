@@ -182,6 +182,7 @@ char * redis_write( ngx_command_t *cmd, void *arg )
 	if ( cmd->resource == NULL ) return CACHE_ERROR;
 	if ( cmd->data == NULL ) return CACHE_ERROR;
 	c = ( redisContext * ) opool_request(cmd->resource);
+    //c = cmd->resource;
     if ( c == NULL ) return CACHE_ERROR;
 	reply = redisCommand ( c, "set %s %s", arg, cmd->data );
     opool_release(cmd->resource, c);

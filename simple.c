@@ -64,6 +64,7 @@ void simple_func(stone_server_t *server){
     //cache_command.data = NULL;
     //response_write(res, buf);
     cache_command = command_create(pool, COMMAND_CACHE_REDIS);
+    cache_command->resource = server->thread->redis;
     int rc = app_select(server, "article", "*", &wheres, 1, 0, cache_command);
     if (rc != 0) ECHO("error data");
 	//app_update(globals_r.con, "article", &fields, &wheres, &cache_command);
@@ -84,7 +85,7 @@ void simple_func(stone_server_t *server){
 	str = tpl_render( &cache_command, dcommand, tplbuf, server->tpl);
     */
     char *val = _GET( "act" );
-    TPL_ASSIGN ( ngx_strdup ( pool, "act" ), val );
+    //TPL_ASSIGN ( ngx_strdup ( pool, "act" ), val );
     char *str = TPL_OUTPUT ( "index.tpl" );
 	if ( str ) ECHO ( str );
 	

@@ -19,6 +19,10 @@ http://code.google.com/p/inih/
 #include <stdlib.h>
 #endif
 
+#ifndef CONFIG_FILE
+#define CONFIG_FILE "/opt/www/fcgi.ini"
+#endif
+
 #define MAX_SECTION 50
 #define MAX_NAME 50
 
@@ -46,7 +50,7 @@ int config_start(notifier_block *nb, unsigned long ev, void *d)
     configuration* pconfig = ngx_palloc(g->pool, sizeof(*pconfig));
     if (pconfig == NULL) return NOTIFY_STOP;
     g->config = pconfig;
-    if( ini_parse("config.ini", config_handler, d) <0 )
+    if( ini_parse(CONFIG_FILE, config_handler, d) <0 )
         return NOTIFY_STOP;
     return NOTIFY_DONE;
 }

@@ -4,7 +4,7 @@ opool_t * opool_create(ngx_pool_t *pool, unsigned int flag, unsigned int n, opoo
 {
     opool_t *opool;
     opool_node_t *node, *prev;
-    int i,rc;
+    int i,rc = 0;
     if ( n < 1 ) return NULL;
     opool = ngx_palloc(pool, sizeof(*opool) + n*sizeof(*node));
     if(!opool) return NULL;
@@ -18,13 +18,17 @@ opool_t * opool_create(ngx_pool_t *pool, unsigned int flag, unsigned int n, opoo
     opool->destroy_fn = destroy_fn;
     opool->init_fn = init_fn;
     //init nodes
-    rc = init_fn(&node->data, opool);
-    if(rc != 0) goto failed;
-    prev = node;
-    for(i=1;i<n;i++){
-        node += sizeof(*node);
+    if(init_fn){
         rc = init_fn(&node->data, opool);
         if(rc != 0) goto failed;
+    }
+    prev = node;
+    for(i=1;i<n;i++){
+        node = (void*)node + sizeof(*node);
+        if (init_fn) {
+            rc = init_fn(&node->data, opool);
+            if(rc != 0) goto failed;
+        }
         prev->next = node;
         prev = node;
     }
@@ -66,7 +70,7 @@ int opool_destroy(opool_t *opool)
 void * opool_request(opool_t *opool)
 {
     opool_node_t *free;
-    int rc;
+    int rc = 0;
     if (opool->mode & OPOOL_FLAG_LOCK)pthread_mutex_lock(&opool->mutex);
     free = opool->free;
     if(free == NULL) {
@@ -74,12 +78,14 @@ void * opool_request(opool_t *opool)
         {
             free = ngx_palloc(opool->mem, sizeof(*free));
             if(free == NULL) goto failed;
-            rc = opool->init_fn(&free->data, opool);
-            if(rc != 0) goto failed;
+            if(opool->init_fn){
+                rc = opool->init_fn(&(free->data), opool);
+                if(rc != 0) goto failed;
+            }
             free->next = NULL;
         }else{
 failed:
-        if(opool->mode & OPOOL_FLAG_LOCK)pthread_mutex_unlock(&opool->mutex);
+        if(opool->mode & OPOOL_FLAG_LOCK) pthread_mutex_unlock(&opool->mutex);
         return NULL;
         }
     }
@@ -90,15 +96,56 @@ failed:
     return free->data;
 }
 
+opool_iter *opool_requestAll(opool_t *p)
+{
+    opool_node_t *free = NULL;
+    if (p->mode & OPOOL_FLAG_LOCK) pthread_mutex_lock(&p->mutex);
+    free = p->free;
+    p->free = NULL;
+    if (p->mode & OPOOL_FLAG_LOCK) pthread_mutex_unlock(&p->mutex);
+    return (opool_iter *)free;
+}
+
+void opool_releaseAll(opool_t *p, opool_iter *iter)
+{
+    opool_node_t *free = NULL;
+    if (p->mode & OPOOL_FLAG_LOCK) pthread_mutex_lock(&p->mutex);
+    free = p->free;
+    if(free == NULL){
+        p->free = iter;
+        goto unlock_release;
+    }
+    //find the end of free list
+    while(free->next) free = free->next;
+    free->next = iter;
+unlock_release:
+    if (p->mode & OPOOL_FLAG_LOCK) pthread_mutex_unlock(&p->mutex);
+    return; 
+}
+
+
 int opool_release(opool_t *opool, void *data)
 {    
     opool_node_t *busy;
+    int rc = 0;
     if(opool->mode & OPOOL_FLAG_LOCK) pthread_mutex_lock(&opool->mutex);
     busy = opool->busy;
     if(busy == NULL) {
+        if(opool->mode & OPOOL_FLAG_RESIZE)
+        {
+            busy = ngx_palloc(opool->mem, sizeof(*busy));
+            if(busy == NULL) goto failed;
+            if(opool->init_fn){
+                rc = opool->init_fn(&(busy->data), opool);
+                if(rc != 0) goto failed;
+            }
+            busy->next = NULL;
+        }else{
+failed:
         if(opool->mode & OPOOL_FLAG_LOCK)
             pthread_mutex_unlock(&opool->mutex);
         return -1;
+        }
     }
     opool->busy = busy->next;
     busy->next=opool->free;
