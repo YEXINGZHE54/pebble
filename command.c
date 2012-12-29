@@ -18,11 +18,11 @@ ngx_command_t * command_create ( ngx_pool_t *pool, enum ngx_command_type type )
 			break;
 		case COMMAND_CACHE_REDIS:
 			cmd->policy = &redis_cache_cmd;
-			cmd->resource = globals_r.redis;
+			//cmd->resource = globals_r.redis;
 			break;
 		case COMMAND_CACHE_DB:
 			cmd->policy = &db_cache_cmd;
-			cmd->resource = globals_r.mysql;
+			//cmd->resource = globals_r.mysql;
 			break;
 		case COMMAND_NODE_MJSON:
 			cmd->policy = &node_mjson_command;

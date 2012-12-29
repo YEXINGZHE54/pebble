@@ -457,7 +457,7 @@ ngx_memalign(size_t alignment, size_t size, ngx_log_t *log)
 {
     void  *p;
 
-    p = memalign(alignment, size);
+    p = (void*)memalign(alignment, size);
     if (p == NULL) {
 //         ngx_log_error(NGX_LOG_EMERG, log, ngx_errno,                      "memalign(%uz, %uz) failed", alignment, size);
     }

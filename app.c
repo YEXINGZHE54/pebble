@@ -3,6 +3,8 @@
 #include "tpl.h"
 #include "notifier.h"
 #include "module.h"
+#include "list.h"
+#include "error.h"
 #include <signal.h>
 #include <mysql/mysql.h>
 
@@ -34,7 +36,7 @@ unsigned int app_init(){
     notifier_chain_init();
     module_init();
     int ret = triger( NOTIFIER_INIT, &globals_r );
-    if((ret & NOTIFIER_STOP) == NOTIFIER_STOP) exit(-1);
+    if((ret & NOTIFY_STOP) == NOTIFY_STOP) exit(STONE_ERROR_INIT); //init_error
 
 //	init_handlers(globals_r.pool);
 
@@ -51,7 +53,7 @@ void app_close(int num){
 }
 
 
-stone_server_t * stone_app_start(struct thread_info_t *threadInfo ){
+stone_server_t * stone_app_start(struct thread_info_t *threadInfo, struct FCGX_Request *fcgx){
 	ngx_pool_t *pool;
 	stone_server_t *server;
 	stone_request_t *req;
@@ -59,23 +61,24 @@ stone_server_t * stone_app_start(struct thread_info_t *threadInfo ){
 	tpl_data_table *tpl_data;
 
 	int rc;
-	//create server struct
-	server = ngx_palloc(threadInfo->pool, sizeof(stone_server_t));
-	if (server == NULL){
-			error_handler("Error while initializing server info!", threadInfo->fcgi_request);
-			return NULL;
-	}
-	
 	//create pool first
 	pool = ngx_create_pool(4096, globals_r.log);
 	if (pool == NULL){
-			error_handler("Error while creating pool buffer!", threadInfo->fcgi_request);
+			error_handler("Error while creating pool buffer!", fcgx);
 			return NULL;
 	}
 
+	//create server struct
+	server = ngx_palloc(pool, sizeof(stone_server_t));
+	if (server == NULL){
+			error_handler("Error while initializing server info!", fcgx);
+			return NULL;
+	}
+	
 	server->pool = pool;
 	server->thread = threadInfo;
-    server->fcgx = threadInfo->fcgi_request;
+    server->fcgx = fcgx;
+    server->async = 0; //no async caller
     triger ( NOTIFIER_START, server );
 	// create request and response
 	return server;

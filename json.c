@@ -248,7 +248,7 @@ json_new_string (ngx_pool_t *pool, const char *text)
 	// we did not realloc a memory for text, because json object is not storage
 	// json object is just a temorary middle ware, tarnsformed into string
 	// so, needn't free as well
-	new_object->text = text;
+	new_object->text = (char *)text;
 	new_object->parent = NULL;
 	new_object->child = NULL;
 	new_object->child_end = NULL;
@@ -287,7 +287,7 @@ json_new_number (ngx_pool_t *pool, const char *text)
 	// we did not realloc a memory for text, because json object is not storage
 	// json object is just a temorary middle ware, tarnsformed into string
 	// so, needn't free as well
-	new_object->text = text;
+	new_object->text = (char *)text;
 	new_object->parent = NULL;
 	new_object->child = NULL;
 	new_object->child_end = NULL;

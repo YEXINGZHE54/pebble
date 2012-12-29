@@ -1,5 +1,7 @@
+#include <stdlib.h>
 #include "module.h"
 #include "module_config.h"
+#include "error.h"
 
 void module_init ( void )
 {
@@ -9,6 +11,6 @@ void module_init ( void )
     {
         md = stone_modules[i];
         rc = (*md.init)();
-        if ( rc != 0 ) exit(-1);
+        if ( rc != 0 ) exit(STONE_ERROR_MODULE); //module error
     }
 }

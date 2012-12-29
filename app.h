@@ -12,6 +12,8 @@ typedef struct stone_server_s stone_server_t;
 #include "tpl.h"
 #include "threadinfo.h"
 #include "opool.h"
+#include "connection.h"
+#include "async.h"
 
 #define STONE_PAGE_SIZE_MAX 4096
 #define STONE_UPLOAD_LEN_MAX 20*1024*1004
@@ -41,21 +43,24 @@ struct stone_server_s {
     tpl_data_table *tpl;
 	struct list_head *session;
 	struct thread_info_t *thread;
+    int async;
 };
 
 struct GLOBAL_RAPHTERS {
     configuration *config;
-    opool_t *mysql;
-	opool_t *redis;
+    //opool_t *mysql;
+	//opool_t *redis;
+    opool_t *connection;
     ngx_pool_t *pool;
     hasht_table *tpl;
 	ngx_log_t *log;
+    stone_async_thread *async;
     struct thread_info_t **threads;
 }globals_r;
 
 unsigned int app_init(void);
 void app_close(int);
-stone_server_t * stone_app_start(struct thread_info_t *);
+stone_server_t * stone_app_start(struct thread_info_t *, struct FCGX_Request *);
 int stone_app_stop(stone_server_t *);
 
 #endif

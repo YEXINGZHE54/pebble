@@ -1,13 +1,13 @@
 #ifndef _FRAMEWORK_H
 #define _FRAMEWORK_H
 
+
 #include <stdlib.h>
 #include <string.h>
 #include "request.h"
 #include "response.h"
 #include "nginx.h"
 #include "appsql.h"
-#include "list.h"
 #include "command.h"
 #include "session.h"
 #include "cache.h"

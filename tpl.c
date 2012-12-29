@@ -509,6 +509,8 @@ char *tpl_output ( stone_server_t *server, char *name )
     if ( !node )
     { 
         pthread_mutex_lock(&global_tpl_lock);
+        node = hasht_find ( globals_r.tpl, name );
+        if(node) goto success;
         cache_command->pool = globals_r.pool;
 	    str = tpl_load( cache_command, name );
 	    if ( !str ) goto release_tpl_lock;
