@@ -5,18 +5,24 @@ opool_t * opool_create(ngx_pool_t *pool, unsigned int flag, unsigned int n, opoo
     opool_t *opool;
     opool_node_t *node, *prev;
     int i,rc = 0;
-    if ( n < 1 ) return NULL;
+    if ( n < 0 ) return NULL;
     opool = ngx_palloc(pool, sizeof(*opool) + n*sizeof(*node));
     if(!opool) return NULL;
     if (flag & OPOOL_FLAG_LOCK)
         pthread_mutex_init(&opool->mutex, NULL);
     opool->mem = pool;
-    node = ((void*)opool + sizeof(*opool));
-    opool->free = node;
     opool->busy = NULL;
     opool->mode = flag;
     opool->destroy_fn = destroy_fn;
     opool->init_fn = init_fn;
+    if(n==0) 
+    {
+        opool->free = NULL;
+        goto finished;
+    }
+    //here n >= 1
+    node = ((void*)opool + sizeof(*opool));
+    opool->free = node;
     //init nodes
     if(init_fn){
         rc = init_fn(&node->data, opool);
@@ -33,6 +39,7 @@ opool_t * opool_create(ngx_pool_t *pool, unsigned int flag, unsigned int n, opoo
         prev = node;
     }
     node->next = NULL;
+finished:
     return opool;
 failed:
     opool_destroy(opool);

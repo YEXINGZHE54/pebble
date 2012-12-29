@@ -3,6 +3,7 @@
 #include "threadinfo.h"
 #include "error.h"
 #include "event.h"
+#include "async.h"
 #include <time.h>
 #include <event2/event.h>
 #include <sys/socket.h>
@@ -213,7 +214,7 @@ void stone_run(void){
 
     //start up async thread first
     rc = async_thread_init(&globals_r);
-    if(rc != 0) perror("async init failed!");
+    if(rc != 0) {perror("async init failed!");return;}
     pthread_create(globals_r.async->pThread, 0, async_thread_start, globals_r.async);
 
     pThreadList = ngx_palloc( globals_r.pool, nThreads * sizeof(*pThreadList) );
