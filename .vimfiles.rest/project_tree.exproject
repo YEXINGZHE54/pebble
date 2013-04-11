@@ -1,0 +1,77 @@
+file filter = c,C,c++,cc,cp,cpp,cxx,h,H,h++,hh,hp,hpp,hxx,inl,ipp,cs,java,hlsl,vsh,psh,fx,fxh,cg,shd,glsl,py,pyw,pyx,pxd,vim,uc,wiki,ini,cfg,mak,mk,Makefile,makefile,sh,SH,bsh,bash,ksh,zsh,bat,log,err,exe,
+dir filter = 
+
+-[F]MyApp {
+ |-[F]hiredis {
+ | |-[F]adapters {
+ | | |-[h]ae.h
+ | | |-[h]libev.h
+ | | |-[h]libevent.h }
+ | |
+ | |-[c]async.c
+ | |-[h]async.h
+ | |-[c]dict.c
+ | |-[h]dict.h
+ | |-[c]example-ae.c
+ | |-[c]example-libev.c
+ | |-[c]example-libevent.c
+ | |-[c]example.c
+ | |-[h]fmacros.h
+ | |-[c]hiredis.c
+ | |-[h]hiredis.h
+ | |-[c]net.c
+ | |-[h]net.h
+ | |-[c]sds.c
+ | |-[h]sds.h
+ | |-[c]test.c }
+ |
+ |-[c]app.c
+ |-[h]app.h
+ |-[h]appsql.h
+ |-[c]cache.c
+ |-[h]cache.h
+ |-[c]command.c
+ |-[h]command.h
+ |-[i]config.ini
+ |-[h]connection.h
+ |-[c]event.c
+ |-[h]event.h
+ |-[c]framework.c
+ |-[h]framework.h
+ |-[c]handler.c
+ |-[h]handler.h
+ |-[c]ini.c
+ |-[h]ini.h
+ |-[c]json.c
+ |-[h]json.h
+ |-[c]list.c
+ |-[h]list.h
+ |-[c]module.c
+ |-[h]module.h
+ |-[h]module_config.h
+ |-[c]nginx.c
+ |-[h]nginx.h
+ |-[c]notifier.c
+ |-[h]notifier.h
+ |-[c]opool.c
+ |-[h]opool.h
+ |-[s]quick_gen_project_rest_autogen.sh
+ |-[c]redis.c
+ |-[c]request.c
+ |-[h]request.h
+ |-[c]response.c
+ |-[h]response.h
+ |-[c]session.c
+ |-[h]session.h
+ |-[c]simple.c
+ |-[h]simple.h
+ |-[c]sql.c
+ |-[h]threadinfo.h
+ |-[c]tpl.c
+ |-[h]tpl.h
+ |-[c]tree.c
+ |-[h]tree.h
+ |-[c]util.c
+ |-[h]util.h }
+
+

@@ -1,0 +1,38 @@
+main()
+    --prepare for handler
+    --run()
+
+run()
+    chain_init, module_init
+    app_init()      //triger INIT
+    accpet()        //triger IOLOOP
+    app_start()     //triger START/REQUEST
+    tpl_output      //triger OUTPUT
+    resopnse_send   //triger RESONSE
+    app_stop()      //triger STOP
+    app_close()     //triger EXIT
+
+app_init()
+    initialize global resources
+
+accept()
+    means io loop multi-event , epoll/select, from socket to accept
+
+app_start()
+    initialize requests, responses, filter?
+
+tpl_output()
+    render tpl files and filter?
+
+response_send()
+    echo headers and bodies
+
+app_stop()
+    clean up
+
+app_close()
+    close the app, and clean up global resources
+
+global_resources:
+    mysql, redis, file, handler, cache, command, node, tpl, session, user?, 
+

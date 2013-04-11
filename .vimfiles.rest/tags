@@ -1,0 +1,1578 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AF_LOCAL	../hiredis/net.h	39;"	d
+BINS	../hiredis/Makefile	/^BINS=hiredis-example hiredis-test$/;"	m
+BKDRHash	../appsql.h	/^unsigned int BKDRHash(char *);$/;"	p	signature:(char *)
+BKDRHash	../cache.c	/^extern unsigned int BKDRHash(char *);$/;"	p	file:	signature:(char *)
+BKDRHash	../sql.c	/^unsigned int BKDRHash(char *str)$/;"	f	signature:(char *str)
+Boundary	../request.h	/^	char *Boundary;$/;"	m	struct:stone_server_env	access:public
+BoundaryLen	../request.h	/^	uint BoundaryLen;$/;"	m	struct:stone_server_env	access:public
+CACHE_ERROR	../cache.h	7;"	d
+CC	../hiredis/Makefile	/^CC:=$(shell sh -c 'type $(CC) >\/dev\/null 2>\/dev\/null && echo $(CC) || echo gcc')$/;"	m
+CFLAGS	../Makefile	/^CFLAGS=-g -lfcgi -L\/user\/lib\/mysql -lmysqlclient -lhiredis$/;"	m
+COMMAND_CACHE_DB	../command.h	/^enum ngx_command_type { COMMAND_CACHE_FILE = 0, COMMAND_CACHE_REDIS = 1, COMMAND_CACHE_DB = 2, COMMAND_NODE_MJSON = 3 };$/;"	e	enum:ngx_command_type
+COMMAND_CACHE_FILE	../command.h	/^enum ngx_command_type { COMMAND_CACHE_FILE = 0, COMMAND_CACHE_REDIS = 1, COMMAND_CACHE_DB = 2, COMMAND_NODE_MJSON = 3 };$/;"	e	enum:ngx_command_type
+COMMAND_CACHE_REDIS	../command.h	/^enum ngx_command_type { COMMAND_CACHE_FILE = 0, COMMAND_CACHE_REDIS = 1, COMMAND_CACHE_DB = 2, COMMAND_NODE_MJSON = 3 };$/;"	e	enum:ngx_command_type
+COMMAND_NODE_MJSON	../command.h	/^enum ngx_command_type { COMMAND_CACHE_FILE = 0, COMMAND_CACHE_REDIS = 1, COMMAND_CACHE_DB = 2, COMMAND_NODE_MJSON = 3 };$/;"	e	enum:ngx_command_type
+CONN_TCP	../hiredis/test.c	/^    CONN_TCP,$/;"	e	enum:connection_type	file:
+CONN_UNIX	../hiredis/test.c	/^    CONN_UNIX$/;"	e	enum:connection_type	file:
+ContentLength	../request.h	/^	uint ContentLength;$/;"	m	struct:stone_server_env	access:public
+ContentType	../request.h	/^	char *ContentType;$/;"	m	struct:stone_server_env	access:public
+DEBUG	../hiredis/Makefile	/^DEBUG?= -g -ggdb$/;"	m
+DELETE	../request.h	11;"	d
+DICT_ERR	../hiredis/dict.h	40;"	d
+DICT_HT_INITIAL_SIZE	../hiredis/dict.h	76;"	d
+DICT_NOTUSED	../hiredis/dict.h	43;"	d
+DICT_OK	../hiredis/dict.h	39;"	d
+DYLIBNAME	../hiredis/Makefile	/^DYLIBNAME=$(LIBNAME).$(DYLIBSUFFIX)$/;"	m
+DYLIBSUFFIX	../hiredis/Makefile	/^  DYLIBSUFFIX=dylib$/;"	m
+DYLIBSUFFIX	../hiredis/Makefile	/^DYLIBSUFFIX=so$/;"	m
+DYLIB_MAJOR_NAME	../hiredis/Makefile	/^  DYLIB_MAJOR_NAME=$(LIBNAME).$(HIREDIS_MAJOR).$(DYLIBSUFFIX)$/;"	m
+DYLIB_MAJOR_NAME	../hiredis/Makefile	/^DYLIB_MAJOR_NAME=$(LIBNAME).$(DYLIBSUFFIX).$(HIREDIS_MAJOR)$/;"	m
+DYLIB_MAKE_CMD	../hiredis/Makefile	/^  DYLIB_MAKE_CMD=$(CC) -G -o $(DYLIBNAME) -h $(DYLIB_MINOR_NAME) $(LDFLAGS)$/;"	m
+DYLIB_MAKE_CMD	../hiredis/Makefile	/^  DYLIB_MAKE_CMD=$(CC) -shared -Wl,-install_name,$(DYLIB_MINOR_NAME) -o $(DYLIBNAME) $(LDFLAGS)$/;"	m
+DYLIB_MAKE_CMD	../hiredis/Makefile	/^DYLIB_MAKE_CMD=$(CC) -shared -Wl,-soname,$(DYLIB_MINOR_NAME) -o $(DYLIBNAME) $(LDFLAGS)$/;"	m
+DYLIB_MINOR_NAME	../hiredis/Makefile	/^  DYLIB_MINOR_NAME=$(LIBNAME).$(HIREDIS_MAJOR).$(HIREDIS_MINOR).$(DYLIBSUFFIX)$/;"	m
+DYLIB_MINOR_NAME	../hiredis/Makefile	/^DYLIB_MINOR_NAME=$(LIBNAME).$(DYLIBSUFFIX).$(HIREDIS_MAJOR).$(HIREDIS_MINOR)$/;"	m
+ECHO	../response.h	4;"	d
+FLOAT_WIDTH_TEST	../hiredis/test.c	157;"	d	file:
+GET	../request.h	7;"	d
+GLOBAL_RAPHTERS	../app.h	/^struct GLOBAL_RAPHTERS {$/;"	s
+GLOBAL_RAPHTERS::con	../app.h	/^    MYSQL *con;$/;"	m	struct:GLOBAL_RAPHTERS	access:public
+GLOBAL_RAPHTERS::log	../app.h	/^	ngx_log_t *log;$/;"	m	struct:GLOBAL_RAPHTERS	access:public
+GLOBAL_RAPHTERS::pool	../app.h	/^    ngx_pool_t *pool;$/;"	m	struct:GLOBAL_RAPHTERS	access:public
+GLOBAL_RAPHTERS::redis	../app.h	/^	redisContext *redis;$/;"	m	struct:GLOBAL_RAPHTERS	access:public
+GLOBAL_RAPHTERS::tpl	../app.h	/^    hasht_table *tpl;$/;"	m	struct:GLOBAL_RAPHTERS	access:public
+HEAD	../request.h	10;"	d
+HEADER	../response.h	5;"	d
+HIREDIS_MAJOR	../hiredis/Makefile	/^HIREDIS_MAJOR=0$/;"	m
+HIREDIS_MAJOR	../hiredis/hiredis.h	38;"	d
+HIREDIS_MINOR	../hiredis/Makefile	/^HIREDIS_MINOR=10$/;"	m
+HIREDIS_MINOR	../hiredis/hiredis.h	39;"	d
+HIREDIS_PATCH	../hiredis/hiredis.h	40;"	d
+HLIST_HEAD	../list.h	606;"	d
+HLIST_HEAD_INIT	../list.h	605;"	d
+INCLUDE_PATH	../hiredis/Makefile	/^INCLUDE_PATH?=include\/hiredis$/;"	m
+INIT_HLIST_HEAD	../list.h	607;"	d
+INIT_HLIST_NODE	../list.h	/^static inline void INIT_HLIST_NODE(struct hlist_node *h)$/;"	f	signature:(struct hlist_node *h)
+INIT_LIST_HEAD	../list.h	/^static inline void INIT_LIST_HEAD(struct list_head *list)$/;"	f	signature:(struct list_head *list)
+INSTALL	../hiredis/Makefile	/^  INSTALL= cp -r$/;"	m
+INSTALL	../hiredis/Makefile	/^  INSTALL?= cp -r$/;"	m
+INSTALL	../hiredis/Makefile	/^INSTALL?= cp -a$/;"	m
+INSTALL_INCLUDE_PATH	../hiredis/Makefile	/^INSTALL_INCLUDE_PATH= $(PREFIX)\/$(INCLUDE_PATH)$/;"	m
+INSTALL_LIBRARY_PATH	../hiredis/Makefile	/^INSTALL_LIBRARY_PATH= $(PREFIX)\/$(LIBRARY_PATH)$/;"	m
+INTEGER_WIDTH_TEST	../hiredis/test.c	148;"	d	file:
+JSON_ARRAY	../json.h	/^	{ JSON_STRING = 0, JSON_NUMBER, JSON_OBJECT, JSON_ARRAY, JSON_TRUE, JSON_FALSE, JSON_NULL };$/;"	e	enum:json_value_type
+JSON_BAD_TREE_STRUCTURE	../json.h	/^		JSON_BAD_TREE_STRUCTURE,	\/*!< the document tree structure is malformed *\/$/;"	e	enum:json_error
+JSON_FALSE	../json.h	/^	{ JSON_STRING = 0, JSON_NUMBER, JSON_OBJECT, JSON_ARRAY, JSON_TRUE, JSON_FALSE, JSON_NULL };$/;"	e	enum:json_value_type
+JSON_H	../json.h	29;"	d
+JSON_ILLEGAL_CHARACTER	../json.h	/^		JSON_ILLEGAL_CHARACTER,	\/*!< the currently parsed character does not belong here *\/$/;"	e	enum:json_error
+JSON_INCOMPATIBLE_TYPE	../json.h	/^		JSON_INCOMPATIBLE_TYPE,	\/*!< the currently parsed type does not belong here *\/$/;"	e	enum:json_error
+JSON_INCOMPLETE_DOCUMENT	../json.h	/^		JSON_INCOMPLETE_DOCUMENT,	\/*!< the parsed document didn't ended *\/$/;"	e	enum:json_error
+JSON_MALFORMED_DOCUMENT	../json.h	/^		JSON_MALFORMED_DOCUMENT,	\/* the JSON document which was fed to this parser is malformed *\/$/;"	e	enum:json_error
+JSON_MAXIMUM_LENGTH	../json.h	/^		JSON_MAXIMUM_LENGTH,	\/*!< the parsed string reached the maximum allowed size *\/$/;"	e	enum:json_error
+JSON_MAX_STRING_LENGTH	../json.h	40;"	d
+JSON_MEMORY	../json.h	/^		JSON_MEMORY,	\/*!< an error occurred when allocating memory *\/$/;"	e	enum:json_error
+JSON_NULL	../json.h	/^	{ JSON_STRING = 0, JSON_NUMBER, JSON_OBJECT, JSON_ARRAY, JSON_TRUE, JSON_FALSE, JSON_NULL };$/;"	e	enum:json_value_type
+JSON_NUMBER	../json.h	/^	{ JSON_STRING = 0, JSON_NUMBER, JSON_OBJECT, JSON_ARRAY, JSON_TRUE, JSON_FALSE, JSON_NULL };$/;"	e	enum:json_value_type
+JSON_OBJECT	../json.h	/^	{ JSON_STRING = 0, JSON_NUMBER, JSON_OBJECT, JSON_ARRAY, JSON_TRUE, JSON_FALSE, JSON_NULL };$/;"	e	enum:json_value_type
+JSON_OK	../json.h	/^		JSON_OK = 1,	\/*!< everything went smoothly *\/$/;"	e	enum:json_error
+JSON_STRING	../json.h	/^	{ JSON_STRING = 0, JSON_NUMBER, JSON_OBJECT, JSON_ARRAY, JSON_TRUE, JSON_FALSE, JSON_NULL };$/;"	e	enum:json_value_type
+JSON_TRUE	../json.h	/^	{ JSON_STRING = 0, JSON_NUMBER, JSON_OBJECT, JSON_ARRAY, JSON_TRUE, JSON_FALSE, JSON_NULL };$/;"	e	enum:json_value_type
+JSON_UNKNOWN_PROBLEM	../json.h	/^		JSON_UNKNOWN_PROBLEM	\/*!< some random, unaccounted problem occurred *\/$/;"	e	enum:json_error
+JSON_WAITING_FOR_EOF	../json.h	/^		JSON_WAITING_FOR_EOF,	\/*!< A complete JSON document tree was already finished but needs to get to EOF. Other characters beyond whitespaces produce errors *\/$/;"	e	enum:json_error
+LEX_BEGIN_ARRAY	../json.c	/^	LEX_BEGIN_ARRAY,$/;"	e	enum:LEX_VALUE	file:
+LEX_BEGIN_OBJECT	../json.c	/^	LEX_BEGIN_OBJECT,$/;"	e	enum:LEX_VALUE	file:
+LEX_END_ARRAY	../json.c	/^	LEX_END_ARRAY,$/;"	e	enum:LEX_VALUE	file:
+LEX_END_OBJECT	../json.c	/^	LEX_END_OBJECT,$/;"	e	enum:LEX_VALUE	file:
+LEX_ERROR	../json.c	/^	LEX_ERROR,$/;"	e	enum:LEX_VALUE	file:
+LEX_FALSE	../json.c	/^	LEX_FALSE,$/;"	e	enum:LEX_VALUE	file:
+LEX_INVALID_CHARACTER	../json.c	/^	LEX_INVALID_CHARACTER,$/;"	e	enum:LEX_VALUE	file:
+LEX_MEMORY	../json.c	/^	LEX_MEMORY$/;"	e	enum:LEX_VALUE	file:
+LEX_MORE	../json.c	/^{ LEX_MORE = 0,$/;"	e	enum:LEX_VALUE	file:
+LEX_NAME_SEPARATOR	../json.c	/^	LEX_NAME_SEPARATOR,$/;"	e	enum:LEX_VALUE	file:
+LEX_NULL	../json.c	/^	LEX_NULL,$/;"	e	enum:LEX_VALUE	file:
+LEX_NUMBER	../json.c	/^	LEX_NUMBER,$/;"	e	enum:LEX_VALUE	file:
+LEX_STRING	../json.c	/^	LEX_STRING,$/;"	e	enum:LEX_VALUE	file:
+LEX_TRUE	../json.c	/^	LEX_TRUE,$/;"	e	enum:LEX_VALUE	file:
+LEX_VALUE	../json.c	/^enum LEX_VALUE$/;"	g	file:
+LEX_VALUE_SEPARATOR	../json.c	/^	LEX_VALUE_SEPARATOR,$/;"	e	enum:LEX_VALUE	file:
+LIBNAME	../hiredis/Makefile	/^LIBNAME=libhiredis$/;"	m
+LIBRARY_PATH	../hiredis/Makefile	/^LIBRARY_PATH?=lib$/;"	m
+LIST_HEAD	../list.h	59;"	d
+LIST_HEAD_INIT	../list.h	57;"	d
+LIST_POISON1	../list.h	18;"	d
+LIST_POISON2	../list.h	19;"	d
+NGX_ABORT	../nginx.h	42;"	d
+NGX_AGAIN	../nginx.h	38;"	d
+NGX_ALIGNMENT	../nginx.h	28;"	d
+NGX_BUSY	../nginx.h	39;"	d
+NGX_DECLINED	../nginx.h	41;"	d
+NGX_DEFAULT_POOL_SIZE	../nginx.h	25;"	d
+NGX_DONE	../nginx.h	40;"	d
+NGX_ENOENT	../nginx.h	44;"	d
+NGX_ERROR	../nginx.h	37;"	d
+NGX_FILE_APPEND	../nginx.h	52;"	d
+NGX_FILE_CREATE_OR_OPEN	../nginx.h	49;"	d
+NGX_FILE_DEFAULT_ACCESS	../nginx.h	55;"	d
+NGX_FILE_ERROR	../nginx.h	33;"	d
+NGX_FILE_NONBLOCK	../nginx.h	53;"	d
+NGX_FILE_OPEN	../nginx.h	50;"	d
+NGX_FILE_OWNER_ACCESS	../nginx.h	56;"	d
+NGX_FILE_RDONLY	../nginx.h	46;"	d
+NGX_FILE_RDWR	../nginx.h	48;"	d
+NGX_FILE_TRUNCATE	../nginx.h	51;"	d
+NGX_FILE_WRONLY	../nginx.h	47;"	d
+NGX_INVALID_FILE	../nginx.h	32;"	d
+NGX_MAX_ALLOC_FROM_POOL	../nginx.h	23;"	d
+NGX_MIN_POOL_SIZE	../nginx.h	29;"	d
+NGX_OK	../nginx.h	36;"	d
+NGX_POOL_ALIGNMENT	../nginx.h	27;"	d
+NODE_ARR	../tree.h	/^enum stone_node_type { NODE_NC = 0, NODE_VALUE = 1, NODE_ARR = 2, NODE_OBJ = 3, NODE_CONDITION = 4 };$/;"	e	enum:stone_node_type
+NODE_CONDITION	../tree.h	/^enum stone_node_type { NODE_NC = 0, NODE_VALUE = 1, NODE_ARR = 2, NODE_OBJ = 3, NODE_CONDITION = 4 };$/;"	e	enum:stone_node_type
+NODE_NC	../tree.h	/^enum stone_node_type { NODE_NC = 0, NODE_VALUE = 1, NODE_ARR = 2, NODE_OBJ = 3, NODE_CONDITION = 4 };$/;"	e	enum:stone_node_type
+NODE_OBJ	../tree.h	/^enum stone_node_type { NODE_NC = 0, NODE_VALUE = 1, NODE_ARR = 2, NODE_OBJ = 3, NODE_CONDITION = 4 };$/;"	e	enum:stone_node_type
+NODE_VALUE	../tree.h	/^enum stone_node_type { NODE_NC = 0, NODE_VALUE = 1, NODE_ARR = 2, NODE_OBJ = 3, NODE_CONDITION = 4 };$/;"	e	enum:stone_node_type
+OBJ	../hiredis/Makefile	/^OBJ=net.o hiredis.o sds.o async.o$/;"	m
+OBJS	../Makefile	/^OBJS=simple.o nginx.o sql.o cache.o json.o framework.o session.o tree.o app.o handler.o request.o response.o util.o tpl.o command.o list.o$/;"	m
+OPTIMIZATION	../hiredis/Makefile	/^OPTIMIZATION?=-O3$/;"	m
+POISON_POINTER_DELTA	../list.h	13;"	d
+POISON_POINTER_DELTA	../list.h	15;"	d
+POST	../request.h	8;"	d
+PREFIX	../hiredis/Makefile	/^PREFIX?=\/usr\/local$/;"	m
+PUT	../request.h	9;"	d
+REAL_CFLAGS	../hiredis/Makefile	/^REAL_CFLAGS=$(OPTIMIZATION) -fPIC $(CFLAGS) $(WARNINGS) $(DEBUG) $(ARCH)$/;"	m
+REAL_LDFLAGS	../hiredis/Makefile	/^REAL_LDFLAGS=$(LDFLAGS) $(ARCH)$/;"	m
+REDIS_BLOCK	../hiredis/hiredis.h	57;"	d
+REDIS_CONNECTED	../hiredis/hiredis.h	61;"	d
+REDIS_DISCONNECTING	../hiredis/hiredis.h	67;"	d
+REDIS_ERR	../hiredis/hiredis.h	42;"	d
+REDIS_ERR_EOF	../hiredis/hiredis.h	50;"	d
+REDIS_ERR_IO	../hiredis/hiredis.h	49;"	d
+REDIS_ERR_OOM	../hiredis/hiredis.h	52;"	d
+REDIS_ERR_OTHER	../hiredis/hiredis.h	53;"	d
+REDIS_ERR_PROTOCOL	../hiredis/hiredis.h	51;"	d
+REDIS_FREEING	../hiredis/hiredis.h	71;"	d
+REDIS_IN_CALLBACK	../hiredis/hiredis.h	74;"	d
+REDIS_MONITORING	../hiredis/hiredis.h	80;"	d
+REDIS_OK	../hiredis/hiredis.h	43;"	d
+REDIS_READER_MAX_BUF	../hiredis/hiredis.h	89;"	d
+REDIS_REPLY_ARRAY	../hiredis/hiredis.h	83;"	d
+REDIS_REPLY_ERROR	../hiredis/hiredis.h	87;"	d
+REDIS_REPLY_INTEGER	../hiredis/hiredis.h	84;"	d
+REDIS_REPLY_NIL	../hiredis/hiredis.h	85;"	d
+REDIS_REPLY_STATUS	../hiredis/hiredis.h	86;"	d
+REDIS_REPLY_STRING	../hiredis/hiredis.h	82;"	d
+REDIS_SUBSCRIBED	../hiredis/hiredis.h	77;"	d
+RSTRING_INCSTEP	../json.c	51;"	d	file:
+RS_MEMORY	../json.c	/^{ RS_MEMORY, RS_OK = 1, RS_UNKNOWN };$/;"	e	enum:rui_string_error_codes	file:
+RS_OK	../json.c	/^{ RS_MEMORY, RS_OK = 1, RS_UNKNOWN };$/;"	e	enum:rui_string_error_codes	file:
+RS_UNKNOWN	../json.c	/^{ RS_MEMORY, RS_OK = 1, RS_UNKNOWN };$/;"	e	enum:rui_string_error_codes	file:
+SESSION_ERROR	../session.h	10;"	d
+SESSION_OK	../session.h	9;"	d
+STLIBNAME	../hiredis/Makefile	/^STLIBNAME=$(LIBNAME).$(STLIBSUFFIX)$/;"	m
+STLIBSUFFIX	../hiredis/Makefile	/^STLIBSUFFIX=a$/;"	m
+STLIB_MAKE_CMD	../hiredis/Makefile	/^STLIB_MAKE_CMD=ar rcs $(STLIBNAME)$/;"	m
+STONE_APP	../app.h	2;"	d
+STONE_BOUNDARY_LEN_MAX	../app.h	14;"	d
+STONE_HANDLER	../handler.h	2;"	d
+STONE_NOTIFIER_H	../notifier.h	2;"	d
+STONE_PAGE_SIZE_MAX	../app.h	12;"	d
+STONE_REQUEST	../request.h	2;"	d
+STONE_RESPONSE	../response.h	2;"	d
+STONE_TPL_H	../tpl.h	2;"	d
+STONE_UPLOAD_LEN_MAX	../app.h	13;"	d
+STONE_UTIL	../util.h	2;"	d
+TMP_DIR	../app.h	15;"	d
+TPL_ASSIGN	../tpl.h	19;"	d
+TPL_DATA_TABLE_SIZE	../tpl.h	18;"	d
+TPL_DIR	../tpl.h	17;"	d
+TPL_END_OF_TAG	../tpl.h	15;"	d
+TPL_KEY_BUF_SIZE	../tpl.h	16;"	d
+TPL_OUTPUT	../tpl.h	20;"	d
+TPL_TAG_FILE	../tpl.h	14;"	d
+TPL_TAG_IF	../tpl.h	12;"	d
+TPL_TAG_INCLUDE	../tpl.h	13;"	d
+TPL_TAG_LOOP	../tpl.h	10;"	d
+TPL_TAG_START	../tpl.h	8;"	d
+TPL_TAG_TAIL	../tpl.h	9;"	d
+TPL_TAG_VALUE	../tpl.h	11;"	d
+WARNINGS	../hiredis/Makefile	/^WARNINGS=-Wall -W -Wstrict-prototypes -Wwrite-strings$/;"	m
+_APPSQL_H	../appsql.h	2;"	d
+_BSD_SOURCE	../hiredis/fmacros.h	5;"	d
+_CACHE_H	../cache.h	2;"	d
+_COMMAND_H	../command.h	2;"	d
+_COOKIE	../request.h	15;"	d
+_DCOOKIE	../response.h	7;"	d
+_EL_ADD_READ	../hiredis/async.c	44;"	d	file:
+_EL_ADD_WRITE	../hiredis/async.c	50;"	d	file:
+_EL_CLEANUP	../hiredis/async.c	56;"	d	file:
+_EL_DEL_READ	../hiredis/async.c	47;"	d	file:
+_EL_DEL_WRITE	../hiredis/async.c	53;"	d	file:
+_FILE	../request.h	16;"	d
+_FRAMEWORK_H	../framework.h	2;"	d
+_GET	../request.h	13;"	d
+_LINUX_LIST_H	../list.h	2;"	d
+_NGX_PALLOC_H_INCLUDED_	../nginx.h	12;"	d
+_POSIX_C_SOURCE	../hiredis/fmacros.h	9;"	d
+_POST	../request.h	14;"	d
+_SCOOKIE	../response.h	6;"	d
+_STONE_SESSION_H	../session.h	2;"	d
+_STONE_TREE_H	../tree.h	2;"	d
+_XOPEN_SOURCE	../hiredis/fmacros.h	11;"	d
+_XOPEN_SOURCE	../hiredis/fmacros.h	13;"	d
+__DICT_H	../hiredis/dict.h	37;"	d
+__HIREDIS_AE_H__	../hiredis/adapters/ae.h	2;"	d
+__HIREDIS_ASYNC_H	../hiredis/async.h	33;"	d
+__HIREDIS_FMACRO_H	../hiredis/fmacros.h	2;"	d
+__HIREDIS_H	../hiredis/hiredis.h	33;"	d
+__HIREDIS_LIBEVENT_H__	../hiredis/adapters/libevent.h	2;"	d
+__HIREDIS_LIBEV_H__	../hiredis/adapters/libev.h	2;"	d
+__MAX_MSEC	../hiredis/net.c	126;"	d	file:
+__NET_H	../hiredis/net.h	34;"	d
+__SDS_H	../hiredis/sds.h	32;"	d
+__anon5::last	../nginx.h	/^    ngx_list_part_t  *last;$/;"	m	struct:__anon5	access:public
+__anon5::nalloc	../nginx.h	/^    ngx_uint_t        nalloc;$/;"	m	struct:__anon5	access:public
+__anon5::part	../nginx.h	/^    ngx_list_part_t   part;$/;"	m	struct:__anon5	access:public
+__anon5::pool	../nginx.h	/^    ngx_pool_t       *pool;$/;"	m	struct:__anon5	access:public
+__anon5::size	../nginx.h	/^    size_t            size;$/;"	m	struct:__anon5	access:public
+__anon6::data	../nginx.h	/^    u_char     *data;$/;"	m	struct:__anon6	access:public
+__anon6::len	../nginx.h	/^    size_t      len;$/;"	m	struct:__anon6	access:public
+__anon7::end	../nginx.h	/^    u_char               *end;$/;"	m	struct:__anon7	access:public
+__anon7::failed	../nginx.h	/^    ngx_uint_t            failed;$/;"	m	struct:__anon7	access:public
+__anon7::last	../nginx.h	/^    u_char               *last;$/;"	m	struct:__anon7	access:public
+__anon7::next	../nginx.h	/^    ngx_pool_t           *next;$/;"	m	struct:__anon7	access:public
+__anon8::fd	../nginx.h	/^    ngx_fd_t              fd;$/;"	m	struct:__anon8	access:public
+__anon8::log	../nginx.h	/^    ngx_log_t            *log;$/;"	m	struct:__anon8	access:public
+__anon8::name	../nginx.h	/^    u_char               *name;$/;"	m	struct:__anon8	access:public
+__anon9::num	../nginx.h	/^    uint    num;$/;"	m	struct:__anon9	access:public
+__anon9::size	../nginx.h	/^    size_t       size;$/;"	m	struct:__anon9	access:public
+__failed_tests	../hiredis/sds.c	/^int __failed_tests = 0;$/;"	v
+__hlist_del	../list.h	/^static inline void __hlist_del(struct hlist_node *n)$/;"	f	signature:(struct hlist_node *n)
+__list_add	../list.h	/^extern void __list_add(struct list_head *new,$/;"	p	signature:(struct list_head *new, struct list_head *prev, struct list_head *next)
+__list_add	../list.h	/^static inline void __list_add(struct list_head *new,$/;"	f	signature:(struct list_head *new, struct list_head *prev, struct list_head *next)
+__list_cut_position	../list.h	/^static inline void __list_cut_position(struct list_head *list,$/;"	f	signature:(struct list_head *list, struct list_head *head, struct list_head *entry)
+__list_del	../list.h	/^static inline void __list_del(struct list_head * prev, struct list_head * next)$/;"	f	signature:(struct list_head * prev, struct list_head * next)
+__list_del_entry	../list.h	/^extern void __list_del_entry(struct list_head *entry);$/;"	p	signature:(struct list_head *entry)
+__list_del_entry	../list.h	/^static inline void __list_del_entry(struct list_head *entry)$/;"	f	signature:(struct list_head *entry)
+__list_for_each	../list.h	418;"	d
+__list_splice	../list.h	/^static inline void __list_splice(const struct list_head *list,$/;"	f	signature:(const struct list_head *list, struct list_head *prev, struct list_head *next)
+__redisAppendCommand	../hiredis/async.c	/^void __redisAppendCommand(redisContext *c, char *cmd, size_t len);$/;"	p	file:	signature:(redisContext *c, char *cmd, size_t len)
+__redisAppendCommand	../hiredis/hiredis.c	/^int __redisAppendCommand(redisContext *c, char *cmd, size_t len) {$/;"	f	signature:(redisContext *c, char *cmd, size_t len)
+__redisAsyncCommand	../hiredis/async.c	/^static int __redisAsyncCommand(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, char *cmd, size_t len) {$/;"	f	file:	signature:(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, char *cmd, size_t len)
+__redisAsyncCopyError	../hiredis/async.c	/^static void __redisAsyncCopyError(redisAsyncContext *ac) {$/;"	f	file:	signature:(redisAsyncContext *ac)
+__redisAsyncDisconnect	../hiredis/async.c	/^static void __redisAsyncDisconnect(redisAsyncContext *ac) {$/;"	f	file:	signature:(redisAsyncContext *ac)
+__redisAsyncFree	../hiredis/async.c	/^static void __redisAsyncFree(redisAsyncContext *ac) {$/;"	f	file:	signature:(redisAsyncContext *ac)
+__redisAsyncHandleConnect	../hiredis/async.c	/^static int __redisAsyncHandleConnect(redisAsyncContext *ac) {$/;"	f	file:	signature:(redisAsyncContext *ac)
+__redisBlockForReply	../hiredis/hiredis.c	/^static void *__redisBlockForReply(redisContext *c) {$/;"	f	file:	signature:(redisContext *c)
+__redisGetSubscribeCallback	../hiredis/async.c	/^static int __redisGetSubscribeCallback(redisAsyncContext *ac, redisReply *reply, redisCallback *dstcb) {$/;"	f	file:	signature:(redisAsyncContext *ac, redisReply *reply, redisCallback *dstcb)
+__redisPushCallback	../hiredis/async.c	/^static int __redisPushCallback(redisCallbackList *list, redisCallback *source) {$/;"	f	file:	signature:(redisCallbackList *list, redisCallback *source)
+__redisReaderSetError	../hiredis/hiredis.c	/^static void __redisReaderSetError(redisReader *r, int type, const char *str) {$/;"	f	file:	signature:(redisReader *r, int type, const char *str)
+__redisReaderSetErrorOOM	../hiredis/hiredis.c	/^static void __redisReaderSetErrorOOM(redisReader *r) {$/;"	f	file:	signature:(redisReader *r)
+__redisReaderSetErrorProtocolByte	../hiredis/hiredis.c	/^static void __redisReaderSetErrorProtocolByte(redisReader *r, char byte) {$/;"	f	file:	signature:(redisReader *r, char byte)
+__redisRunCallback	../hiredis/async.c	/^static void __redisRunCallback(redisAsyncContext *ac, redisCallback *cb, redisReply *reply) {$/;"	f	file:	signature:(redisAsyncContext *ac, redisCallback *cb, redisReply *reply)
+__redisSetError	../hiredis/hiredis.c	/^void __redisSetError(redisContext *c, int type, const char *str) {$/;"	f	signature:(redisContext *c, int type, const char *str)
+__redisSetError	../hiredis/net.c	/^void __redisSetError(redisContext *c, int type, const char *str);$/;"	p	file:	signature:(redisContext *c, int type, const char *str)
+__redisSetErrorFromErrno	../hiredis/net.c	/^static void __redisSetErrorFromErrno(redisContext *c, int type, const char *prefix) {$/;"	f	file:	signature:(redisContext *c, int type, const char *prefix)
+__redisShiftCallback	../hiredis/async.c	/^static int __redisShiftCallback(redisCallbackList *list, redisCallback *target) {$/;"	f	file:	signature:(redisCallbackList *list, redisCallback *target)
+__test_num	../hiredis/sds.c	/^int __test_num = 0;$/;"	v
+_dictClear	../hiredis/dict.c	/^static int _dictClear(dict *ht) {$/;"	f	file:	signature:(dict *ht)
+_dictExpandIfNeeded	../hiredis/dict.c	/^static int _dictExpandIfNeeded(dict *ht) {$/;"	f	file:	signature:(dict *ht)
+_dictExpandIfNeeded	../hiredis/dict.c	/^static int _dictExpandIfNeeded(dict *ht);$/;"	p	file:	signature:(dict *ht)
+_dictInit	../hiredis/dict.c	/^static int _dictInit(dict *ht, dictType *type, void *privDataPtr) {$/;"	f	file:	signature:(dict *ht, dictType *type, void *privDataPtr)
+_dictInit	../hiredis/dict.c	/^static int _dictInit(dict *ht, dictType *type, void *privDataPtr);$/;"	p	file:	signature:(dict *ht, dictType *type, void *privDataPtr)
+_dictKeyIndex	../hiredis/dict.c	/^static int _dictKeyIndex(dict *ht, const void *key) {$/;"	f	file:	signature:(dict *ht, const void *key)
+_dictKeyIndex	../hiredis/dict.c	/^static int _dictKeyIndex(dict *ht, const void *key);$/;"	p	file:	signature:(dict *ht, const void *key)
+_dictNextPower	../hiredis/dict.c	/^static unsigned long _dictNextPower(unsigned long size) {$/;"	f	file:	signature:(unsigned long size)
+_dictNextPower	../hiredis/dict.c	/^static unsigned long _dictNextPower(unsigned long size);$/;"	p	file:	signature:(unsigned long size)
+_dictReset	../hiredis/dict.c	/^static void _dictReset(dict *ht) {$/;"	f	file:	signature:(dict *ht)
+action	../nginx.h	/^    char                *action;$/;"	m	struct:ngx_log_s	access:public
+addRead	../hiredis/async.h	/^        void (*addRead)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon1	access:public
+addWrite	../hiredis/async.h	/^        void (*addWrite)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon1	access:public
+add_handler	../handler.c	/^void add_handler(handler *h) {$/;"	f	signature:(handler *h)
+add_handler	../handler.h	/^void add_handler(handler *);$/;"	p	signature:(handler *)
+alloc	../nginx.h	/^    void                 *alloc;$/;"	m	struct:ngx_pool_large_s	access:public
+app_cache_dir	../cache.h	6;"	d
+app_close	../app.c	/^void app_close(int num){$/;"	f	signature:(int num)
+app_close	../app.h	/^void app_close(int);$/;"	p	signature:(int)
+app_init	../app.c	/^unsigned int app_init(){$/;"	f
+app_init	../app.h	/^unsigned int app_init(void);$/;"	p	signature:(void)
+app_query	../appsql.h	/^void * app_query(MYSQL *mysql, char *, ngx_command_t *);$/;"	p	signature:(MYSQL *mysql, char *, ngx_command_t *)
+app_query	../sql.c	/^void * app_query(MYSQL *mysql, char * query, ngx_command_t *cmd){$/;"	f	signature:(MYSQL *mysql, char * query, ngx_command_t *cmd)
+app_select	../appsql.h	/^unsigned int app_select(MYSQL *mysql, char *, char *, struct list_head *, int, int, ngx_command_t *);$/;"	p	signature:(MYSQL *mysql, char *, char *, struct list_head *, int, int, ngx_command_t *)
+app_select	../sql.c	/^unsigned int app_select(MYSQL *mysql, char * table, char * fields, struct list_head *wheres, int page, int limit, ngx_command_t *cmd){$/;"	f	signature:(MYSQL *mysql, char * table, char * fields, struct list_head *wheres, int page, int limit, ngx_command_t *cmd)
+app_select_store	../sql.c	/^void * app_select_store ( ngx_command_t *cmd, MYSQL_RES *result )$/;"	f	signature:( ngx_command_t *cmd, MYSQL_RES *result )
+app_select_store	../sql.c	/^void * app_select_store ( ngx_command_t *cmd, MYSQL_RES *result );$/;"	p	file:	signature:( ngx_command_t *cmd, MYSQL_RES *result )
+app_select_toString	../sql.c	/^char * app_select_toString ( ngx_command_t *cmd, stone_node_t *tree )$/;"	f	signature:( ngx_command_t *cmd, stone_node_t *tree )
+app_select_toString	../sql.c	/^char * app_select_toString ( ngx_command_t *cmd, stone_node_t *tree );$/;"	p	file:	signature:( ngx_command_t *cmd, stone_node_t *tree )
+app_sql_line	../appsql.h	/^typedef struct app_sql_value_t* 	app_sql_line;$/;"	t	typeref:struct:app_sql_value_t
+app_sql_set	../appsql.h	/^typedef struct app_sql_value_t** 	app_sql_set;$/;"	t	typeref:struct:app_sql_value_t
+app_sql_value	../appsql.h	/^typedef struct app_sql_value_t	  	app_sql_value;$/;"	t	typeref:struct:app_sql_value_t
+app_sql_value_t	../appsql.h	/^struct app_sql_value_t{$/;"	s
+app_sql_value_t::len	../appsql.h	/^	unsigned int len;$/;"	m	struct:app_sql_value_t	access:public
+app_sql_value_t::start	../appsql.h	/^	char *start;$/;"	m	struct:app_sql_value_t	access:public
+app_update	../appsql.h	/^unsigned int app_update(MYSQL *mysql, char * table, struct list_head * fields, struct list_head * where, ngx_command_t *cmd);$/;"	p	signature:(MYSQL *mysql, char * table, struct list_head * fields, struct list_head * where, ngx_command_t *cmd)
+app_update	../sql.c	/^unsigned int app_update(MYSQL *mysql, char * table, struct list_head * fields, struct list_head * wheres, ngx_command_t *cmd)$/;"	f	signature:(MYSQL *mysql, char * table, struct list_head * fields, struct list_head * wheres, ngx_command_t *cmd)
+append	../tree.h	/^	void * ( *append ) ( stone_node_t *, stone_node_t * );$/;"	m	struct:stone_node_command_s	access:public
+atquit	../framework.c	/^void atquit(void){$/;"	f	signature:(void)
+atquit	../framework.h	/^void atquit(void);$/;"	p	signature:(void)
+buf	../hiredis/hiredis.h	/^    char *buf; \/* Read buffer *\/$/;"	m	struct:redisReader	access:public
+buf	../hiredis/sds.h	/^    char buf[];$/;"	m	struct:sdshdr	access:public
+buf	../nginx.h	/^    ngx_buf_t    *buf;$/;"	m	struct:ngx_chain_s	access:public
+buffer	../nginx.h	/^    u_char               *buffer;$/;"	m	struct:ngx_open_file_s	access:public
+bulklen	../hiredis/hiredis.c	/^static size_t bulklen(size_t len) {$/;"	f	file:	signature:(size_t len)
+c	../hiredis/async.h	/^    redisContext c;$/;"	m	struct:redisAsyncContext	access:public
+cache_delete	../cache.c	/^char * cache_delete ( ngx_command_t *cmd, void *arg )$/;"	f	signature:( ngx_command_t *cmd, void *arg )
+cache_delete	../cache.h	/^char	*cache_delete(ngx_command_t *cmd, void *arg);$/;"	p	signature:(ngx_command_t *cmd, void *arg)
+cache_read	../cache.c	/^char	*cache_read(ngx_command_t *cmd, void *arg){$/;"	f	signature:(ngx_command_t *cmd, void *arg)
+cache_read	../cache.h	/^char	*cache_read(ngx_command_t *cmd, void *arg);$/;"	p	signature:(ngx_command_t *cmd, void *arg)
+cache_write	../cache.c	/^char * cache_write(ngx_command_t *cmd, void *arg){$/;"	f	signature:(ngx_command_t *cmd, void *arg)
+cache_write	../cache.h	/^char	*cache_write(ngx_command_t *cmd, void *arg);$/;"	p	signature:(ngx_command_t *cmd, void *arg)
+call	../notifier.h	/^   int ( *call ) ( struct notifier_block *, unsigned long, void * );$/;"	m	struct:notifier_block	access:public
+callbackDict	../hiredis/async.c	/^static dictType callbackDict = {$/;"	v	file:
+callbackHash	../hiredis/async.c	/^static unsigned int callbackHash(const void *key) {$/;"	f	file:	signature:(const void *key)
+callbackKeyCompare	../hiredis/async.c	/^static int callbackKeyCompare(void *privdata, const void *key1, const void *key2) {$/;"	f	file:	signature:(void *privdata, const void *key1, const void *key2)
+callbackKeyDestructor	../hiredis/async.c	/^static void callbackKeyDestructor(void *privdata, void *key) {$/;"	f	file:	signature:(void *privdata, void *key)
+callbackValDestructor	../hiredis/async.c	/^static void callbackValDestructor(void *privdata, void *val) {$/;"	f	file:	signature:(void *privdata, void *val)
+callbackValDup	../hiredis/async.c	/^static void *callbackValDup(void *privdata, const void *src) {$/;"	f	file:	signature:(void *privdata, const void *src)
+chain	../nginx.h	/^    ngx_chain_t          *chain;$/;"	m	struct:ngx_pool_s	access:public
+channels	../hiredis/async.h	/^        struct dict *channels;$/;"	m	struct:redisAsyncContext::__anon2	typeref:struct:redisAsyncContext::__anon2::dict	access:public
+child	../json.h	/^		struct json_value *child;	\/*!< The pointer pointing to the first child node in the document tree *\/$/;"	m	struct:json_value	typeref:struct:json_value::json_value	access:public
+child	../tree.h	/^	void * ( *child ) ( ngx_command_t *cmd ); \/\/ change cmd->data to child$/;"	m	struct:stone_node_command_s	access:public
+child	../tree.h	/^    stone_node_t *child;$/;"	m	struct:stone_node_s	access:public
+child_end	../json.h	/^		struct json_value *child_end;	\/*!< The pointer pointing to the last child node in the document tree *\/$/;"	m	struct:json_value	typeref:struct:json_value::json_value	access:public
+chrtos	../hiredis/hiredis.c	/^static size_t chrtos(char *buf, size_t size, char byte) {$/;"	f	file:	signature:(char *buf, size_t size, char byte)
+cleanup	../hiredis/async.h	/^        void (*cleanup)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon1	access:public
+cleanup	../nginx.h	/^    ngx_pool_cleanup_t   *cleanup;$/;"	m	struct:ngx_pool_s	access:public
+cleanup_handlers	../handler.c	/^void cleanup_handlers(ngx_pool_t *pool) {$/;"	f	signature:(ngx_pool_t *pool)
+cleanup_handlers	../handler.h	/^void cleanup_handlers(ngx_pool_t *);$/;"	p	signature:(ngx_pool_t *)
+close_array	../json.h	/^		int (*close_array) ();$/;"	m	struct:json_saxy_functions	access:public
+close_object	../json.h	/^		int (*close_object) ();$/;"	m	struct:json_saxy_functions	access:public
+command_clone	../command.c	/^ngx_command_t* command_clone ( ngx_pool_t *pool, ngx_command_t *origin )$/;"	f	signature:( ngx_pool_t *pool, ngx_command_t *origin )
+command_clone	../command.h	/^ngx_command_t* command_clone ( ngx_pool_t *, ngx_command_t * );$/;"	p	signature:( ngx_pool_t *, ngx_command_t * )
+command_create	../command.c	/^ngx_command_t * command_create ( ngx_pool_t *pool, enum ngx_command_type type )$/;"	f	signature:( ngx_pool_t *pool, enum ngx_command_type type )
+command_create	../command.h	/^ngx_command_t * command_create ( ngx_pool_t *, enum ngx_command_type );$/;"	p	signature:( ngx_pool_t *, enum ngx_command_type )
+con	../app.h	/^    MYSQL *con;$/;"	m	struct:GLOBAL_RAPHTERS	access:public
+config	../hiredis/test.c	/^struct config {$/;"	s	file:
+config::__anon3::host	../hiredis/test.c	/^        const char *host;$/;"	m	struct:config::__anon3	file:	access:public
+config::__anon3::port	../hiredis/test.c	/^        int port;$/;"	m	struct:config::__anon3	file:	access:public
+config::__anon4::path	../hiredis/test.c	/^        const char *path;$/;"	m	struct:config::__anon4	file:	access:public
+config::tcp	../hiredis/test.c	/^    } tcp;$/;"	m	struct:config	typeref:struct:config::__anon3	file:	access:public
+config::type	../hiredis/test.c	/^    enum connection_type type;$/;"	m	struct:config	typeref:enum:config::connection_type	file:	access:public
+config::unix	../hiredis/test.c	/^    } unix;$/;"	m	struct:config	typeref:struct:config::__anon4	file:	access:public
+connect	../hiredis/test.c	/^static redisContext *connect(struct config config) {$/;"	f	file:	signature:(struct config config)
+connectCallback	../hiredis/example-ae.c	/^void connectCallback(const redisAsyncContext *c, int status) {$/;"	f	signature:(const redisAsyncContext *c, int status)
+connectCallback	../hiredis/example-libev.c	/^void connectCallback(const redisAsyncContext *c, int status) {$/;"	f	signature:(const redisAsyncContext *c, int status)
+connectCallback	../hiredis/example-libevent.c	/^void connectCallback(const redisAsyncContext *c, int status) {$/;"	f	signature:(const redisAsyncContext *c, int status)
+connection_type	../hiredis/test.c	/^enum connection_type {$/;"	g	file:
+container_of	../list.h	7;"	d
+context	../hiredis/adapters/ae.h	/^    redisAsyncContext *context;$/;"	m	struct:redisAeEvents	access:public
+context	../hiredis/adapters/libev.h	/^    redisAsyncContext *context;$/;"	m	struct:redisLibevEvents	access:public
+context	../hiredis/adapters/libevent.h	/^    redisAsyncContext *context;$/;"	m	struct:redisLibeventEvents	access:public
+cookie	../request.h	/^	struct list_head *cookie;$/;"	m	struct:stone_request_s	typeref:struct:stone_request_s::list_head	access:public
+create	../tree.h	/^	stone_node_t * ( *create ) ( ngx_command_t *cmd, stone_node_t * root, enum stone_node_type type );$/;"	m	struct:stone_node_command_s	access:public
+createArray	../hiredis/hiredis.h	/^    void *(*createArray)(const redisReadTask*, int);$/;"	m	struct:redisReplyObjectFunctions	access:public
+createArrayObject	../hiredis/hiredis.c	/^static void *createArrayObject(const redisReadTask *task, int elements) {$/;"	f	file:	signature:(const redisReadTask *task, int elements)
+createArrayObject	../hiredis/hiredis.c	/^static void *createArrayObject(const redisReadTask *task, int elements);$/;"	p	file:	signature:(const redisReadTask *task, int elements)
+createInteger	../hiredis/hiredis.h	/^    void *(*createInteger)(const redisReadTask*, long long);$/;"	m	struct:redisReplyObjectFunctions	access:public
+createIntegerObject	../hiredis/hiredis.c	/^static void *createIntegerObject(const redisReadTask *task, long long value) {$/;"	f	file:	signature:(const redisReadTask *task, long long value)
+createIntegerObject	../hiredis/hiredis.c	/^static void *createIntegerObject(const redisReadTask *task, long long value);$/;"	p	file:	signature:(const redisReadTask *task, long long value)
+createNil	../hiredis/hiredis.h	/^    void *(*createNil)(const redisReadTask*);$/;"	m	struct:redisReplyObjectFunctions	access:public
+createNilObject	../hiredis/hiredis.c	/^static void *createNilObject(const redisReadTask *task) {$/;"	f	file:	signature:(const redisReadTask *task)
+createNilObject	../hiredis/hiredis.c	/^static void *createNilObject(const redisReadTask *task);$/;"	p	file:	signature:(const redisReadTask *task)
+createReplyObject	../hiredis/hiredis.c	/^static redisReply *createReplyObject(int type) {$/;"	f	file:	signature:(int type)
+createReplyObject	../hiredis/hiredis.c	/^static redisReply *createReplyObject(int type);$/;"	p	file:	signature:(int type)
+createString	../hiredis/hiredis.h	/^    void *(*createString)(const redisReadTask*, char*, size_t);$/;"	m	struct:redisReplyObjectFunctions	access:public
+createStringObject	../hiredis/hiredis.c	/^static void *createStringObject(const redisReadTask *task, char *str, size_t len) {$/;"	f	file:	signature:(const redisReadTask *task, char *str, size_t len)
+createStringObject	../hiredis/hiredis.c	/^static void *createStringObject(const redisReadTask *task, char *str, size_t len);$/;"	p	file:	signature:(const redisReadTask *task, char *str, size_t len)
+current	../nginx.h	/^    ngx_pool_t           *current;$/;"	m	struct:ngx_pool_s	access:public
+cursor	../json.h	/^		json_t *cursor;	\/*!< pointers to nodes belonging to the document tree which aid the document parsing *\/$/;"	m	struct:json_parsing_info	access:public
+d	../nginx.h	/^    ngx_pool_data_t       d;$/;"	m	struct:ngx_pool_s	access:public
+data	../command.h	/^    void            *data;$/;"	m	struct:ngx_command_s	access:public
+data	../hiredis/async.h	/^        void *data;$/;"	m	struct:redisAsyncContext::__anon1	access:public
+data	../hiredis/async.h	/^    void *data;$/;"	m	struct:redisAsyncContext	access:public
+data	../list.h	/^    void *data;$/;"	m	struct:hash_data_node_s	access:public
+data	../nginx.h	/^    u_char     *data;$/;"	m	struct:__anon6	access:public
+data	../nginx.h	/^    void                 *data;$/;"	m	struct:ngx_pool_cleanup_s	access:public
+data	../nginx.h	/^    void                *data;$/;"	m	struct:ngx_log_s	access:public
+db_cache_cmd	../cache.h	/^static struct stone_cache_command_s db_cache_cmd = { .read = db_read, .write = db_write, .delete = db_delete };$/;"	v	typeref:struct:stone_cache_command_s
+db_delete	../cache.c	/^char * db_delete ( ngx_command_t *cmd, void *arg )$/;"	f	signature:( ngx_command_t *cmd, void *arg )
+db_delete	../cache.h	/^char	*db_delete(ngx_command_t *cmd, void *arg);$/;"	p	signature:(ngx_command_t *cmd, void *arg)
+db_read	../cache.c	/^char *db_read(ngx_command_t *cmd, void *arg){$/;"	f	signature:(ngx_command_t *cmd, void *arg)
+db_read	../cache.h	/^char	*db_read(ngx_command_t *cmd, void *arg);$/;"	p	signature:(ngx_command_t *cmd, void *arg)
+db_write	../cache.c	/^char * db_write(ngx_command_t *cmd, void *arg){$/;"	f	signature:(ngx_command_t *cmd, void *arg)
+db_write	../cache.h	/^char	*db_write(ngx_command_t *cmd, void *arg);$/;"	p	signature:(ngx_command_t *cmd, void *arg)
+defaultFunctions	../hiredis/hiredis.c	/^static redisReplyObjectFunctions defaultFunctions = {$/;"	v	file:
+delRead	../hiredis/async.h	/^        void (*delRead)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon1	access:public
+delWrite	../hiredis/async.h	/^        void (*delWrite)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon1	access:public
+dict	../hiredis/dict.h	/^typedef struct dict {$/;"	s
+dict	../hiredis/dict.h	/^} dict;$/;"	t	typeref:struct:dict
+dict::privdata	../hiredis/dict.h	/^    void *privdata;$/;"	m	struct:dict	access:public
+dict::size	../hiredis/dict.h	/^    unsigned long size;$/;"	m	struct:dict	access:public
+dict::sizemask	../hiredis/dict.h	/^    unsigned long sizemask;$/;"	m	struct:dict	access:public
+dict::table	../hiredis/dict.h	/^    dictEntry **table;$/;"	m	struct:dict	access:public
+dict::type	../hiredis/dict.h	/^    dictType *type;$/;"	m	struct:dict	access:public
+dict::used	../hiredis/dict.h	/^    unsigned long used;$/;"	m	struct:dict	access:public
+dictAdd	../hiredis/dict.c	/^static int dictAdd(dict *ht, void *key, void *val) {$/;"	f	file:	signature:(dict *ht, void *key, void *val)
+dictAdd	../hiredis/dict.h	/^static int dictAdd(dict *ht, void *key, void *val);$/;"	p	signature:(dict *ht, void *key, void *val)
+dictCompareHashKeys	../hiredis/dict.h	101;"	d
+dictCreate	../hiredis/dict.c	/^static dict *dictCreate(dictType *type, void *privDataPtr) {$/;"	f	file:	signature:(dictType *type, void *privDataPtr)
+dictCreate	../hiredis/dict.h	/^static dict *dictCreate(dictType *type, void *privDataPtr);$/;"	p	signature:(dictType *type, void *privDataPtr)
+dictDelete	../hiredis/dict.c	/^static int dictDelete(dict *ht, const void *key) {$/;"	f	file:	signature:(dict *ht, const void *key)
+dictDelete	../hiredis/dict.h	/^static int dictDelete(dict *ht, const void *key);$/;"	p	signature:(dict *ht, const void *key)
+dictEntry	../hiredis/dict.h	/^typedef struct dictEntry {$/;"	s
+dictEntry	../hiredis/dict.h	/^} dictEntry;$/;"	t	typeref:struct:dictEntry
+dictEntry::key	../hiredis/dict.h	/^    void *key;$/;"	m	struct:dictEntry	access:public
+dictEntry::next	../hiredis/dict.h	/^    struct dictEntry *next;$/;"	m	struct:dictEntry	typeref:struct:dictEntry::dictEntry	access:public
+dictEntry::val	../hiredis/dict.h	/^    void *val;$/;"	m	struct:dictEntry	access:public
+dictExpand	../hiredis/dict.c	/^static int dictExpand(dict *ht, unsigned long size) {$/;"	f	file:	signature:(dict *ht, unsigned long size)
+dictExpand	../hiredis/dict.h	/^static int dictExpand(dict *ht, unsigned long size);$/;"	p	signature:(dict *ht, unsigned long size)
+dictFind	../hiredis/dict.c	/^static dictEntry *dictFind(dict *ht, const void *key) {$/;"	f	file:	signature:(dict *ht, const void *key)
+dictFind	../hiredis/dict.h	/^static dictEntry * dictFind(dict *ht, const void *key);$/;"	p	signature:(dict *ht, const void *key)
+dictFreeEntryKey	../hiredis/dict.h	90;"	d
+dictFreeEntryVal	../hiredis/dict.h	79;"	d
+dictGenHashFunction	../hiredis/dict.c	/^static unsigned int dictGenHashFunction(const unsigned char *buf, int len) {$/;"	f	file:	signature:(const unsigned char *buf, int len)
+dictGenHashFunction	../hiredis/dict.h	/^static unsigned int dictGenHashFunction(const unsigned char *buf, int len);$/;"	p	signature:(const unsigned char *buf, int len)
+dictGetEntryKey	../hiredis/dict.h	108;"	d
+dictGetEntryVal	../hiredis/dict.h	109;"	d
+dictGetIterator	../hiredis/dict.c	/^static dictIterator *dictGetIterator(dict *ht) {$/;"	f	file:	signature:(dict *ht)
+dictGetIterator	../hiredis/dict.h	/^static dictIterator *dictGetIterator(dict *ht);$/;"	p	signature:(dict *ht)
+dictHashKey	../hiredis/dict.h	106;"	d
+dictIterator	../hiredis/dict.h	/^typedef struct dictIterator {$/;"	s
+dictIterator	../hiredis/dict.h	/^} dictIterator;$/;"	t	typeref:struct:dictIterator
+dictIterator::entry	../hiredis/dict.h	/^    dictEntry *entry, *nextEntry;$/;"	m	struct:dictIterator	access:public
+dictIterator::ht	../hiredis/dict.h	/^    dict *ht;$/;"	m	struct:dictIterator	access:public
+dictIterator::index	../hiredis/dict.h	/^    int index;$/;"	m	struct:dictIterator	access:public
+dictIterator::nextEntry	../hiredis/dict.h	/^    dictEntry *entry, *nextEntry;$/;"	m	struct:dictIterator	access:public
+dictNext	../hiredis/dict.c	/^static dictEntry *dictNext(dictIterator *iter) {$/;"	f	file:	signature:(dictIterator *iter)
+dictNext	../hiredis/dict.h	/^static dictEntry *dictNext(dictIterator *iter);$/;"	p	signature:(dictIterator *iter)
+dictRelease	../hiredis/dict.c	/^static void dictRelease(dict *ht) {$/;"	f	file:	signature:(dict *ht)
+dictRelease	../hiredis/dict.h	/^static void dictRelease(dict *ht);$/;"	p	signature:(dict *ht)
+dictReleaseIterator	../hiredis/dict.c	/^static void dictReleaseIterator(dictIterator *iter) {$/;"	f	file:	signature:(dictIterator *iter)
+dictReleaseIterator	../hiredis/dict.h	/^static void dictReleaseIterator(dictIterator *iter);$/;"	p	signature:(dictIterator *iter)
+dictReplace	../hiredis/dict.c	/^static int dictReplace(dict *ht, void *key, void *val) {$/;"	f	file:	signature:(dict *ht, void *key, void *val)
+dictReplace	../hiredis/dict.h	/^static int dictReplace(dict *ht, void *key, void *val);$/;"	p	signature:(dict *ht, void *key, void *val)
+dictSetHashKey	../hiredis/dict.h	94;"	d
+dictSetHashVal	../hiredis/dict.h	83;"	d
+dictSize	../hiredis/dict.h	111;"	d
+dictSlots	../hiredis/dict.h	110;"	d
+dictType	../hiredis/dict.h	/^typedef struct dictType {$/;"	s
+dictType	../hiredis/dict.h	/^} dictType;$/;"	t	typeref:struct:dictType
+dictType::hashFunction	../hiredis/dict.h	/^    unsigned int (*hashFunction)(const void *key);$/;"	m	struct:dictType	access:public
+dictType::keyCompare	../hiredis/dict.h	/^    int (*keyCompare)(void *privdata, const void *key1, const void *key2);$/;"	m	struct:dictType	access:public
+dictType::keyDestructor	../hiredis/dict.h	/^    void (*keyDestructor)(void *privdata, void *key);$/;"	m	struct:dictType	access:public
+dictType::keyDup	../hiredis/dict.h	/^    void *(*keyDup)(void *privdata, const void *key);$/;"	m	struct:dictType	access:public
+dictType::valDestructor	../hiredis/dict.h	/^    void (*valDestructor)(void *privdata, void *obj);$/;"	m	struct:dictType	access:public
+dictType::valDup	../hiredis/dict.h	/^    void *(*valDup)(void *privdata, const void *obj);$/;"	m	struct:dictType	access:public
+disconnect	../hiredis/test.c	/^static void disconnect(redisContext *c) {$/;"	f	file:	signature:(redisContext *c)
+disconnectCallback	../hiredis/example-ae.c	/^void disconnectCallback(const redisAsyncContext *c, int status) {$/;"	f	signature:(const redisAsyncContext *c, int status)
+disconnectCallback	../hiredis/example-libev.c	/^void disconnectCallback(const redisAsyncContext *c, int status) {$/;"	f	signature:(const redisAsyncContext *c, int status)
+disconnectCallback	../hiredis/example-libevent.c	/^void disconnectCallback(const redisAsyncContext *c, int status) {$/;"	f	signature:(const redisAsyncContext *c, int status)
+dispatch	../framework.c	/^void dispatch(ngx_pool_t *pool) {$/;"	f	signature:(ngx_pool_t *pool)
+dispatch	../framework.h	/^void dispatch(ngx_pool_t *pool);$/;"	p	signature:(ngx_pool_t *pool)
+element	../hiredis/hiredis.h	/^    struct redisReply **element; \/* elements vector for REDIS_REPLY_ARRAY *\/$/;"	m	struct:redisReply	typeref:struct:redisReply::redisReply	access:public
+elements	../hiredis/hiredis.h	/^    int elements; \/* number of elements in multibulk container *\/$/;"	m	struct:redisReadTask	access:public
+elements	../hiredis/hiredis.h	/^    size_t elements; \/* number of elements, for REDIS_REPLY_ARRAY *\/$/;"	m	struct:redisReply	access:public
+elts	../nginx.h	/^    void             *elts;$/;"	m	struct:ngx_list_part_s	access:public
+elts	../nginx.h	/^    void        *elts;$/;"	m	struct:ngx_array_s	access:public
+empty_session	../session.c	/^struct list_head * empty_session ( ngx_pool_t * pool )$/;"	f	signature:( ngx_pool_t * pool )
+empty_session	../session.h	/^struct list_head * empty_session ( ngx_pool_t * pool );$/;"	p	signature:( ngx_pool_t * pool )
+end	../nginx.h	/^    u_char               *end;$/;"	m	struct:__anon7	access:public
+end	../nginx.h	/^    uchar          *end;           \/* end of buffer *\/$/;"	m	struct:ngx_buf_s	access:public
+entry	../hiredis/dict.h	/^    dictEntry *entry, *nextEntry;$/;"	m	struct:dictIterator	access:public
+env	../request.h	/^	struct stone_server_env *env;$/;"	m	struct:stone_request_s	typeref:struct:stone_request_s::stone_server_env	access:public
+err	../hiredis/async.h	/^    int err;$/;"	m	struct:redisAsyncContext	access:public
+err	../hiredis/hiredis.h	/^    int err; \/* Error flags, 0 when there is no error *\/$/;"	m	struct:redisContext	access:public
+err	../hiredis/hiredis.h	/^    int err; \/* Error flags, 0 when there is no error *\/$/;"	m	struct:redisReader	access:public
+error_handler	../handler.c	/^void error_handler(const char *msg) {$/;"	f	signature:(const char *msg)
+error_handler	../handler.h	/^void error_handler(const char *msg);$/;"	p	signature:(const char *msg)
+errstr	../hiredis/async.h	/^    char *errstr;$/;"	m	struct:redisAsyncContext	access:public
+errstr	../hiredis/hiredis.h	/^    char errstr[128]; \/* String representation of error when applicable *\/$/;"	m	struct:redisContext	access:public
+errstr	../hiredis/hiredis.h	/^    char errstr[128]; \/* String representation of error when applicable *\/$/;"	m	struct:redisReader	access:public
+ev	../hiredis/async.h	/^    } ev;$/;"	m	struct:redisAsyncContext	typeref:struct:redisAsyncContext::__anon1	access:public
+failed	../nginx.h	/^    ngx_uint_t            failed;$/;"	m	struct:__anon7	access:public
+fails	../hiredis/test.c	/^static int tests = 0, fails = 0;$/;"	v	file:
+fd	../hiredis/adapters/ae.h	/^    int fd;$/;"	m	struct:redisAeEvents	access:public
+fd	../hiredis/hiredis.h	/^    int fd;$/;"	m	struct:redisContext	access:public
+fd	../nginx.h	/^    ngx_fd_t              fd;$/;"	m	struct:__anon8	access:public
+fd	../nginx.h	/^    ngx_fd_t              fd;$/;"	m	struct:ngx_open_file_s	access:public
+file	../nginx.h	/^    ngx_open_file_t     *file;$/;"	m	struct:ngx_log_s	access:public
+file	../request.h	/^	struct list_head *file;$/;"	m	struct:stone_request_s	typeref:struct:stone_request_s::list_head	access:public
+file_cache_cmd	../cache.h	/^static struct stone_cache_command_s file_cache_cmd = { .read = cache_read, .write = cache_write, .delete = cache_delete };$/;"	v	typeref:struct:stone_cache_command_s
+filename	../request.h	/^	char *filename;$/;"	m	struct:stone_file_s	access:public
+filepath	../request.h	/^	char *filepath;$/;"	m	struct:stone_file_s	access:public
+first	../list.h	/^    struct hlist_node *first;$/;"	m	struct:hlist_head	typeref:struct:hlist_head::hlist_node	access:public
+flags	../hiredis/hiredis.h	/^    int flags;$/;"	m	struct:redisContext	access:public
+fn	../hiredis/async.h	/^    redisCallbackFn *fn;$/;"	m	struct:redisCallback	access:public
+fn	../hiredis/hiredis.h	/^    redisReplyObjectFunctions *fn;$/;"	m	struct:redisReader	access:public
+free	../hiredis/sds.h	/^    int free;$/;"	m	struct:sdshdr	access:public
+freeObject	../hiredis/hiredis.h	/^    void (*freeObject)(void*);$/;"	m	struct:redisReplyObjectFunctions	access:public
+freeReplyObject	../hiredis/hiredis.c	/^void freeReplyObject(void *reply) {$/;"	f	signature:(void *reply)
+freeReplyObject	../hiredis/hiredis.h	/^void freeReplyObject(void *reply);$/;"	p	signature:(void *reply)
+func	../handler.h	/^    void (*func)(stone_server_t *);$/;"	m	struct:handler	access:public
+get	../request.h	/^	struct list_head *get;$/;"	m	struct:stone_request_s	typeref:struct:stone_request_s::list_head	access:public
+get	../tree.h	/^	stone_node_t * ( *get ) ( ngx_command_t *cmd ); $/;"	m	struct:stone_node_command_s	access:public
+getCallback	../hiredis/example-ae.c	/^void getCallback(redisAsyncContext *c, void *r, void *privdata) {$/;"	f	signature:(redisAsyncContext *c, void *r, void *privdata)
+getCallback	../hiredis/example-libev.c	/^void getCallback(redisAsyncContext *c, void *r, void *privdata) {$/;"	f	signature:(redisAsyncContext *c, void *r, void *privdata)
+getCallback	../hiredis/example-libevent.c	/^void getCallback(redisAsyncContext *c, void *r, void *privdata) {$/;"	f	signature:(redisAsyncContext *c, void *r, void *privdata)
+get_handler_head	../handler.c	/^handler * get_handler_head( void )$/;"	f	signature:( void )
+get_handler_head	../handler.h	/^handler *get_handler_head( void );$/;"	p	signature:( void )
+globals_r	../app.h	/^}globals_r;$/;"	v	typeref:struct:GLOBAL_RAPHTERS
+handler	../handler.h	/^struct handler {$/;"	s
+handler	../handler.h	/^typedef struct handler handler;$/;"	t	typeref:struct:handler
+handler	../nginx.h	/^    ngx_pool_cleanup_pt   handler;$/;"	m	struct:ngx_pool_cleanup_s	access:public
+handler::func	../handler.h	/^    void (*func)(stone_server_t *);$/;"	m	struct:handler	access:public
+handler::method	../handler.h	/^    int method;$/;"	m	struct:handler	access:public
+handler::next	../handler.h	/^	struct handler *next;$/;"	m	struct:handler	typeref:struct:handler::handler	access:public
+handler::nmatch	../handler.h	/^    size_t nmatch;$/;"	m	struct:handler	access:public
+handler::regex	../handler.h	/^    regex_t regex;$/;"	m	struct:handler	access:public
+handler::regex_str	../handler.h	/^    const char *regex_str;$/;"	m	struct:handler	access:public
+hashFunction	../hiredis/dict.h	/^    unsigned int (*hashFunction)(const void *key);$/;"	m	struct:dictType	access:public
+hash_data_node_s	../list.h	/^struct hash_data_node_s {$/;"	s
+hash_data_node_s::data	../list.h	/^    void *data;$/;"	m	struct:hash_data_node_s	access:public
+hash_data_node_s::name	../list.h	/^    char *name;$/;"	m	struct:hash_data_node_s	access:public
+hash_data_node_s::ptr	../list.h	/^    struct hlist_node ptr;$/;"	m	struct:hash_data_node_s	typeref:struct:hash_data_node_s::hlist_node	access:public
+hash_data_table_s	../list.h	/^struct hash_data_table_s {$/;"	s
+hash_data_table_s::head	../list.h	/^    struct hlist_head *head;$/;"	m	struct:hash_data_table_s	typeref:struct:hash_data_table_s::hlist_head	access:public
+hash_data_table_s::mask	../list.h	/^    uint mask;$/;"	m	struct:hash_data_table_s	access:public
+hash_data_table_s::num	../list.h	/^    uint num;$/;"	m	struct:hash_data_table_s	access:public
+hasht_delete	../list.c	/^int hasht_delete ( hasht_table *table, char *name )$/;"	f	signature:( hasht_table *table, char *name )
+hasht_delete	../list.h	/^int hasht_delete ( hasht_table *table, char *name );$/;"	p	signature:( hasht_table *table, char *name )
+hasht_find	../list.c	/^void *hasht_find ( hasht_table *table, char *str )$/;"	f	signature:( hasht_table *table, char *str )
+hasht_find	../list.h	/^void *hasht_find ( hasht_table *table, char *str );$/;"	p	signature:( hasht_table *table, char *str )
+hasht_hash	../list.c	/^uint hasht_hash ( hasht_table *table, char *str, uint len )$/;"	f	signature:( hasht_table *table, char *str, uint len )
+hasht_hash	../list.h	/^uint hasht_hash ( hasht_table *table, char *str, uint len );$/;"	p	signature:( hasht_table *table, char *str, uint len )
+hasht_init	../list.c	/^hasht_table *hasht_init ( ngx_pool_t *pool, uint mask )$/;"	f	signature:( ngx_pool_t *pool, uint mask )
+hasht_init	../list.h	/^hasht_table *hasht_init ( ngx_pool_t *pool, uint mask );$/;"	p	signature:( ngx_pool_t *pool, uint mask )
+hasht_init	../tpl.h	/^tpl_data_table *hasht_init ( ngx_pool_t *pool, uint mask );$/;"	p	signature:( ngx_pool_t *pool, uint mask )
+hasht_insert	../list.c	/^int hasht_insert ( ngx_pool_t *pool, hasht_table *table, char *name, void *value )$/;"	f	signature:( ngx_pool_t *pool, hasht_table *table, char *name, void *value )
+hasht_insert	../list.h	/^int hasht_insert ( ngx_pool_t *pool, hasht_table *table, char *name, void *value );$/;"	p	signature:( ngx_pool_t *pool, hasht_table *table, char *name, void *value )
+hasht_node	../list.h	/^typedef struct hash_data_node_s hasht_node;$/;"	t	typeref:struct:hash_data_node_s
+hasht_resize	../list.c	/^int hasht_resize ( ngx_pool_t *pool, hasht_table **otable )$/;"	f	signature:( ngx_pool_t *pool, hasht_table **otable )
+hasht_table	../list.h	/^typedef struct hash_data_table_s hasht_table;$/;"	t	typeref:struct:hash_data_table_s
+hasht_update	../list.c	/^int hasht_update (ngx_pool_t *pool, hasht_table *table, char *name, void *value )$/;"	f	signature:(ngx_pool_t *pool, hasht_table *table, char *name, void *value )
+hasht_update	../list.h	/^int hasht_update (ngx_pool_t *pool, hasht_table *table, char *name, void *value );$/;"	p	signature:(ngx_pool_t *pool, hasht_table *table, char *name, void *value )
+head	../handler.c	/^handler *head = NULL;$/;"	v
+head	../hiredis/async.h	/^    redisCallback *head, *tail;$/;"	m	struct:redisCallbackList	access:public
+head	../list.h	/^    struct hlist_head *head;$/;"	m	struct:hash_data_table_s	typeref:struct:hash_data_table_s::hlist_head	access:public
+head	../notifier.h	/^    struct notifier_block *head;$/;"	m	struct:raw_notifier_head	typeref:struct:raw_notifier_head::notifier_block	access:public
+header	../response.h	/^struct header {$/;"	s
+header	../response.h	/^typedef struct header header;$/;"	t	typeref:struct:header
+header::name	../response.h	/^    char *name;$/;"	m	struct:header	access:public
+header::next	../response.h	/^    struct header *next;$/;"	m	struct:header	typeref:struct:header::header	access:public
+header::value	../response.h	/^    char *value;$/;"	m	struct:header	access:public
+header_head	../response.h	/^    header *header_head;$/;"	m	struct:stone_response_s	access:public
+header_tail	../response.h	/^    header *header_tail;$/;"	m	struct:stone_response_s	access:public
+hlist_add_after	../list.h	/^static inline void hlist_add_after(struct hlist_node *n,$/;"	f	signature:(struct hlist_node *n, struct hlist_node *next)
+hlist_add_before	../list.h	/^static inline void hlist_add_before(struct hlist_node *n,$/;"	f	signature:(struct hlist_node *n, struct hlist_node *next)
+hlist_add_fake	../list.h	/^static inline void hlist_add_fake(struct hlist_node *n)$/;"	f	signature:(struct hlist_node *n)
+hlist_add_head	../list.h	/^static inline void hlist_add_head(struct hlist_node *n, struct hlist_head *h)$/;"	f	signature:(struct hlist_node *n, struct hlist_head *h)
+hlist_del	../list.h	/^static inline void hlist_del(struct hlist_node *n)$/;"	f	signature:(struct hlist_node *n)
+hlist_del_init	../list.h	/^static inline void hlist_del_init(struct hlist_node *n)$/;"	f	signature:(struct hlist_node *n)
+hlist_empty	../list.h	/^static inline int hlist_empty(const struct hlist_head *h)$/;"	f	signature:(const struct hlist_head *h)
+hlist_entry	../list.h	698;"	d
+hlist_for_each	../list.h	700;"	d
+hlist_for_each_entry	../list.h	714;"	d
+hlist_for_each_entry_continue	../list.h	726;"	d
+hlist_for_each_entry_from	../list.h	738;"	d
+hlist_for_each_entry_safe	../list.h	751;"	d
+hlist_for_each_safe	../list.h	703;"	d
+hlist_head	../list.h	/^struct hlist_head {$/;"	s
+hlist_head::first	../list.h	/^    struct hlist_node *first;$/;"	m	struct:hlist_head	typeref:struct:hlist_head::hlist_node	access:public
+hlist_move_list	../list.h	/^static inline void hlist_move_list(struct hlist_head *old,$/;"	f	signature:(struct hlist_head *old, struct hlist_head *new)
+hlist_node	../list.h	/^struct hlist_node {$/;"	s
+hlist_node::next	../list.h	/^    struct hlist_node *next, **pprev;$/;"	m	struct:hlist_node	typeref:struct:hlist_node::hlist_node	access:public
+hlist_node::pprev	../list.h	/^    struct hlist_node *next, **pprev;$/;"	m	struct:hlist_node	typeref:struct:hlist_node::	access:public
+hlist_unhashed	../list.h	/^static inline int hlist_unhashed(const struct hlist_node *h)$/;"	f	signature:(const struct hlist_node *h)
+host	../hiredis/test.c	/^        const char *host;$/;"	m	struct:config::__anon3	file:	access:public
+ht	../hiredis/dict.h	/^    dict *ht;$/;"	m	struct:dictIterator	access:public
+idx	../hiredis/hiredis.h	/^    int idx; \/* index in parent (array) object *\/$/;"	m	struct:redisReadTask	access:public
+index	../hiredis/dict.h	/^    int index;$/;"	m	struct:dictIterator	access:public
+init_handlers	../handler.c	/^void init_handlers(ngx_pool_t *pool) {$/;"	f	signature:(ngx_pool_t *pool)
+init_handlers	../handler.h	/^void init_handlers(ngx_pool_t *);$/;"	p	signature:(ngx_pool_t *)
+integer	../hiredis/hiredis.h	/^    long long integer; \/* The integer when type is REDIS_REPLY_INTEGER *\/$/;"	m	struct:redisReply	access:public
+intlen	../hiredis/hiredis.c	/^static int intlen(int i) {$/;"	f	file:	signature:(int i)
+invalid	../hiredis/async.h	/^        redisCallbackList invalid;$/;"	m	struct:redisAsyncContext::__anon2	access:public
+json_error	../json.h	/^	enum json_error$/;"	g
+json_escape	../json.c	/^json_escape (ngx_pool_t *pool, char * text)$/;"	f	signature:(ngx_pool_t *pool, char * text)
+json_escape	../json.h	/^	char *json_escape (ngx_pool_t *, char * text);$/;"	p	signature:(ngx_pool_t *, char * text)
+json_find_first_label	../json.c	/^json_find_first_label (const json_t * object, const char *text_label)$/;"	f	signature:(const json_t * object, const char *text_label)
+json_find_first_label	../json.h	/^	json_t *json_find_first_label (const json_t * object, const char *text_label);$/;"	p	signature:(const json_t * object, const char *text_label)
+json_format_string	../json.c	/^json_format_string (ngx_pool_t *pool, char *text)$/;"	f	signature:(ngx_pool_t *pool, char *text)
+json_format_string	../json.h	/^	char *json_format_string (ngx_pool_t *, char *text);$/;"	p	signature:(ngx_pool_t *, char *text)
+json_free_value	../json.c	/^json_free_value (json_t ** value)$/;"	f	signature:(json_t ** value)
+json_free_value	../json.h	/^	void json_free_value (json_t ** value);$/;"	p	signature:(json_t ** value)
+json_insert_child	../json.c	/^json_insert_child (json_t * parent, json_t * child)$/;"	f	signature:(json_t * parent, json_t * child)
+json_insert_child	../json.h	/^	enum json_error json_insert_child (json_t * parent, json_t * child);$/;"	p	signature:(json_t * parent, json_t * child)
+json_insert_pair_into_object	../json.c	/^json_insert_pair_into_object (ngx_pool_t *pool, json_t * parent, const char *text_label, json_t * value)$/;"	f	signature:(ngx_pool_t *pool, json_t * parent, const char *text_label, json_t * value)
+json_insert_pair_into_object	../json.h	/^	enum json_error json_insert_pair_into_object (ngx_pool_t *, json_t * parent, const char *text_label, json_t * value);$/;"	p	signature:(ngx_pool_t *, json_t * parent, const char *text_label, json_t * value)
+json_jpi_init	../json.c	/^json_jpi_init (struct json_parsing_info *jpi)$/;"	f	signature:(struct json_parsing_info *jpi)
+json_jpi_init	../json.h	/^	void json_jpi_init (struct json_parsing_info *jpi);$/;"	p	signature:(struct json_parsing_info *jpi)
+json_new_array	../json.c	/^json_new_array (ngx_pool_t *pool)$/;"	f	signature:(ngx_pool_t *pool)
+json_new_array	../json.h	/^	json_t *json_new_array (ngx_pool_t *);$/;"	p	signature:(ngx_pool_t *)
+json_new_false	../json.c	/^json_new_false (ngx_pool_t *pool)$/;"	f	signature:(ngx_pool_t *pool)
+json_new_false	../json.h	/^	json_t *json_new_false (ngx_pool_t *);$/;"	p	signature:(ngx_pool_t *)
+json_new_null	../json.c	/^json_new_null (ngx_pool_t *pool)$/;"	f	signature:(ngx_pool_t *pool)
+json_new_null	../json.h	/^	json_t *json_new_null (ngx_pool_t *);$/;"	p	signature:(ngx_pool_t *)
+json_new_number	../json.c	/^json_new_number (ngx_pool_t *pool, const char *text)$/;"	f	signature:(ngx_pool_t *pool, const char *text)
+json_new_number	../json.h	/^	json_t *json_new_number (ngx_pool_t *, const char *text);$/;"	p	signature:(ngx_pool_t *, const char *text)
+json_new_object	../json.c	/^json_new_object (ngx_pool_t *pool)$/;"	f	signature:(ngx_pool_t *pool)
+json_new_object	../json.h	/^	json_t *json_new_object (ngx_pool_t *);$/;"	p	signature:(ngx_pool_t *)
+json_new_string	../json.c	/^json_new_string (ngx_pool_t *pool, const char *text)$/;"	f	signature:(ngx_pool_t *pool, const char *text)
+json_new_string	../json.h	/^	json_t *json_new_string (ngx_pool_t *, const char *text);$/;"	p	signature:(ngx_pool_t *, const char *text)
+json_new_true	../json.c	/^json_new_true (ngx_pool_t *pool)$/;"	f	signature:(ngx_pool_t *pool)
+json_new_true	../json.h	/^	json_t *json_new_true (ngx_pool_t *);$/;"	p	signature:(ngx_pool_t *)
+json_new_value	../json.c	/^json_new_value (ngx_pool_t *pool, const enum json_value_type type)$/;"	f	signature:(ngx_pool_t *pool, const enum json_value_type type)
+json_new_value	../json.h	/^	json_t *json_new_value (ngx_pool_t *, const enum json_value_type type);$/;"	p	signature:(ngx_pool_t *, const enum json_value_type type)
+json_parse_document	../json.c	/^enum json_error json_parse_document (ngx_pool_t *pool, json_t **root, char *text)$/;"	f	signature:(ngx_pool_t *pool, json_t **root, char *text)
+json_parse_document	../json.h	/^	enum json_error json_parse_document (ngx_pool_t *, json_t **root, char *text);$/;"	p	signature:(ngx_pool_t *, json_t **root, char *text)
+json_parse_fragment	../json.c	/^json_parse_fragment (ngx_pool_t *pool, struct json_parsing_info *info, char *buffer)$/;"	f	signature:(ngx_pool_t *pool, struct json_parsing_info *info, char *buffer)
+json_parse_fragment	../json.h	/^	enum json_error json_parse_fragment (ngx_pool_t *, struct json_parsing_info *info, char *buffer);$/;"	p	signature:(ngx_pool_t *, struct json_parsing_info *info, char *buffer)
+json_parsing_info	../json.h	/^	struct json_parsing_info$/;"	s
+json_parsing_info::cursor	../json.h	/^		json_t *cursor;	\/*!< pointers to nodes belonging to the document tree which aid the document parsing *\/$/;"	m	struct:json_parsing_info	access:public
+json_parsing_info::lex_state	../json.h	/^		unsigned int lex_state;$/;"	m	struct:json_parsing_info	access:public
+json_parsing_info::lex_text	../json.h	/^		void *lex_text;$/;"	m	struct:json_parsing_info	access:public
+json_parsing_info::p	../json.h	/^		char *p;$/;"	m	struct:json_parsing_info	access:public
+json_parsing_info::state	../json.h	/^		unsigned int state;	\/*!< the state where the parsing was left on the last parser run *\/$/;"	m	struct:json_parsing_info	access:public
+json_parsing_info::string_length_limit_reached	../json.h	/^		int string_length_limit_reached;	\/*!< flag informing if the string limit length defined by JSON_MAX_STRING_LENGTH was reached *\/$/;"	m	struct:json_parsing_info	access:public
+json_saxy_functions	../json.h	/^	struct json_saxy_functions$/;"	s
+json_saxy_functions::close_array	../json.h	/^		int (*close_array) ();$/;"	m	struct:json_saxy_functions	access:public
+json_saxy_functions::close_object	../json.h	/^		int (*close_object) ();$/;"	m	struct:json_saxy_functions	access:public
+json_saxy_functions::label_value_separator	../json.h	/^		int (*label_value_separator) ();$/;"	m	struct:json_saxy_functions	access:public
+json_saxy_functions::new_false	../json.h	/^		int (*new_false) ();$/;"	m	struct:json_saxy_functions	access:public
+json_saxy_functions::new_null	../json.h	/^		int (*new_null) ();$/;"	m	struct:json_saxy_functions	access:public
+json_saxy_functions::new_number	../json.h	/^		int (*new_number) (char * text);$/;"	m	struct:json_saxy_functions	access:public
+json_saxy_functions::new_string	../json.h	/^		int (*new_string) (char * text);$/;"	m	struct:json_saxy_functions	access:public
+json_saxy_functions::new_true	../json.h	/^		int (*new_true) ();$/;"	m	struct:json_saxy_functions	access:public
+json_saxy_functions::open_array	../json.h	/^		int (*open_array) ();$/;"	m	struct:json_saxy_functions	access:public
+json_saxy_functions::open_object	../json.h	/^		int (*open_object) ();$/;"	m	struct:json_saxy_functions	access:public
+json_saxy_functions::sibling_separator	../json.h	/^		int (*sibling_separator) ();$/;"	m	struct:json_saxy_functions	access:public
+json_saxy_parse	../json.c	/^json_saxy_parse (ngx_pool_t *pool, struct json_saxy_parser_status *jsps, struct json_saxy_functions *jsf, char c)$/;"	f	signature:(ngx_pool_t *pool, struct json_saxy_parser_status *jsps, struct json_saxy_functions *jsf, char c)
+json_saxy_parse	../json.h	/^	enum json_error json_saxy_parse (ngx_pool_t *, struct json_saxy_parser_status *jsps, struct json_saxy_functions *jsf, char c);$/;"	p	signature:(ngx_pool_t *, struct json_saxy_parser_status *jsps, struct json_saxy_functions *jsf, char c)
+json_saxy_parser_status	../json.h	/^	struct json_saxy_parser_status$/;"	s
+json_saxy_parser_status::state	../json.h	/^		unsigned int state;	\/*!< current parser state *\/$/;"	m	struct:json_saxy_parser_status	access:public
+json_saxy_parser_status::string_length_limit_reached	../json.h	/^		int string_length_limit_reached;	\/*!< flag informing if the string limit length defined by JSON_MAX_STRING_LENGTH was reached *\/$/;"	m	struct:json_saxy_parser_status	access:public
+json_saxy_parser_status::temp	../json.h	/^		void *temp;	\/*!< temporary string which will be used to build up parsed strings between parser runs. *\/$/;"	m	struct:json_saxy_parser_status	access:public
+json_strip_white_spaces	../json.c	/^json_strip_white_spaces (char *text)$/;"	f	signature:(char *text)
+json_strip_white_spaces	../json.h	/^	void json_strip_white_spaces (char *text);$/;"	p	signature:(char *text)
+json_t	../json.h	/^	typedef struct json_value json_t;$/;"	t	typeref:struct:json_value
+json_to_session	../session.c	/^int json_to_session ( ngx_pool_t *pool, struct list_head **session, char *text )$/;"	f	signature:( ngx_pool_t *pool, struct list_head **session, char *text )
+json_to_session	../session.h	/^int json_to_session ( ngx_pool_t *pool, struct list_head **session, char *text );$/;"	p	signature:( ngx_pool_t *pool, struct list_head **session, char *text )
+json_tree_to_string	../json.c	/^json_tree_to_string (ngx_pool_t *pool, json_t * root, char **text)$/;"	f	signature:(ngx_pool_t *pool, json_t * root, char **text)
+json_tree_to_string	../json.h	/^	enum json_error json_tree_to_string (ngx_pool_t *, json_t * root, char **text);$/;"	p	signature:(ngx_pool_t *, json_t * root, char **text)
+json_value	../json.h	/^	struct json_value$/;"	s
+json_value::child	../json.h	/^		struct json_value *child;	\/*!< The pointer pointing to the first child node in the document tree *\/$/;"	m	struct:json_value	typeref:struct:json_value::json_value	access:public
+json_value::child_end	../json.h	/^		struct json_value *child_end;	\/*!< The pointer pointing to the last child node in the document tree *\/$/;"	m	struct:json_value	typeref:struct:json_value::json_value	access:public
+json_value::next	../json.h	/^		struct json_value *next;	\/*!< The pointer pointing to the next element in the FIFO sibling list *\/$/;"	m	struct:json_value	typeref:struct:json_value::json_value	access:public
+json_value::parent	../json.h	/^		struct json_value *parent;	\/*!< The pointer pointing to the parent node in the document tree *\/$/;"	m	struct:json_value	typeref:struct:json_value::json_value	access:public
+json_value::previous	../json.h	/^		struct json_value *previous;	\/*!< The pointer pointing to the previous element in the FIFO sibling list *\/$/;"	m	struct:json_value	typeref:struct:json_value::json_value	access:public
+json_value::text	../json.h	/^		char *text;	\/*!< The text stored by the node. It stores UTF-8 strings and is used exclusively by the JSON_STRING and JSON_NUMBER node types *\/$/;"	m	struct:json_value	access:public
+json_value::type	../json.h	/^		enum json_value_type type;	\/*!< the type of node *\/$/;"	m	struct:json_value	typeref:enum:json_value::json_value_type	access:public
+json_value_type	../json.h	/^	enum json_value_type$/;"	g
+key	../hiredis/dict.h	/^    void *key;$/;"	m	struct:dictEntry	access:public
+key	../tpl.h	/^	char *key;$/;"	m	struct:tpl_loop_s	access:public
+keyCompare	../hiredis/dict.h	/^    int (*keyCompare)(void *privdata, const void *key1, const void *key2);$/;"	m	struct:dictType	access:public
+keyDestructor	../hiredis/dict.h	/^    void (*keyDestructor)(void *privdata, void *key);$/;"	m	struct:dictType	access:public
+keyDup	../hiredis/dict.h	/^    void *(*keyDup)(void *privdata, const void *key);$/;"	m	struct:dictType	access:public
+label_value_separator	../json.h	/^		int (*label_value_separator) ();$/;"	m	struct:json_saxy_functions	access:public
+large	../nginx.h	/^    ngx_pool_large_t     *large;$/;"	m	struct:ngx_pool_s	access:public
+last	../handler.c	/^handler *last = NULL;$/;"	v
+last	../nginx.h	/^    ngx_list_part_t  *last;$/;"	m	struct:__anon5	access:public
+last	../nginx.h	/^    u_char               *last;$/;"	m	struct:__anon7	access:public
+last	../nginx.h	/^    u_char               *last;$/;"	m	struct:ngx_open_file_s	access:public
+last	../nginx.h	/^    uchar          *last;$/;"	m	struct:ngx_buf_s	access:public
+len	../appsql.h	/^	unsigned int len;$/;"	m	struct:app_sql_value_t	access:public
+len	../hiredis/hiredis.h	/^    int len; \/* Length of string *\/$/;"	m	struct:redisReply	access:public
+len	../hiredis/hiredis.h	/^    size_t len; \/* Buffer length *\/$/;"	m	struct:redisReader	access:public
+len	../hiredis/sds.h	/^    int len;$/;"	m	struct:sdshdr	access:public
+len	../nginx.h	/^    size_t      len;$/;"	m	struct:__anon6	access:public
+len	../request.h	/^	uint len;$/;"	m	struct:stone_file_s	access:public
+lex_state	../json.h	/^		unsigned int lex_state;$/;"	m	struct:json_parsing_info	access:public
+lex_text	../json.h	/^		void *lex_text;$/;"	m	struct:json_parsing_info	access:public
+lexer	../json.c	/^lexer (ngx_pool_t *pool, char *buffer, char **p, unsigned int *state, rcstring ** text)$/;"	f	signature:(ngx_pool_t *pool, char *buffer, char **p, unsigned int *state, rcstring ** text)
+linux_list_add	../list.h	/^static inline void linux_list_add(struct list_head *new, struct list_head *head)$/;"	f	signature:(struct list_head *new, struct list_head *head)
+linux_list_add_tail	../list.h	/^static inline void linux_list_add_tail(struct list_head *new, struct list_head *head)$/;"	f	signature:(struct list_head *new, struct list_head *head)
+list_cut_position	../list.h	/^static inline void list_cut_position(struct list_head *list,$/;"	f	signature:(struct list_head *list, struct list_head *head, struct list_head *entry)
+list_del	../list.h	/^extern void list_del(struct list_head *entry);$/;"	p	signature:(struct list_head *entry)
+list_del	../list.h	/^static inline void list_del(struct list_head *entry)$/;"	f	signature:(struct list_head *entry)
+list_del_init	../list.h	/^static inline void list_del_init(struct list_head *entry)$/;"	f	signature:(struct list_head *entry)
+list_empty	../list.h	/^static inline int list_empty(const struct list_head *head)$/;"	f	signature:(const struct list_head *head)
+list_empty_careful	../list.h	/^static inline int list_empty_careful(const struct list_head *head)$/;"	f	signature:(const struct list_head *head)
+list_entry	../list.h	388;"	d
+list_first_entry	../list.h	399;"	d
+list_for_each	../list.h	407;"	d
+list_for_each_entry	../list.h	456;"	d
+list_for_each_entry_continue	../list.h	492;"	d
+list_for_each_entry_continue_reverse	../list.h	506;"	d
+list_for_each_entry_from	../list.h	519;"	d
+list_for_each_entry_reverse	../list.h	467;"	d
+list_for_each_entry_safe	../list.h	530;"	d
+list_for_each_entry_safe_continue	../list.h	546;"	d
+list_for_each_entry_safe_from	../list.h	562;"	d
+list_for_each_entry_safe_reverse	../list.h	577;"	d
+list_for_each_prev	../list.h	426;"	d
+list_for_each_prev_safe	../list.h	445;"	d
+list_for_each_safe	../list.h	435;"	d
+list_head	../list.h	/^struct list_head {$/;"	s
+list_head::next	../list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head	access:public
+list_head::prev	../list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::	access:public
+list_is_last	../list.h	/^static inline int list_is_last(const struct list_head *list,$/;"	f	signature:(const struct list_head *list, const struct list_head *head)
+list_is_singular	../list.h	/^static inline int list_is_singular(const struct list_head *head)$/;"	f	signature:(const struct list_head *head)
+list_move	../list.h	/^static inline void list_move(struct list_head *list, struct list_head *head)$/;"	f	signature:(struct list_head *list, struct list_head *head)
+list_move_tail	../list.h	/^static inline void list_move_tail(struct list_head *list,$/;"	f	signature:(struct list_head *list, struct list_head *head)
+list_prepare_entry	../list.h	480;"	d
+list_replace	../list.h	/^static inline void list_replace(struct list_head *old,$/;"	f	signature:(struct list_head *old, struct list_head *new)
+list_replace_init	../list.h	/^static inline void list_replace_init(struct list_head *old,$/;"	f	signature:(struct list_head *old, struct list_head *new)
+list_rotate_left	../list.h	/^static inline void list_rotate_left(struct list_head *head)$/;"	f	signature:(struct list_head *head)
+list_safe_reset_next	../list.h	595;"	d
+list_splice	../list.h	/^static inline void list_splice(const struct list_head *list,$/;"	f	signature:(const struct list_head *list, struct list_head *head)
+list_splice_init	../list.h	/^static inline void list_splice_init(struct list_head *list,$/;"	f	signature:(struct list_head *list, struct list_head *head)
+list_splice_tail	../list.h	/^static inline void list_splice_tail(struct list_head *list,$/;"	f	signature:(struct list_head *list, struct list_head *head)
+list_splice_tail_init	../list.h	/^static inline void list_splice_tail_init(struct list_head *list,$/;"	f	signature:(struct list_head *list, struct list_head *head)
+log	../app.h	/^	ngx_log_t *log;$/;"	m	struct:GLOBAL_RAPHTERS	access:public
+log	../nginx.h	/^    ngx_log_t            *log;$/;"	m	struct:__anon8	access:public
+log	../nginx.h	/^    ngx_log_t            *log;$/;"	m	struct:ngx_pool_s	access:public
+log_level	../nginx.h	/^    ngx_uint_t           log_level;$/;"	m	struct:ngx_log_s	access:public
+loop	../hiredis/adapters/ae.h	/^    aeEventLoop *loop;$/;"	m	struct:redisAeEvents	access:public
+loop	../hiredis/adapters/libev.h	/^    struct ev_loop *loop;$/;"	m	struct:redisLibevEvents	typeref:struct:redisLibevEvents::ev_loop	access:public
+loop	../hiredis/example-ae.c	/^static aeEventLoop *loop;$/;"	v	file:
+main	../hiredis/example-ae.c	/^int main (int argc, char **argv) {$/;"	f	signature:(int argc, char **argv)
+main	../hiredis/example-libev.c	/^int main (int argc, char **argv) {$/;"	f	signature:(int argc, char **argv)
+main	../hiredis/example-libevent.c	/^int main (int argc, char **argv) {$/;"	f	signature:(int argc, char **argv)
+main	../hiredis/example.c	/^int main(void) {$/;"	f	signature:(void)
+main	../hiredis/sds.c	/^int main(void) {$/;"	f	signature:(void)
+main	../hiredis/test.c	/^int main(int argc, char **argv) {$/;"	f	signature:(int argc, char **argv)
+main	../simple.c	/^int main() {$/;"	f
+main_add_variable	../request.c	/^int main_add_variable( ngx_pool_t *pool, struct list_head *head, char *Name, void *Value)$/;"	f	signature:( ngx_pool_t *pool, struct list_head *head, char *Name, void *Value)
+main_add_variable	../request.h	/^int main_add_variable( ngx_pool_t *pool, struct list_head *head, char *Name, void *Value);$/;"	p	signature:( ngx_pool_t *pool, struct list_head *head, char *Name, void *Value)
+main_escape	../request.c	/^char *main_escape( ngx_pool_t *pool, const char *s, int len, int *new_length )$/;"	f	signature:( ngx_pool_t *pool, const char *s, int len, int *new_length )
+main_from_hex	../request.c	/^char main_from_hex( char c )$/;"	f	signature:( char c )
+main_get_var	../request.c	/^char *main_get_var( char *lpBuf, char *lpszDest, unsigned int nDestSize, char *lpszVarName )$/;"	f	signature:( char *lpBuf, char *lpszDest, unsigned int nDestSize, char *lpszVarName )
+main_get_variable	../request.c	/^void *main_get_variable( struct list_head *head, char *lpszName )$/;"	f	signature:( struct list_head *head, char *lpszName )
+main_get_variable	../request.h	/^void *main_get_variable( struct list_head *head, char *lpszName );$/;"	p	signature:( struct list_head *head, char *lpszName )
+main_pop_variable	../request.c	/^void *main_pop_variable( struct list_head *head, char *lpszName )$/;"	f	signature:( struct list_head *head, char *lpszName )
+main_pop_variable	../request.h	/^void *main_pop_variable( struct list_head *head, char *lpszName ); \/\/ pop up a value of name$/;"	p	signature:( struct list_head *head, char *lpszName )
+main_store_data	../request.c	/^void main_store_data( ngx_pool_t *pool, struct list_head *head, char *query )$/;"	f	signature:( ngx_pool_t *pool, struct list_head *head, char *query )
+main_store_data	../request.h	/^void main_store_data( ngx_pool_t *pool, struct list_head *head, char *query );$/;"	p	signature:( ngx_pool_t *pool, struct list_head *head, char *query )
+main_store_data_rfc1867	../request.c	/^void main_store_data_rfc1867( ngx_pool_t *pool, stone_request_t *req, char *query )$/;"	f	signature:( ngx_pool_t *pool, stone_request_t *req, char *query )
+main_store_data_rfc1867	../request.h	/^void main_store_data_rfc1867( ngx_pool_t *pool, stone_request_t *req, char *query );$/;"	p	signature:( ngx_pool_t *pool, stone_request_t *req, char *query )
+main_unescape	../request.c	/^char *main_unescape( char *str )$/;"	f	signature:( char *str )
+main_update_variable	../request.c	/^int main_update_variable( struct list_head *head, char *lpszName, void *value )$/;"	f	signature:( struct list_head *head, char *lpszName, void *value )
+main_update_variable	../request.h	/^int main_update_variable( struct list_head *head, char *lpszName, void *value );$/;"	p	signature:( struct list_head *head, char *lpszName, void *value )
+mask	../list.h	/^    uint mask;$/;"	m	struct:hash_data_table_s	access:public
+max	../json.c	/^	size_t max;	\/*<! usable memory allocated to text minus the space for the nul character *\/$/;"	m	struct:rui_cstring	file:	access:public
+max	../nginx.h	/^    size_t                max;$/;"	m	struct:ngx_pool_s	access:public
+maxbuf	../hiredis/hiredis.h	/^    size_t maxbuf; \/* Max length of unused buffer *\/$/;"	m	struct:redisReader	access:public
+method	../handler.h	/^    int method;$/;"	m	struct:handler	access:public
+mjson_append	../tree.c	/^void * mjson_append ( stone_node_t *p, stone_node_t * c )$/;"	f	signature:( stone_node_t *p, stone_node_t * c )
+mjson_append	../tree.h	/^	void * mjson_append ( stone_node_t *, stone_node_t * );$/;"	p	signature:( stone_node_t *, stone_node_t * )
+mjson_child	../tree.c	/^void * mjson_child ( ngx_command_t *cmd )$/;"	f	signature:( ngx_command_t *cmd )
+mjson_child	../tree.h	/^	void * mjson_child ( ngx_command_t *cmd );$/;"	p	signature:( ngx_command_t *cmd )
+mjson_create	../tree.c	/^stone_node_t * mjson_create ( ngx_command_t *cmd, stone_node_t * root, enum stone_node_type type )$/;"	f	signature:( ngx_command_t *cmd, stone_node_t * root, enum stone_node_type type )
+mjson_create	../tree.h	/^	stone_node_t * mjson_create ( ngx_command_t *cmd, stone_node_t * root, enum stone_node_type type );$/;"	p	signature:( ngx_command_t *cmd, stone_node_t * root, enum stone_node_type type )
+mjson_get	../tree.c	/^stone_node_t * mjson_get ( ngx_command_t *cmd )$/;"	f	signature:( ngx_command_t *cmd )
+mjson_get	../tree.h	/^	stone_node_t * mjson_get ( ngx_command_t *cmd ); $/;"	p	signature:( ngx_command_t *cmd )
+mjson_name	../tree.c	/^char * mjson_name ( stone_node_t *node )$/;"	f	signature:( stone_node_t *node )
+mjson_name	../tree.h	/^	char * mjson_name ( stone_node_t *node );$/;"	p	signature:( stone_node_t *node )
+mjson_next	../tree.c	/^void * mjson_next ( ngx_command_t *cmd )$/;"	f	signature:( ngx_command_t *cmd )
+mjson_next	../tree.h	/^	void * mjson_next ( ngx_command_t *cmd );$/;"	p	signature:( ngx_command_t *cmd )
+mjson_parent	../tree.c	/^void * mjson_parent ( ngx_command_t *cmd )$/;"	f	signature:( ngx_command_t *cmd )
+mjson_parent	../tree.h	/^	void * mjson_parent ( ngx_command_t *cmd );$/;"	p	signature:( ngx_command_t *cmd )
+mjson_save	../tree.c	/^void * mjson_save ( ngx_command_t *cmd, stone_node_t *node, char  * name, void * value )$/;"	f	signature:( ngx_command_t *cmd, stone_node_t *node, char * name, void * value )
+mjson_save	../tree.h	/^	void * mjson_save ( ngx_command_t *cmd, stone_node_t *node, char  * name, void * value );$/;"	p	signature:( ngx_command_t *cmd, stone_node_t *node, char * name, void * value )
+mjson_search	../tree.c	/^stone_node_t * mjson_search ( stone_node_t *node, char *name )$/;"	f	signature:( stone_node_t *node, char *name )
+mjson_search	../tree.h	/^	stone_node_t * mjson_search ( stone_node_t *node, char *name );$/;"	p	signature:( stone_node_t *node, char *name )
+mjson_set	../tree.c	/^void * mjson_set ( ngx_command_t *cmd, stone_node_t *node )$/;"	f	signature:( ngx_command_t *cmd, stone_node_t *node )
+mjson_set	../tree.h	/^	void * mjson_set ( ngx_command_t *cmd, stone_node_t * ); $/;"	p	signature:( ngx_command_t *cmd, stone_node_t * )
+mjson_toString	../tree.c	/^void * mjson_toString ( ngx_command_t *cmd, stone_node_t * root )$/;"	f	signature:( ngx_command_t *cmd, stone_node_t * root )
+mjson_toString	../tree.h	/^	void * mjson_toString ( ngx_command_t *cmd, stone_node_t *root );$/;"	p	signature:( ngx_command_t *cmd, stone_node_t *root )
+mjson_type	../tree.c	/^enum stone_node_type mjson_type ( stone_node_t *node )$/;"	f	signature:( stone_node_t *node )
+mjson_type	../tree.h	/^	enum stone_node_type mjson_type ( stone_node_t *node );$/;"	p	signature:( stone_node_t *node )
+mjson_value	../tree.c	/^void * mjson_value ( stone_node_t *node )$/;"	f	signature:( stone_node_t *node )
+mjson_value	../tree.h	/^	void * mjson_value ( stone_node_t *node );$/;"	p	signature:( stone_node_t *node )
+moveToNextTask	../hiredis/hiredis.c	/^static void moveToNextTask(redisReader *r) {$/;"	f	file:	signature:(redisReader *r)
+nalloc	../nginx.h	/^    ngx_uint_t        nalloc;$/;"	m	struct:__anon5	access:public
+nalloc	../nginx.h	/^    ngx_uint_t   nalloc;$/;"	m	struct:ngx_array_s	access:public
+name	../app.h	/^	char *name;$/;"	m	struct:stone_item_s	access:public
+name	../list.h	/^    char *name;$/;"	m	struct:hash_data_node_s	access:public
+name	../nginx.h	/^    ngx_str_t             name;$/;"	m	struct:ngx_open_file_s	access:public
+name	../nginx.h	/^    u_char               *name;$/;"	m	struct:__anon8	access:public
+name	../response.h	/^    char *name;$/;"	m	struct:header	access:public
+name	../tpl.h	/^	char *name;$/;"	m	struct:tpl_loop_s	access:public
+name	../tree.h	/^	char * ( *name ) ( stone_node_t *node );$/;"	m	struct:stone_node_command_s	access:public
+name	../tree.h	/^	char * name;$/;"	m	struct:stone_node_s	access:public
+nelts	../nginx.h	/^    ngx_uint_t        nelts;$/;"	m	struct:ngx_list_part_s	access:public
+nelts	../nginx.h	/^    ngx_uint_t   nelts;$/;"	m	struct:ngx_array_s	access:public
+new_false	../json.h	/^		int (*new_false) ();$/;"	m	struct:json_saxy_functions	access:public
+new_null	../json.h	/^		int (*new_null) ();$/;"	m	struct:json_saxy_functions	access:public
+new_number	../json.h	/^		int (*new_number) (char * text);$/;"	m	struct:json_saxy_functions	access:public
+new_string	../json.h	/^		int (*new_string) (char * text);$/;"	m	struct:json_saxy_functions	access:public
+new_true	../json.h	/^		int (*new_true) ();$/;"	m	struct:json_saxy_functions	access:public
+next	../handler.h	/^	struct handler *next;$/;"	m	struct:handler	typeref:struct:handler::handler	access:public
+next	../hiredis/async.h	/^    struct redisCallback *next; \/* simple singly linked list *\/$/;"	m	struct:redisCallback	typeref:struct:redisCallback::redisCallback	access:public
+next	../hiredis/dict.h	/^    struct dictEntry *next;$/;"	m	struct:dictEntry	typeref:struct:dictEntry::dictEntry	access:public
+next	../json.h	/^		struct json_value *next;	\/*!< The pointer pointing to the next element in the FIFO sibling list *\/$/;"	m	struct:json_value	typeref:struct:json_value::json_value	access:public
+next	../list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head	access:public
+next	../list.h	/^    struct hlist_node *next, **pprev;$/;"	m	struct:hlist_node	typeref:struct:hlist_node::hlist_node	access:public
+next	../nginx.h	/^    ngx_chain_t  *next;$/;"	m	struct:ngx_chain_s	access:public
+next	../nginx.h	/^    ngx_list_part_t  *next;$/;"	m	struct:ngx_list_part_s	access:public
+next	../nginx.h	/^    ngx_pool_cleanup_t   *next;$/;"	m	struct:ngx_pool_cleanup_s	access:public
+next	../nginx.h	/^    ngx_pool_large_t     *next;$/;"	m	struct:ngx_pool_large_s	access:public
+next	../nginx.h	/^    ngx_pool_t           *next;$/;"	m	struct:__anon7	access:public
+next	../notifier.h	/^   struct notifier_block *next;$/;"	m	struct:notifier_block	typeref:struct:notifier_block::notifier_block	access:public
+next	../response.h	/^    struct header *next;$/;"	m	struct:header	typeref:struct:header::header	access:public
+next	../response.h	/^    struct text_segment *next;$/;"	m	struct:text_segment	typeref:struct:text_segment::text_segment	access:public
+next	../tree.h	/^	stone_node_t *next;$/;"	m	struct:stone_node_s	access:public
+next	../tree.h	/^	void * ( *next ) ( ngx_command_t *cmd ); $/;"	m	struct:stone_node_command_s	access:public
+nextArgument	../hiredis/async.c	/^static char *nextArgument(char *start, char **str, size_t *len) {$/;"	f	file:	signature:(char *start, char **str, size_t *len)
+nextEntry	../hiredis/dict.h	/^    dictEntry *entry, *nextEntry;$/;"	m	struct:dictIterator	access:public
+ngx_align_ptr	../nginx.h	61;"	d
+ngx_alloc	../nginx.c	/^ngx_alloc(size_t size, ngx_log_t *log)$/;"	f	signature:(size_t size, ngx_log_t *log)
+ngx_alloc	../nginx.h	/^void *ngx_alloc(size_t size, ngx_log_t *log);$/;"	p	signature:(size_t size, ngx_log_t *log)
+ngx_alloc_buf	../nginx.h	81;"	d
+ngx_alloc_chain_link	../nginx.c	/^ngx_alloc_chain_link(ngx_pool_t *pool)$/;"	f	signature:(ngx_pool_t *pool)
+ngx_alloc_chain_link	../nginx.h	/^ngx_chain_t *ngx_alloc_chain_link(ngx_pool_t *pool);$/;"	p	signature:(ngx_pool_t *pool)
+ngx_array_create	../nginx.c	/^ngx_array_create(ngx_pool_t *p, ngx_uint_t n, size_t size)$/;"	f	signature:(ngx_pool_t *p, ngx_uint_t n, size_t size)
+ngx_array_create	../nginx.h	/^ngx_array_t *ngx_array_create(ngx_pool_t *p, ngx_uint_t n, size_t size);$/;"	p	signature:(ngx_pool_t *p, ngx_uint_t n, size_t size)
+ngx_array_destroy	../nginx.c	/^ngx_array_destroy(ngx_array_t *a)$/;"	f	signature:(ngx_array_t *a)
+ngx_array_destroy	../nginx.h	/^void ngx_array_destroy(ngx_array_t *a);$/;"	p	signature:(ngx_array_t *a)
+ngx_array_init	../nginx.h	/^ngx_array_init(ngx_array_t *array, ngx_pool_t *pool, ngx_uint_t n, size_t size)$/;"	f	signature:(ngx_array_t *array, ngx_pool_t *pool, ngx_uint_t n, size_t size)
+ngx_array_push	../nginx.c	/^ngx_array_push(ngx_array_t *a)$/;"	f	signature:(ngx_array_t *a)
+ngx_array_push	../nginx.h	/^void *ngx_array_push(ngx_array_t *a);$/;"	p	signature:(ngx_array_t *a)
+ngx_array_push_n	../nginx.c	/^ngx_array_push_n(ngx_array_t *a, ngx_uint_t n)$/;"	f	signature:(ngx_array_t *a, ngx_uint_t n)
+ngx_array_push_n	../nginx.h	/^void *ngx_array_push_n(ngx_array_t *a, ngx_uint_t n);$/;"	p	signature:(ngx_array_t *a, ngx_uint_t n)
+ngx_array_s	../nginx.h	/^struct ngx_array_s {$/;"	s
+ngx_array_s::elts	../nginx.h	/^    void        *elts;$/;"	m	struct:ngx_array_s	access:public
+ngx_array_s::nalloc	../nginx.h	/^    ngx_uint_t   nalloc;$/;"	m	struct:ngx_array_s	access:public
+ngx_array_s::nelts	../nginx.h	/^    ngx_uint_t   nelts;$/;"	m	struct:ngx_array_s	access:public
+ngx_array_s::pool	../nginx.h	/^    ngx_pool_t  *pool;$/;"	m	struct:ngx_array_s	access:public
+ngx_array_s::size	../nginx.h	/^    size_t       size;$/;"	m	struct:ngx_array_s	access:public
+ngx_array_t	../nginx.h	/^typedef struct ngx_array_s       ngx_array_t;$/;"	t	typeref:struct:ngx_array_s
+ngx_buf_cat	../nginx.c	/^char * ngx_buf_cat ( ngx_pool_t *pool, ngx_buf_t *buf, char *str, uint n )$/;"	f	signature:( ngx_pool_t *pool, ngx_buf_t *buf, char *str, uint n )
+ngx_buf_cat	../nginx.h	/^char * ngx_buf_cat ( ngx_pool_t *pool, ngx_buf_t *buf, char *str, uint n );$/;"	p	signature:( ngx_pool_t *pool, ngx_buf_t *buf, char *str, uint n )
+ngx_buf_reset	../nginx.c	/^void ngx_buf_reset ( ngx_buf_t *buf )$/;"	f	signature:( ngx_buf_t *buf )
+ngx_buf_reset	../nginx.h	/^void ngx_buf_reset ( ngx_buf_t *buf );$/;"	p	signature:( ngx_buf_t *buf )
+ngx_buf_s	../nginx.h	/^struct ngx_buf_s {$/;"	s
+ngx_buf_s::end	../nginx.h	/^    uchar          *end;           \/* end of buffer *\/$/;"	m	struct:ngx_buf_s	access:public
+ngx_buf_s::last	../nginx.h	/^    uchar          *last;$/;"	m	struct:ngx_buf_s	access:public
+ngx_buf_s::num	../nginx.h	/^    \/* STUB *\/ int   num;$/;"	m	struct:ngx_buf_s	access:public
+ngx_buf_s::pos	../nginx.h	/^    uchar          *pos;$/;"	m	struct:ngx_buf_s	access:public
+ngx_buf_s::start	../nginx.h	/^    uchar          *start;         \/* start of buffer *\/$/;"	m	struct:ngx_buf_s	access:public
+ngx_buf_s::tag	../nginx.h	/^    ngx_buf_tag_t    tag;$/;"	m	struct:ngx_buf_s	access:public
+ngx_buf_size	../nginx.h	80;"	d
+ngx_buf_t	../nginx.h	/^typedef struct ngx_buf_s  ngx_buf_t;$/;"	t	typeref:struct:ngx_buf_s
+ngx_buf_tag_t	../nginx.h	/^typedef void *            ngx_buf_tag_t;$/;"	t
+ngx_bufs_t	../nginx.h	/^} ngx_bufs_t;$/;"	t	typeref:struct:__anon9
+ngx_calloc	../nginx.c	/^ngx_calloc(size_t size, ngx_log_t *log)$/;"	f	signature:(size_t size, ngx_log_t *log)
+ngx_calloc	../nginx.h	/^void *ngx_calloc(size_t size, ngx_log_t *log);$/;"	p	signature:(size_t size, ngx_log_t *log)
+ngx_calloc_buf	../nginx.h	82;"	d
+ngx_chain_add_copy	../nginx.c	/^ngx_chain_add_copy(ngx_pool_t *pool, ngx_chain_t **chain, ngx_chain_t *in)$/;"	f	signature:(ngx_pool_t *pool, ngx_chain_t **chain, ngx_chain_t *in)
+ngx_chain_add_copy	../nginx.h	/^ngx_int_t ngx_chain_add_copy(ngx_pool_t *pool, ngx_chain_t **chain, ngx_chain_t *in);$/;"	p	signature:(ngx_pool_t *pool, ngx_chain_t **chain, ngx_chain_t *in)
+ngx_chain_get_free_buf	../nginx.c	/^ngx_chain_get_free_buf(ngx_pool_t *p, ngx_chain_t **free)$/;"	f	signature:(ngx_pool_t *p, ngx_chain_t **free)
+ngx_chain_get_free_buf	../nginx.h	/^ngx_chain_t *ngx_chain_get_free_buf(ngx_pool_t *p, ngx_chain_t **free);$/;"	p	signature:(ngx_pool_t *p, ngx_chain_t **free)
+ngx_chain_s	../nginx.h	/^struct ngx_chain_s {$/;"	s
+ngx_chain_s::buf	../nginx.h	/^    ngx_buf_t    *buf;$/;"	m	struct:ngx_chain_s	access:public
+ngx_chain_s::next	../nginx.h	/^    ngx_chain_t  *next;$/;"	m	struct:ngx_chain_s	access:public
+ngx_chain_t	../nginx.h	/^typedef struct ngx_chain_s       ngx_chain_t;$/;"	t	typeref:struct:ngx_chain_s
+ngx_chain_update_chains	../nginx.c	/^ngx_chain_update_chains(ngx_pool_t *p, ngx_chain_t **free, ngx_chain_t **busy,$/;"	f	signature:(ngx_pool_t *p, ngx_chain_t **free, ngx_chain_t **busy, ngx_chain_t **out, ngx_buf_tag_t tag)
+ngx_chain_update_chains	../nginx.h	/^void ngx_chain_update_chains(ngx_pool_t *p, ngx_chain_t **free, ngx_chain_t **busy, ngx_chain_t **out, ngx_buf_tag_t tag);$/;"	p	signature:(ngx_pool_t *p, ngx_chain_t **free, ngx_chain_t **busy, ngx_chain_t **out, ngx_buf_tag_t tag)
+ngx_close_file	../nginx.h	67;"	d
+ngx_command_s	../command.h	/^struct ngx_command_s {$/;"	s
+ngx_command_s::data	../command.h	/^    void            *data;$/;"	m	struct:ngx_command_s	access:public
+ngx_command_s::policy	../command.h	/^	void *policy;$/;"	m	struct:ngx_command_s	access:public
+ngx_command_s::pool	../command.h	/^    ngx_pool_t		*pool;$/;"	m	struct:ngx_command_s	access:public
+ngx_command_s::resource	../command.h	/^	void *resource;$/;"	m	struct:ngx_command_s	access:public
+ngx_command_s::type	../command.h	/^    enum ngx_command_type	type;$/;"	m	struct:ngx_command_s	typeref:enum:ngx_command_s::ngx_command_type	access:public
+ngx_command_t	../command.h	/^typedef struct ngx_command_s     ngx_command_t;$/;"	t	typeref:struct:ngx_command_s
+ngx_command_type	../command.h	/^enum ngx_command_type { COMMAND_CACHE_FILE = 0, COMMAND_CACHE_REDIS = 1, COMMAND_CACHE_DB = 2, COMMAND_NODE_MJSON = 3 };$/;"	g
+ngx_create_chain_of_bufs	../nginx.c	/^ngx_create_chain_of_bufs(ngx_pool_t *pool, ngx_bufs_t *bufs)$/;"	f	signature:(ngx_pool_t *pool, ngx_bufs_t *bufs)
+ngx_create_chain_of_bufs	../nginx.h	/^ngx_chain_t *ngx_create_chain_of_bufs(ngx_pool_t *pool, ngx_bufs_t *bufs);$/;"	p	signature:(ngx_pool_t *pool, ngx_bufs_t *bufs)
+ngx_create_pool	../nginx.c	/^ngx_create_pool(size_t size, ngx_log_t *log)$/;"	f	signature:(size_t size, ngx_log_t *log)
+ngx_create_pool	../nginx.h	/^ngx_pool_t *ngx_create_pool(size_t size, ngx_log_t *log);$/;"	p	signature:(size_t size, ngx_log_t *log)
+ngx_create_temp_buf	../nginx.c	/^ngx_create_temp_buf(ngx_pool_t *pool, size_t size)$/;"	f	signature:(ngx_pool_t *pool, size_t size)
+ngx_create_temp_buf	../nginx.h	/^ngx_buf_t *ngx_create_temp_buf(ngx_pool_t *pool, size_t size);$/;"	p	signature:(ngx_pool_t *pool, size_t size)
+ngx_delete_file	../nginx.h	68;"	d
+ngx_destroy_pool	../nginx.c	/^ngx_destroy_pool(ngx_pool_t *pool)$/;"	f	signature:(ngx_pool_t *pool)
+ngx_destroy_pool	../nginx.h	/^void ngx_destroy_pool(ngx_pool_t *pool);$/;"	p	signature:(ngx_pool_t *pool)
+ngx_err_t	../nginx.h	/^typedef int               ngx_err_t;$/;"	t
+ngx_errno	../nginx.h	43;"	d
+ngx_fd_info	../nginx.h	69;"	d
+ngx_fd_t	../nginx.h	/^typedef int                      ngx_fd_t;$/;"	t
+ngx_file_access	../nginx.h	74;"	d
+ngx_file_fs_size	../nginx.h	76;"	d
+ngx_file_info_t	../nginx.h	/^typedef struct stat              ngx_file_info_t;$/;"	t	typeref:struct:stat
+ngx_file_mtime	../nginx.h	77;"	d
+ngx_file_size	../nginx.h	75;"	d
+ngx_file_uniq	../nginx.h	78;"	d
+ngx_flag_t	../nginx.h	/^typedef intptr_t        ngx_flag_t;$/;"	t
+ngx_free	../nginx.h	58;"	d
+ngx_free_chain	../nginx.h	83;"	d
+ngx_int_t	../nginx.h	/^typedef intptr_t        ngx_int_t;$/;"	t
+ngx_is_dir	../nginx.h	70;"	d
+ngx_is_exec	../nginx.h	73;"	d
+ngx_is_file	../nginx.h	71;"	d
+ngx_is_link	../nginx.h	72;"	d
+ngx_json_free_value	../json.h	311;"	d
+ngx_json_insert_child	../json.h	309;"	d
+ngx_json_new_array	../json.h	306;"	d
+ngx_json_new_object	../json.h	307;"	d
+ngx_json_new_string	../json.h	308;"	d
+ngx_json_tree_to_string	../json.h	310;"	d
+ngx_list_create	../nginx.c	/^ngx_list_create(ngx_pool_t *pool, ngx_uint_t n, size_t size)$/;"	f	signature:(ngx_pool_t *pool, ngx_uint_t n, size_t size)
+ngx_list_create	../nginx.h	/^ngx_list_t *ngx_list_create(ngx_pool_t *pool, ngx_uint_t n, size_t size);$/;"	p	signature:(ngx_pool_t *pool, ngx_uint_t n, size_t size)
+ngx_list_init	../nginx.h	/^ngx_list_init(ngx_list_t *list, ngx_pool_t *pool, ngx_uint_t n, size_t size)$/;"	f	signature:(ngx_list_t *list, ngx_pool_t *pool, ngx_uint_t n, size_t size)
+ngx_list_part_s	../nginx.h	/^struct ngx_list_part_s {$/;"	s
+ngx_list_part_s::elts	../nginx.h	/^    void             *elts;$/;"	m	struct:ngx_list_part_s	access:public
+ngx_list_part_s::nelts	../nginx.h	/^    ngx_uint_t        nelts;$/;"	m	struct:ngx_list_part_s	access:public
+ngx_list_part_s::next	../nginx.h	/^    ngx_list_part_t  *next;$/;"	m	struct:ngx_list_part_s	access:public
+ngx_list_part_t	../nginx.h	/^typedef struct ngx_list_part_s  ngx_list_part_t;$/;"	t	typeref:struct:ngx_list_part_s
+ngx_list_push	../nginx.c	/^ngx_list_push(ngx_list_t *l)$/;"	f	signature:(ngx_list_t *l)
+ngx_list_push	../nginx.h	/^void *ngx_list_push(ngx_list_t *list);$/;"	p	signature:(ngx_list_t *list)
+ngx_list_t	../nginx.h	/^} ngx_list_t;$/;"	t	typeref:struct:__anon5
+ngx_log_init	../nginx.c	/^ngx_log_t * ngx_log_init(u_char *filename)$/;"	f	signature:(u_char *filename)
+ngx_log_s	../nginx.h	/^struct ngx_log_s {$/;"	s
+ngx_log_s::action	../nginx.h	/^    char                *action;$/;"	m	struct:ngx_log_s	access:public
+ngx_log_s::data	../nginx.h	/^    void                *data;$/;"	m	struct:ngx_log_s	access:public
+ngx_log_s::file	../nginx.h	/^    ngx_open_file_t     *file;$/;"	m	struct:ngx_log_s	access:public
+ngx_log_s::log_level	../nginx.h	/^    ngx_uint_t           log_level;$/;"	m	struct:ngx_log_s	access:public
+ngx_log_t	../nginx.h	/^typedef struct ngx_log_s         ngx_log_t;$/;"	t	typeref:struct:ngx_log_s
+ngx_memalign	../nginx.c	/^ngx_memalign(size_t alignment, size_t size, ngx_log_t *log)$/;"	f	signature:(size_t alignment, size_t size, ngx_log_t *log)
+ngx_memalign	../nginx.c	/^void *ngx_memalign(size_t alignment, size_t size, ngx_log_t *log);$/;"	p	file:	signature:(size_t alignment, size_t size, ngx_log_t *log)
+ngx_memcpy	../nginx.h	60;"	d
+ngx_memzero	../nginx.h	59;"	d
+ngx_nstrdup	../nginx.c	/^char * ngx_nstrdup(ngx_pool_t *pool, char *text, size_t size){$/;"	f	signature:(ngx_pool_t *pool, char *text, size_t size)
+ngx_nstrdup	../nginx.h	/^char * ngx_nstrdup(ngx_pool_t *pool, char *text, size_t size);$/;"	p	signature:(ngx_pool_t *pool, char *text, size_t size)
+ngx_open_file	../nginx.h	65;"	d
+ngx_open_file_s	../nginx.h	/^struct ngx_open_file_s {$/;"	s
+ngx_open_file_s::buffer	../nginx.h	/^    u_char               *buffer;$/;"	m	struct:ngx_open_file_s	access:public
+ngx_open_file_s::fd	../nginx.h	/^    ngx_fd_t              fd;$/;"	m	struct:ngx_open_file_s	access:public
+ngx_open_file_s::last	../nginx.h	/^    u_char               *last;$/;"	m	struct:ngx_open_file_s	access:public
+ngx_open_file_s::name	../nginx.h	/^    ngx_str_t             name;$/;"	m	struct:ngx_open_file_s	access:public
+ngx_open_file_s::pos	../nginx.h	/^    u_char               *pos;$/;"	m	struct:ngx_open_file_s	access:public
+ngx_open_file_t	../nginx.h	/^typedef struct ngx_open_file_s   ngx_open_file_t;$/;"	t	typeref:struct:ngx_open_file_s
+ngx_palloc	../nginx.c	/^ngx_palloc(ngx_pool_t *pool, size_t size)$/;"	f	signature:(ngx_pool_t *pool, size_t size)
+ngx_palloc	../nginx.h	/^void *ngx_palloc(ngx_pool_t *pool, size_t size);$/;"	p	signature:(ngx_pool_t *pool, size_t size)
+ngx_palloc_block	../nginx.c	/^ngx_palloc_block(ngx_pool_t *pool, size_t size)$/;"	f	file:	signature:(ngx_pool_t *pool, size_t size)
+ngx_palloc_block	../nginx.c	/^static void *ngx_palloc_block(ngx_pool_t *pool, size_t size);$/;"	p	file:	signature:(ngx_pool_t *pool, size_t size)
+ngx_palloc_large	../nginx.c	/^ngx_palloc_large(ngx_pool_t *pool, size_t size)$/;"	f	file:	signature:(ngx_pool_t *pool, size_t size)
+ngx_palloc_large	../nginx.c	/^static void *ngx_palloc_large(ngx_pool_t *pool, size_t size);$/;"	p	file:	signature:(ngx_pool_t *pool, size_t size)
+ngx_pcalloc	../nginx.c	/^ngx_pcalloc(ngx_pool_t *pool, size_t size)$/;"	f	signature:(ngx_pool_t *pool, size_t size)
+ngx_pcalloc	../nginx.h	/^void *ngx_pcalloc(ngx_pool_t *pool, size_t size);$/;"	p	signature:(ngx_pool_t *pool, size_t size)
+ngx_pfree	../nginx.c	/^ngx_pfree(ngx_pool_t *pool, void *p)$/;"	f	signature:(ngx_pool_t *pool, void *p)
+ngx_pfree	../nginx.h	/^ngx_int_t ngx_pfree(ngx_pool_t *pool, void *p);$/;"	p	signature:(ngx_pool_t *pool, void *p)
+ngx_pmemalign	../nginx.c	/^ngx_pmemalign(ngx_pool_t *pool, size_t size, size_t alignment)$/;"	f	signature:(ngx_pool_t *pool, size_t size, size_t alignment)
+ngx_pmemalign	../nginx.h	/^void *ngx_pmemalign(ngx_pool_t *pool, size_t size, size_t alignment);$/;"	p	signature:(ngx_pool_t *pool, size_t size, size_t alignment)
+ngx_pnalloc	../nginx.c	/^ngx_pnalloc(ngx_pool_t *pool, size_t size)$/;"	f	signature:(ngx_pool_t *pool, size_t size)
+ngx_pnalloc	../nginx.h	/^void *ngx_pnalloc(ngx_pool_t *pool, size_t size);$/;"	p	signature:(ngx_pool_t *pool, size_t size)
+ngx_pool_cleanup_add	../nginx.c	/^ngx_pool_cleanup_add(ngx_pool_t *p, size_t size)$/;"	f	signature:(ngx_pool_t *p, size_t size)
+ngx_pool_cleanup_add	../nginx.h	/^ngx_pool_cleanup_t *ngx_pool_cleanup_add(ngx_pool_t *p, size_t size);$/;"	p	signature:(ngx_pool_t *p, size_t size)
+ngx_pool_cleanup_file	../nginx.c	/^ngx_pool_cleanup_file(void *data)$/;"	f	signature:(void *data)
+ngx_pool_cleanup_file	../nginx.h	/^void ngx_pool_cleanup_file(void *data);$/;"	p	signature:(void *data)
+ngx_pool_cleanup_file_t	../nginx.h	/^} ngx_pool_cleanup_file_t;$/;"	t	typeref:struct:__anon8
+ngx_pool_cleanup_pt	../nginx.h	/^typedef void (*ngx_pool_cleanup_pt)(void *data);$/;"	t
+ngx_pool_cleanup_s	../nginx.h	/^struct ngx_pool_cleanup_s {$/;"	s
+ngx_pool_cleanup_s::data	../nginx.h	/^    void                 *data;$/;"	m	struct:ngx_pool_cleanup_s	access:public
+ngx_pool_cleanup_s::handler	../nginx.h	/^    ngx_pool_cleanup_pt   handler;$/;"	m	struct:ngx_pool_cleanup_s	access:public
+ngx_pool_cleanup_s::next	../nginx.h	/^    ngx_pool_cleanup_t   *next;$/;"	m	struct:ngx_pool_cleanup_s	access:public
+ngx_pool_cleanup_t	../nginx.h	/^typedef struct ngx_pool_cleanup_s  ngx_pool_cleanup_t;$/;"	t	typeref:struct:ngx_pool_cleanup_s
+ngx_pool_data_t	../nginx.h	/^} ngx_pool_data_t;$/;"	t	typeref:struct:__anon7
+ngx_pool_delete_file	../nginx.c	/^void ngx_pool_delete_file(void *data)$/;"	f	signature:(void *data)
+ngx_pool_delete_file	../nginx.h	/^void ngx_pool_delete_file(void *data);$/;"	p	signature:(void *data)
+ngx_pool_large_s	../nginx.h	/^struct ngx_pool_large_s {$/;"	s
+ngx_pool_large_s::alloc	../nginx.h	/^    void                 *alloc;$/;"	m	struct:ngx_pool_large_s	access:public
+ngx_pool_large_s::next	../nginx.h	/^    ngx_pool_large_t     *next;$/;"	m	struct:ngx_pool_large_s	access:public
+ngx_pool_large_t	../nginx.h	/^typedef struct ngx_pool_large_s  ngx_pool_large_t;$/;"	t	typeref:struct:ngx_pool_large_s
+ngx_pool_run_cleanup_file	../nginx.c	/^ngx_pool_run_cleanup_file(ngx_pool_t *p, ngx_fd_t fd)$/;"	f	signature:(ngx_pool_t *p, ngx_fd_t fd)
+ngx_pool_run_cleanup_file	../nginx.h	/^void ngx_pool_run_cleanup_file(ngx_pool_t *p, ngx_fd_t fd);$/;"	p	signature:(ngx_pool_t *p, ngx_fd_t fd)
+ngx_pool_s	../nginx.h	/^struct ngx_pool_s {$/;"	s
+ngx_pool_s::chain	../nginx.h	/^    ngx_chain_t          *chain;$/;"	m	struct:ngx_pool_s	access:public
+ngx_pool_s::cleanup	../nginx.h	/^    ngx_pool_cleanup_t   *cleanup;$/;"	m	struct:ngx_pool_s	access:public
+ngx_pool_s::current	../nginx.h	/^    ngx_pool_t           *current;$/;"	m	struct:ngx_pool_s	access:public
+ngx_pool_s::d	../nginx.h	/^    ngx_pool_data_t       d;$/;"	m	struct:ngx_pool_s	access:public
+ngx_pool_s::large	../nginx.h	/^    ngx_pool_large_t     *large;$/;"	m	struct:ngx_pool_s	access:public
+ngx_pool_s::log	../nginx.h	/^    ngx_log_t            *log;$/;"	m	struct:ngx_pool_s	access:public
+ngx_pool_s::max	../nginx.h	/^    size_t                max;$/;"	m	struct:ngx_pool_s	access:public
+ngx_pool_t	../nginx.h	/^typedef struct ngx_pool_s        ngx_pool_t;$/;"	t	typeref:struct:ngx_pool_s
+ngx_prealloc	../nginx.c	/^char * ngx_prealloc(ngx_pool_t *pool, char *text, size_t size){$/;"	f	signature:(ngx_pool_t *pool, char *text, size_t size)
+ngx_prealloc	../nginx.h	/^char *ngx_prealloc(ngx_pool_t *, char *, size_t);$/;"	p	signature:(ngx_pool_t *, char *, size_t)
+ngx_read_fd	../nginx.h	79;"	d
+ngx_reset_pool	../nginx.c	/^ngx_reset_pool(ngx_pool_t *pool)$/;"	f	signature:(ngx_pool_t *pool)
+ngx_reset_pool	../nginx.h	/^void ngx_reset_pool(ngx_pool_t *pool);$/;"	p	signature:(ngx_pool_t *pool)
+ngx_stderr	../nginx.h	34;"	d
+ngx_str_t	../nginx.h	/^} ngx_str_t;$/;"	t	typeref:struct:__anon6
+ngx_strdup	../nginx.c	/^char * ngx_strdup(ngx_pool_t *pool, char *text){$/;"	f	signature:(ngx_pool_t *pool, char *text)
+ngx_strdup	../nginx.h	/^char *ngx_strdup(ngx_pool_t *pool, char *text);$/;"	p	signature:(ngx_pool_t *pool, char *text)
+ngx_strlcpy	../nginx.c	/^size_t ngx_strlcpy(char *dst, const char *src, size_t size){$/;"	f	signature:(char *dst, const char *src, size_t size)
+ngx_strlcpy	../nginx.h	/^size_t ngx_strlcpy(char *dst, const char *src, size_t size);$/;"	p	signature:(char *dst, const char *src, size_t size)
+ngx_strnstr	../nginx.c	/^char *ngx_strnstr( char *lpszHaystack, char *lpszNeedle, unsigned int nLen )$/;"	f	signature:( char *lpszHaystack, char *lpszNeedle, unsigned int nLen )
+ngx_strnstr	../nginx.h	/^char *ngx_strnstr( char *lpszHaystack, char *lpszNeedle, unsigned int nLen );$/;"	p	signature:( char *lpszHaystack, char *lpszNeedle, unsigned int nLen )
+ngx_uint_t	../nginx.h	/^typedef uintptr_t       ngx_uint_t;$/;"	t
+ngx_write_fd	../nginx.h	/^ngx_write_fd(ngx_fd_t fd, void *buf, size_t n)$/;"	f	signature:(ngx_fd_t fd, void *buf, size_t n)
+nmatch	../handler.h	/^    size_t nmatch;$/;"	m	struct:handler	access:public
+node_mjson_command	../tree.h	/^static stone_node_command_t node_mjson_command = {$/;"	v
+notifier_block	../notifier.h	/^struct notifier_block {$/;"	s
+notifier_block::call	../notifier.h	/^   int ( *call ) ( struct notifier_block *, unsigned long, void * );$/;"	m	struct:notifier_block	access:public
+notifier_block::next	../notifier.h	/^   struct notifier_block *next;$/;"	m	struct:notifier_block	typeref:struct:notifier_block::notifier_block	access:public
+notifier_block::priority	../notifier.h	/^   int priority;$/;"	m	struct:notifier_block	access:public
+notifier_chain_call	../notifier.c	/^int notifier_chain_call ( struct notifier_block **nl, unsigned long ev, void *data, int total, int *affected )$/;"	f	signature:( struct notifier_block **nl, unsigned long ev, void *data, int total, int *affected )
+notifier_chain_call	../notifier.h	/^int notifier_chain_call ( struct notifier_block **, unsigned long, void * );$/;"	p	signature:( struct notifier_block **, unsigned long, void * )
+notifier_chain_register	../notifier.c	/^int notifier_chain_register ( struct notifier_block ** nl, struct notifier_block * nb )$/;"	f	signature:( struct notifier_block ** nl, struct notifier_block * nb )
+notifier_chain_register	../notifier.h	/^int notifier_chain_register ( struct notifier_block **, struct notifier_block * );$/;"	p	signature:( struct notifier_block **, struct notifier_block * )
+notifier_chain_unregister	../notifier.c	/^int notifier_chain_unregister ( struct notifier_block **nl, struct notifier_block *nb )$/;"	f	signature:( struct notifier_block **nl, struct notifier_block *nb )
+notifier_chain_unregister	../notifier.h	/^int notifier_chain_unregister ( struct notifier_block **, struct notifier_block * );$/;"	p	signature:( struct notifier_block **, struct notifier_block * )
+num	../list.h	/^    uint num;$/;"	m	struct:hash_data_table_s	access:public
+num	../nginx.h	/^    \/* STUB *\/ int   num;$/;"	m	struct:ngx_buf_s	access:public
+num	../nginx.h	/^    uint    num;$/;"	m	struct:__anon9	access:public
+obj	../hiredis/hiredis.h	/^    void *obj; \/* holds user-generated value for a read task *\/$/;"	m	struct:redisReadTask	access:public
+obuf	../hiredis/hiredis.h	/^    char *obuf; \/* Write buffer *\/$/;"	m	struct:redisContext	access:public
+onConnect	../hiredis/async.h	/^    redisConnectCallback *onConnect;$/;"	m	struct:redisAsyncContext	access:public
+onDisconnect	../hiredis/async.h	/^    redisDisconnectCallback *onDisconnect;$/;"	m	struct:redisAsyncContext	access:public
+open_array	../json.h	/^		int (*open_array) ();$/;"	m	struct:json_saxy_functions	access:public
+open_object	../json.h	/^		int (*open_object) ();$/;"	m	struct:json_saxy_functions	access:public
+p	../json.h	/^		char *p;$/;"	m	struct:json_parsing_info	access:public
+parent	../hiredis/hiredis.h	/^    struct redisReadTask *parent; \/* parent task *\/$/;"	m	struct:redisReadTask	typeref:struct:redisReadTask::redisReadTask	access:public
+parent	../json.h	/^		struct json_value *parent;	\/*!< The pointer pointing to the parent node in the document tree *\/$/;"	m	struct:json_value	typeref:struct:json_value::json_value	access:public
+parent	../tree.h	/^	void * ( *parent ) ( ngx_command_t *cmd ); \/\/ change cmd->data to parent$/;"	m	struct:stone_node_command_s	access:public
+parent	../tree.h	/^    stone_node_t *parent;$/;"	m	struct:stone_node_s	access:public
+parse_tpl	../tpl.c	/^stone_node_t *parse_tpl ( ngx_command_t *cmd, char **str )$/;"	f	signature:( ngx_command_t *cmd, char **str )
+parse_tpl	../tpl.h	/^stone_node_t *parse_tpl ( ngx_command_t *cmd, char **str );$/;"	p	signature:( ngx_command_t *cmd, char **str )
+part	../nginx.h	/^    ngx_list_part_t   part;$/;"	m	struct:__anon5	access:public
+path	../hiredis/test.c	/^        const char *path;$/;"	m	struct:config::__anon4	file:	access:public
+path	../request.h	/^	char ** path;$/;"	m	struct:stone_request_s	access:public
+patterns	../hiredis/async.h	/^        struct dict *patterns;$/;"	m	struct:redisAsyncContext::__anon2	typeref:struct:redisAsyncContext::__anon2::dict	access:public
+policy	../command.h	/^	void *policy;$/;"	m	struct:ngx_command_s	access:public
+pool	../app.h	/^	ngx_pool_t *pool;$/;"	m	struct:stone_server_s	access:public
+pool	../app.h	/^    ngx_pool_t *pool;$/;"	m	struct:GLOBAL_RAPHTERS	access:public
+pool	../command.h	/^    ngx_pool_t		*pool;$/;"	m	struct:ngx_command_s	access:public
+pool	../nginx.h	/^    ngx_pool_t       *pool;$/;"	m	struct:__anon5	access:public
+pool	../nginx.h	/^    ngx_pool_t  *pool;$/;"	m	struct:ngx_array_s	access:public
+port	../hiredis/test.c	/^        int port;$/;"	m	struct:config::__anon3	file:	access:public
+pos	../hiredis/hiredis.h	/^    size_t pos; \/* Buffer cursor *\/$/;"	m	struct:redisReader	access:public
+pos	../nginx.h	/^    u_char               *pos;$/;"	m	struct:ngx_open_file_s	access:public
+pos	../nginx.h	/^    uchar          *pos;$/;"	m	struct:ngx_buf_s	access:public
+post	../request.h	/^	struct list_head *post;$/;"	m	struct:stone_request_s	typeref:struct:stone_request_s::list_head	access:public
+pprev	../list.h	/^    struct hlist_node *next, **pprev;$/;"	m	struct:hlist_node	typeref:struct:hlist_node::	access:public
+prev	../list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::	access:public
+previous	../json.h	/^		struct json_value *previous;	\/*!< The pointer pointing to the previous element in the FIFO sibling list *\/$/;"	m	struct:json_value	typeref:struct:json_value::json_value	access:public
+priority	../notifier.h	/^   int priority;$/;"	m	struct:notifier_block	access:public
+privdata	../hiredis/async.h	/^    void *privdata;$/;"	m	struct:redisCallback	access:public
+privdata	../hiredis/dict.h	/^    void *privdata;$/;"	m	struct:dict	access:public
+privdata	../hiredis/hiredis.h	/^    void *privdata; \/* user-settable arbitrary field *\/$/;"	m	struct:redisReadTask	access:public
+privdata	../hiredis/hiredis.h	/^    void *privdata;$/;"	m	struct:redisReader	access:public
+processBulkItem	../hiredis/hiredis.c	/^static int processBulkItem(redisReader *r) {$/;"	f	file:	signature:(redisReader *r)
+processItem	../hiredis/hiredis.c	/^static int processItem(redisReader *r) {$/;"	f	file:	signature:(redisReader *r)
+processLineItem	../hiredis/hiredis.c	/^static int processLineItem(redisReader *r) {$/;"	f	file:	signature:(redisReader *r)
+processMultiBulkItem	../hiredis/hiredis.c	/^static int processMultiBulkItem(redisReader *r) {$/;"	f	file:	signature:(redisReader *r)
+ptr	../app.h	/^	struct list_head ptr;$/;"	m	struct:stone_item_s	typeref:struct:stone_item_s::list_head	access:public
+ptr	../list.h	/^    struct hlist_node ptr;$/;"	m	struct:hash_data_node_s	typeref:struct:hash_data_node_s::hlist_node	access:public
+raw_notifier_head	../notifier.h	/^struct raw_notifier_head {$/;"	s
+raw_notifier_head::head	../notifier.h	/^    struct notifier_block *head;$/;"	m	struct:raw_notifier_head	typeref:struct:raw_notifier_head::notifier_block	access:public
+rcs_catc	../json.c	/^rcs_catc (ngx_pool_t *pool, rcstring * pre, const char c)$/;"	f	signature:(ngx_pool_t *pool, rcstring * pre, const char c)
+rcs_catcs	../json.c	/^rcs_catcs (ngx_pool_t *pool, rcstring * pre, const char *pos, const size_t length)$/;"	f	signature:(ngx_pool_t *pool, rcstring * pre, const char *pos, const size_t length)
+rcs_create	../json.c	/^rcs_create (ngx_pool_t *pool, size_t length)$/;"	f	signature:(ngx_pool_t *pool, size_t length)
+rcs_free	../json.c	/^rcs_free (rcstring ** rcs)$/;"	f	signature:(rcstring ** rcs)
+rcs_length	../json.c	/^rcs_length (rcstring * rcs)$/;"	f	signature:(rcstring * rcs)
+rcs_resize	../json.c	/^rcs_resize (ngx_pool_t *pool, rcstring * rcs, size_t length)$/;"	f	signature:(ngx_pool_t *pool, rcstring * rcs, size_t length)
+rcs_unwrap	../json.c	/^rcs_unwrap (ngx_pool_t *pool, rcstring * rcs)$/;"	f	signature:(ngx_pool_t *pool, rcstring * rcs)
+rcstring	../json.c	/^typedef struct rui_cstring rcstring;$/;"	t	typeref:struct:rui_cstring	file:
+read	../command.h	/^	char           	*(*read)(ngx_command_t *cmd, void *arg);$/;"	m	struct:stone_cache_command_s	access:public
+readBytes	../hiredis/hiredis.c	/^static char *readBytes(redisReader *r, unsigned int bytes) {$/;"	f	file:	signature:(redisReader *r, unsigned int bytes)
+readLine	../hiredis/hiredis.c	/^static char *readLine(redisReader *r, int *_len) {$/;"	f	file:	signature:(redisReader *r, int *_len)
+readLongLong	../hiredis/hiredis.c	/^static long long readLongLong(char *s) {$/;"	f	file:	signature:(char *s)
+reader	../hiredis/hiredis.h	/^    redisReader *reader; \/* Protocol reader *\/$/;"	m	struct:redisContext	access:public
+reading	../hiredis/adapters/ae.h	/^    int reading, writing;$/;"	m	struct:redisAeEvents	access:public
+reading	../hiredis/adapters/libev.h	/^    int reading, writing;$/;"	m	struct:redisLibevEvents	access:public
+redis	../app.h	/^	redisContext *redis;$/;"	m	struct:GLOBAL_RAPHTERS	access:public
+redisAeAddRead	../hiredis/adapters/ae.h	/^static void redisAeAddRead(void *privdata) {$/;"	f	signature:(void *privdata)
+redisAeAddWrite	../hiredis/adapters/ae.h	/^static void redisAeAddWrite(void *privdata) {$/;"	f	signature:(void *privdata)
+redisAeAttach	../hiredis/adapters/ae.h	/^static int redisAeAttach(aeEventLoop *loop, redisAsyncContext *ac) {$/;"	f	signature:(aeEventLoop *loop, redisAsyncContext *ac)
+redisAeCleanup	../hiredis/adapters/ae.h	/^static void redisAeCleanup(void *privdata) {$/;"	f	signature:(void *privdata)
+redisAeDelRead	../hiredis/adapters/ae.h	/^static void redisAeDelRead(void *privdata) {$/;"	f	signature:(void *privdata)
+redisAeDelWrite	../hiredis/adapters/ae.h	/^static void redisAeDelWrite(void *privdata) {$/;"	f	signature:(void *privdata)
+redisAeEvents	../hiredis/adapters/ae.h	/^typedef struct redisAeEvents {$/;"	s
+redisAeEvents	../hiredis/adapters/ae.h	/^} redisAeEvents;$/;"	t	typeref:struct:redisAeEvents
+redisAeEvents::context	../hiredis/adapters/ae.h	/^    redisAsyncContext *context;$/;"	m	struct:redisAeEvents	access:public
+redisAeEvents::fd	../hiredis/adapters/ae.h	/^    int fd;$/;"	m	struct:redisAeEvents	access:public
+redisAeEvents::loop	../hiredis/adapters/ae.h	/^    aeEventLoop *loop;$/;"	m	struct:redisAeEvents	access:public
+redisAeEvents::reading	../hiredis/adapters/ae.h	/^    int reading, writing;$/;"	m	struct:redisAeEvents	access:public
+redisAeEvents::writing	../hiredis/adapters/ae.h	/^    int reading, writing;$/;"	m	struct:redisAeEvents	access:public
+redisAeReadEvent	../hiredis/adapters/ae.h	/^static void redisAeReadEvent(aeEventLoop *el, int fd, void *privdata, int mask) {$/;"	f	signature:(aeEventLoop *el, int fd, void *privdata, int mask)
+redisAeWriteEvent	../hiredis/adapters/ae.h	/^static void redisAeWriteEvent(aeEventLoop *el, int fd, void *privdata, int mask) {$/;"	f	signature:(aeEventLoop *el, int fd, void *privdata, int mask)
+redisAppendCommand	../hiredis/hiredis.c	/^int redisAppendCommand(redisContext *c, const char *format, ...) {$/;"	f	signature:(redisContext *c, const char *format, ...)
+redisAppendCommand	../hiredis/hiredis.h	/^int redisAppendCommand(redisContext *c, const char *format, ...);$/;"	p	signature:(redisContext *c, const char *format, ...)
+redisAppendCommandArgv	../hiredis/hiredis.c	/^int redisAppendCommandArgv(redisContext *c, int argc, const char **argv, const size_t *argvlen) {$/;"	f	signature:(redisContext *c, int argc, const char **argv, const size_t *argvlen)
+redisAppendCommandArgv	../hiredis/hiredis.h	/^int redisAppendCommandArgv(redisContext *c, int argc, const char **argv, const size_t *argvlen);$/;"	p	signature:(redisContext *c, int argc, const char **argv, const size_t *argvlen)
+redisAsyncCommand	../hiredis/async.c	/^int redisAsyncCommand(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, const char *format, ...) {$/;"	f	signature:(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, const char *format, ...)
+redisAsyncCommand	../hiredis/async.h	/^int redisAsyncCommand(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, const char *format, ...);$/;"	p	signature:(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, const char *format, ...)
+redisAsyncCommandArgv	../hiredis/async.c	/^int redisAsyncCommandArgv(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, int argc, const char **argv, const size_t *argvlen) {$/;"	f	signature:(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, int argc, const char **argv, const size_t *argvlen)
+redisAsyncCommandArgv	../hiredis/async.h	/^int redisAsyncCommandArgv(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, int argc, const char **argv, const size_t *argvlen);$/;"	p	signature:(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, int argc, const char **argv, const size_t *argvlen)
+redisAsyncConnect	../hiredis/async.c	/^redisAsyncContext *redisAsyncConnect(const char *ip, int port) {$/;"	f	signature:(const char *ip, int port)
+redisAsyncConnect	../hiredis/async.h	/^redisAsyncContext *redisAsyncConnect(const char *ip, int port);$/;"	p	signature:(const char *ip, int port)
+redisAsyncConnectUnix	../hiredis/async.c	/^redisAsyncContext *redisAsyncConnectUnix(const char *path) {$/;"	f	signature:(const char *path)
+redisAsyncConnectUnix	../hiredis/async.h	/^redisAsyncContext *redisAsyncConnectUnix(const char *path);$/;"	p	signature:(const char *path)
+redisAsyncContext	../hiredis/async.h	/^typedef struct redisAsyncContext {$/;"	s
+redisAsyncContext	../hiredis/async.h	/^} redisAsyncContext;$/;"	t	typeref:struct:redisAsyncContext
+redisAsyncContext::__anon1::addRead	../hiredis/async.h	/^        void (*addRead)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon1	access:public
+redisAsyncContext::__anon1::addWrite	../hiredis/async.h	/^        void (*addWrite)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon1	access:public
+redisAsyncContext::__anon1::cleanup	../hiredis/async.h	/^        void (*cleanup)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon1	access:public
+redisAsyncContext::__anon1::data	../hiredis/async.h	/^        void *data;$/;"	m	struct:redisAsyncContext::__anon1	access:public
+redisAsyncContext::__anon1::delRead	../hiredis/async.h	/^        void (*delRead)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon1	access:public
+redisAsyncContext::__anon1::delWrite	../hiredis/async.h	/^        void (*delWrite)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon1	access:public
+redisAsyncContext::__anon2::channels	../hiredis/async.h	/^        struct dict *channels;$/;"	m	struct:redisAsyncContext::__anon2	typeref:struct:redisAsyncContext::__anon2::dict	access:public
+redisAsyncContext::__anon2::invalid	../hiredis/async.h	/^        redisCallbackList invalid;$/;"	m	struct:redisAsyncContext::__anon2	access:public
+redisAsyncContext::__anon2::patterns	../hiredis/async.h	/^        struct dict *patterns;$/;"	m	struct:redisAsyncContext::__anon2	typeref:struct:redisAsyncContext::__anon2::dict	access:public
+redisAsyncContext::c	../hiredis/async.h	/^    redisContext c;$/;"	m	struct:redisAsyncContext	access:public
+redisAsyncContext::data	../hiredis/async.h	/^    void *data;$/;"	m	struct:redisAsyncContext	access:public
+redisAsyncContext::err	../hiredis/async.h	/^    int err;$/;"	m	struct:redisAsyncContext	access:public
+redisAsyncContext::errstr	../hiredis/async.h	/^    char *errstr;$/;"	m	struct:redisAsyncContext	access:public
+redisAsyncContext::ev	../hiredis/async.h	/^    } ev;$/;"	m	struct:redisAsyncContext	typeref:struct:redisAsyncContext::__anon1	access:public
+redisAsyncContext::onConnect	../hiredis/async.h	/^    redisConnectCallback *onConnect;$/;"	m	struct:redisAsyncContext	access:public
+redisAsyncContext::onDisconnect	../hiredis/async.h	/^    redisDisconnectCallback *onDisconnect;$/;"	m	struct:redisAsyncContext	access:public
+redisAsyncContext::replies	../hiredis/async.h	/^    redisCallbackList replies;$/;"	m	struct:redisAsyncContext	access:public
+redisAsyncContext::sub	../hiredis/async.h	/^    } sub;$/;"	m	struct:redisAsyncContext	typeref:struct:redisAsyncContext::__anon2	access:public
+redisAsyncDisconnect	../hiredis/async.c	/^void redisAsyncDisconnect(redisAsyncContext *ac) {$/;"	f	signature:(redisAsyncContext *ac)
+redisAsyncDisconnect	../hiredis/async.h	/^void redisAsyncDisconnect(redisAsyncContext *ac);$/;"	p	signature:(redisAsyncContext *ac)
+redisAsyncFree	../hiredis/async.c	/^void redisAsyncFree(redisAsyncContext *ac) {$/;"	f	signature:(redisAsyncContext *ac)
+redisAsyncFree	../hiredis/async.h	/^void redisAsyncFree(redisAsyncContext *ac);$/;"	p	signature:(redisAsyncContext *ac)
+redisAsyncHandleRead	../hiredis/async.c	/^void redisAsyncHandleRead(redisAsyncContext *ac) {$/;"	f	signature:(redisAsyncContext *ac)
+redisAsyncHandleRead	../hiredis/async.h	/^void redisAsyncHandleRead(redisAsyncContext *ac);$/;"	p	signature:(redisAsyncContext *ac)
+redisAsyncHandleWrite	../hiredis/async.c	/^void redisAsyncHandleWrite(redisAsyncContext *ac) {$/;"	f	signature:(redisAsyncContext *ac)
+redisAsyncHandleWrite	../hiredis/async.h	/^void redisAsyncHandleWrite(redisAsyncContext *ac);$/;"	p	signature:(redisAsyncContext *ac)
+redisAsyncInitialize	../hiredis/async.c	/^static redisAsyncContext *redisAsyncInitialize(redisContext *c) {$/;"	f	file:	signature:(redisContext *c)
+redisAsyncSetConnectCallback	../hiredis/async.c	/^int redisAsyncSetConnectCallback(redisAsyncContext *ac, redisConnectCallback *fn) {$/;"	f	signature:(redisAsyncContext *ac, redisConnectCallback *fn)
+redisAsyncSetConnectCallback	../hiredis/async.h	/^int redisAsyncSetConnectCallback(redisAsyncContext *ac, redisConnectCallback *fn);$/;"	p	signature:(redisAsyncContext *ac, redisConnectCallback *fn)
+redisAsyncSetDisconnectCallback	../hiredis/async.c	/^int redisAsyncSetDisconnectCallback(redisAsyncContext *ac, redisDisconnectCallback *fn) {$/;"	f	signature:(redisAsyncContext *ac, redisDisconnectCallback *fn)
+redisAsyncSetDisconnectCallback	../hiredis/async.h	/^int redisAsyncSetDisconnectCallback(redisAsyncContext *ac, redisDisconnectCallback *fn);$/;"	p	signature:(redisAsyncContext *ac, redisDisconnectCallback *fn)
+redisBufferRead	../hiredis/hiredis.c	/^int redisBufferRead(redisContext *c) {$/;"	f	signature:(redisContext *c)
+redisBufferRead	../hiredis/hiredis.h	/^int redisBufferRead(redisContext *c);$/;"	p	signature:(redisContext *c)
+redisBufferWrite	../hiredis/hiredis.c	/^int redisBufferWrite(redisContext *c, int *done) {$/;"	f	signature:(redisContext *c, int *done)
+redisBufferWrite	../hiredis/hiredis.h	/^int redisBufferWrite(redisContext *c, int *done);$/;"	p	signature:(redisContext *c, int *done)
+redisCallback	../hiredis/async.h	/^typedef struct redisCallback {$/;"	s
+redisCallback	../hiredis/async.h	/^} redisCallback;$/;"	t	typeref:struct:redisCallback
+redisCallback::fn	../hiredis/async.h	/^    redisCallbackFn *fn;$/;"	m	struct:redisCallback	access:public
+redisCallback::next	../hiredis/async.h	/^    struct redisCallback *next; \/* simple singly linked list *\/$/;"	m	struct:redisCallback	typeref:struct:redisCallback::redisCallback	access:public
+redisCallback::privdata	../hiredis/async.h	/^    void *privdata;$/;"	m	struct:redisCallback	access:public
+redisCallbackFn	../hiredis/async.h	/^typedef void (redisCallbackFn)(struct redisAsyncContext*, void*, void*);$/;"	t
+redisCallbackList	../hiredis/async.h	/^typedef struct redisCallbackList {$/;"	s
+redisCallbackList	../hiredis/async.h	/^} redisCallbackList;$/;"	t	typeref:struct:redisCallbackList
+redisCallbackList::head	../hiredis/async.h	/^    redisCallback *head, *tail;$/;"	m	struct:redisCallbackList	access:public
+redisCallbackList::tail	../hiredis/async.h	/^    redisCallback *head, *tail;$/;"	m	struct:redisCallbackList	access:public
+redisCheckSocketError	../hiredis/net.c	/^int redisCheckSocketError(redisContext *c, int fd) {$/;"	f	signature:(redisContext *c, int fd)
+redisCheckSocketError	../hiredis/net.h	/^int redisCheckSocketError(redisContext *c, int fd);$/;"	p	signature:(redisContext *c, int fd)
+redisCommand	../hiredis/hiredis.c	/^void *redisCommand(redisContext *c, const char *format, ...) {$/;"	f	signature:(redisContext *c, const char *format, ...)
+redisCommand	../hiredis/hiredis.h	/^void *redisCommand(redisContext *c, const char *format, ...);$/;"	p	signature:(redisContext *c, const char *format, ...)
+redisCommandArgv	../hiredis/hiredis.c	/^void *redisCommandArgv(redisContext *c, int argc, const char **argv, const size_t *argvlen) {$/;"	f	signature:(redisContext *c, int argc, const char **argv, const size_t *argvlen)
+redisCommandArgv	../hiredis/hiredis.h	/^void *redisCommandArgv(redisContext *c, int argc, const char **argv, const size_t *argvlen);$/;"	p	signature:(redisContext *c, int argc, const char **argv, const size_t *argvlen)
+redisConnect	../hiredis/hiredis.c	/^redisContext *redisConnect(const char *ip, int port) {$/;"	f	signature:(const char *ip, int port)
+redisConnect	../hiredis/hiredis.h	/^redisContext *redisConnect(const char *ip, int port);$/;"	p	signature:(const char *ip, int port)
+redisConnectCallback	../hiredis/async.h	/^typedef void (redisConnectCallback)(const struct redisAsyncContext*, int status);$/;"	t
+redisConnectNonBlock	../hiredis/hiredis.c	/^redisContext *redisConnectNonBlock(const char *ip, int port) {$/;"	f	signature:(const char *ip, int port)
+redisConnectNonBlock	../hiredis/hiredis.h	/^redisContext *redisConnectNonBlock(const char *ip, int port);$/;"	p	signature:(const char *ip, int port)
+redisConnectUnix	../hiredis/hiredis.c	/^redisContext *redisConnectUnix(const char *path) {$/;"	f	signature:(const char *path)
+redisConnectUnix	../hiredis/hiredis.h	/^redisContext *redisConnectUnix(const char *path);$/;"	p	signature:(const char *path)
+redisConnectUnixNonBlock	../hiredis/hiredis.c	/^redisContext *redisConnectUnixNonBlock(const char *path) {$/;"	f	signature:(const char *path)
+redisConnectUnixNonBlock	../hiredis/hiredis.h	/^redisContext *redisConnectUnixNonBlock(const char *path);$/;"	p	signature:(const char *path)
+redisConnectUnixWithTimeout	../hiredis/hiredis.c	/^redisContext *redisConnectUnixWithTimeout(const char *path, struct timeval tv) {$/;"	f	signature:(const char *path, struct timeval tv)
+redisConnectUnixWithTimeout	../hiredis/hiredis.h	/^redisContext *redisConnectUnixWithTimeout(const char *path, struct timeval tv);$/;"	p	signature:(const char *path, struct timeval tv)
+redisConnectWithTimeout	../hiredis/hiredis.c	/^redisContext *redisConnectWithTimeout(const char *ip, int port, struct timeval tv) {$/;"	f	signature:(const char *ip, int port, struct timeval tv)
+redisConnectWithTimeout	../hiredis/hiredis.h	/^redisContext *redisConnectWithTimeout(const char *ip, int port, struct timeval tv);$/;"	p	signature:(const char *ip, int port, struct timeval tv)
+redisContext	../hiredis/hiredis.h	/^typedef struct redisContext {$/;"	s
+redisContext	../hiredis/hiredis.h	/^} redisContext;$/;"	t	typeref:struct:redisContext
+redisContext::err	../hiredis/hiredis.h	/^    int err; \/* Error flags, 0 when there is no error *\/$/;"	m	struct:redisContext	access:public
+redisContext::errstr	../hiredis/hiredis.h	/^    char errstr[128]; \/* String representation of error when applicable *\/$/;"	m	struct:redisContext	access:public
+redisContext::fd	../hiredis/hiredis.h	/^    int fd;$/;"	m	struct:redisContext	access:public
+redisContext::flags	../hiredis/hiredis.h	/^    int flags;$/;"	m	struct:redisContext	access:public
+redisContext::obuf	../hiredis/hiredis.h	/^    char *obuf; \/* Write buffer *\/$/;"	m	struct:redisContext	access:public
+redisContext::reader	../hiredis/hiredis.h	/^    redisReader *reader; \/* Protocol reader *\/$/;"	m	struct:redisContext	access:public
+redisContextConnectTcp	../hiredis/net.c	/^int redisContextConnectTcp(redisContext *c, const char *addr, int port, struct timeval *timeout) {$/;"	f	signature:(redisContext *c, const char *addr, int port, struct timeval *timeout)
+redisContextConnectTcp	../hiredis/net.h	/^int redisContextConnectTcp(redisContext *c, const char *addr, int port, struct timeval *timeout);$/;"	p	signature:(redisContext *c, const char *addr, int port, struct timeval *timeout)
+redisContextConnectUnix	../hiredis/net.c	/^int redisContextConnectUnix(redisContext *c, const char *path, struct timeval *timeout) {$/;"	f	signature:(redisContext *c, const char *path, struct timeval *timeout)
+redisContextConnectUnix	../hiredis/net.h	/^int redisContextConnectUnix(redisContext *c, const char *path, struct timeval *timeout);$/;"	p	signature:(redisContext *c, const char *path, struct timeval *timeout)
+redisContextInit	../hiredis/hiredis.c	/^static redisContext *redisContextInit(void) {$/;"	f	file:	signature:(void)
+redisContextSetTimeout	../hiredis/net.c	/^int redisContextSetTimeout(redisContext *c, struct timeval tv) {$/;"	f	signature:(redisContext *c, struct timeval tv)
+redisContextSetTimeout	../hiredis/net.h	/^int redisContextSetTimeout(redisContext *c, struct timeval tv);$/;"	p	signature:(redisContext *c, struct timeval tv)
+redisContextWaitReady	../hiredis/net.c	/^static int redisContextWaitReady(redisContext *c, int fd, const struct timeval *timeout) {$/;"	f	file:	signature:(redisContext *c, int fd, const struct timeval *timeout)
+redisCreateSocket	../hiredis/net.c	/^static int redisCreateSocket(redisContext *c, int type) {$/;"	f	file:	signature:(redisContext *c, int type)
+redisDisconnectCallback	../hiredis/async.h	/^typedef void (redisDisconnectCallback)(const struct redisAsyncContext*, int status);$/;"	t
+redisFormatCommand	../hiredis/hiredis.c	/^int redisFormatCommand(char **target, const char *format, ...) {$/;"	f	signature:(char **target, const char *format, ...)
+redisFormatCommand	../hiredis/hiredis.h	/^int redisFormatCommand(char **target, const char *format, ...);$/;"	p	signature:(char **target, const char *format, ...)
+redisFormatCommandArgv	../hiredis/hiredis.c	/^int redisFormatCommandArgv(char **target, int argc, const char **argv, const size_t *argvlen) {$/;"	f	signature:(char **target, int argc, const char **argv, const size_t *argvlen)
+redisFormatCommandArgv	../hiredis/hiredis.h	/^int redisFormatCommandArgv(char **target, int argc, const char **argv, const size_t *argvlen);$/;"	p	signature:(char **target, int argc, const char **argv, const size_t *argvlen)
+redisFree	../hiredis/hiredis.c	/^void redisFree(redisContext *c) {$/;"	f	signature:(redisContext *c)
+redisFree	../hiredis/hiredis.h	/^void redisFree(redisContext *c);$/;"	p	signature:(redisContext *c)
+redisGetReply	../hiredis/hiredis.c	/^int redisGetReply(redisContext *c, void **reply) {$/;"	f	signature:(redisContext *c, void **reply)
+redisGetReply	../hiredis/hiredis.h	/^int redisGetReply(redisContext *c, void **reply);$/;"	p	signature:(redisContext *c, void **reply)
+redisGetReplyFromReader	../hiredis/hiredis.c	/^int redisGetReplyFromReader(redisContext *c, void **reply) {$/;"	f	signature:(redisContext *c, void **reply)
+redisGetReplyFromReader	../hiredis/hiredis.h	/^int redisGetReplyFromReader(redisContext *c, void **reply);$/;"	p	signature:(redisContext *c, void **reply)
+redisLibevAddRead	../hiredis/adapters/libev.h	/^static void redisLibevAddRead(void *privdata) {$/;"	f	signature:(void *privdata)
+redisLibevAddWrite	../hiredis/adapters/libev.h	/^static void redisLibevAddWrite(void *privdata) {$/;"	f	signature:(void *privdata)
+redisLibevAttach	../hiredis/adapters/libev.h	/^static int redisLibevAttach(EV_P_ redisAsyncContext *ac) {$/;"	f	signature:(EV_P_ redisAsyncContext *ac)
+redisLibevCleanup	../hiredis/adapters/libev.h	/^static void redisLibevCleanup(void *privdata) {$/;"	f	signature:(void *privdata)
+redisLibevDelRead	../hiredis/adapters/libev.h	/^static void redisLibevDelRead(void *privdata) {$/;"	f	signature:(void *privdata)
+redisLibevDelWrite	../hiredis/adapters/libev.h	/^static void redisLibevDelWrite(void *privdata) {$/;"	f	signature:(void *privdata)
+redisLibevEvents	../hiredis/adapters/libev.h	/^typedef struct redisLibevEvents {$/;"	s
+redisLibevEvents	../hiredis/adapters/libev.h	/^} redisLibevEvents;$/;"	t	typeref:struct:redisLibevEvents
+redisLibevEvents::context	../hiredis/adapters/libev.h	/^    redisAsyncContext *context;$/;"	m	struct:redisLibevEvents	access:public
+redisLibevEvents::loop	../hiredis/adapters/libev.h	/^    struct ev_loop *loop;$/;"	m	struct:redisLibevEvents	typeref:struct:redisLibevEvents::ev_loop	access:public
+redisLibevEvents::reading	../hiredis/adapters/libev.h	/^    int reading, writing;$/;"	m	struct:redisLibevEvents	access:public
+redisLibevEvents::rev	../hiredis/adapters/libev.h	/^    ev_io rev, wev;$/;"	m	struct:redisLibevEvents	access:public
+redisLibevEvents::wev	../hiredis/adapters/libev.h	/^    ev_io rev, wev;$/;"	m	struct:redisLibevEvents	access:public
+redisLibevEvents::writing	../hiredis/adapters/libev.h	/^    int reading, writing;$/;"	m	struct:redisLibevEvents	access:public
+redisLibevReadEvent	../hiredis/adapters/libev.h	/^static void redisLibevReadEvent(EV_P_ ev_io *watcher, int revents) {$/;"	f	signature:(EV_P_ ev_io *watcher, int revents)
+redisLibevWriteEvent	../hiredis/adapters/libev.h	/^static void redisLibevWriteEvent(EV_P_ ev_io *watcher, int revents) {$/;"	f	signature:(EV_P_ ev_io *watcher, int revents)
+redisLibeventAddRead	../hiredis/adapters/libevent.h	/^static void redisLibeventAddRead(void *privdata) {$/;"	f	signature:(void *privdata)
+redisLibeventAddWrite	../hiredis/adapters/libevent.h	/^static void redisLibeventAddWrite(void *privdata) {$/;"	f	signature:(void *privdata)
+redisLibeventAttach	../hiredis/adapters/libevent.h	/^static int redisLibeventAttach(redisAsyncContext *ac, struct event_base *base) {$/;"	f	signature:(redisAsyncContext *ac, struct event_base *base)
+redisLibeventCleanup	../hiredis/adapters/libevent.h	/^static void redisLibeventCleanup(void *privdata) {$/;"	f	signature:(void *privdata)
+redisLibeventDelRead	../hiredis/adapters/libevent.h	/^static void redisLibeventDelRead(void *privdata) {$/;"	f	signature:(void *privdata)
+redisLibeventDelWrite	../hiredis/adapters/libevent.h	/^static void redisLibeventDelWrite(void *privdata) {$/;"	f	signature:(void *privdata)
+redisLibeventEvents	../hiredis/adapters/libevent.h	/^typedef struct redisLibeventEvents {$/;"	s
+redisLibeventEvents	../hiredis/adapters/libevent.h	/^} redisLibeventEvents;$/;"	t	typeref:struct:redisLibeventEvents
+redisLibeventEvents::context	../hiredis/adapters/libevent.h	/^    redisAsyncContext *context;$/;"	m	struct:redisLibeventEvents	access:public
+redisLibeventEvents::rev	../hiredis/adapters/libevent.h	/^    struct event rev, wev;$/;"	m	struct:redisLibeventEvents	typeref:struct:redisLibeventEvents::event	access:public
+redisLibeventEvents::wev	../hiredis/adapters/libevent.h	/^    struct event rev, wev;$/;"	m	struct:redisLibeventEvents	typeref:struct:redisLibeventEvents::	access:public
+redisLibeventReadEvent	../hiredis/adapters/libevent.h	/^static void redisLibeventReadEvent(int fd, short event, void *arg) {$/;"	f	signature:(int fd, short event, void *arg)
+redisLibeventWriteEvent	../hiredis/adapters/libevent.h	/^static void redisLibeventWriteEvent(int fd, short event, void *arg) {$/;"	f	signature:(int fd, short event, void *arg)
+redisProcessCallbacks	../hiredis/async.c	/^void redisProcessCallbacks(redisAsyncContext *ac) {$/;"	f	signature:(redisAsyncContext *ac)
+redisReadTask	../hiredis/hiredis.h	/^typedef struct redisReadTask {$/;"	s
+redisReadTask	../hiredis/hiredis.h	/^} redisReadTask;$/;"	t	typeref:struct:redisReadTask
+redisReadTask::elements	../hiredis/hiredis.h	/^    int elements; \/* number of elements in multibulk container *\/$/;"	m	struct:redisReadTask	access:public
+redisReadTask::idx	../hiredis/hiredis.h	/^    int idx; \/* index in parent (array) object *\/$/;"	m	struct:redisReadTask	access:public
+redisReadTask::obj	../hiredis/hiredis.h	/^    void *obj; \/* holds user-generated value for a read task *\/$/;"	m	struct:redisReadTask	access:public
+redisReadTask::parent	../hiredis/hiredis.h	/^    struct redisReadTask *parent; \/* parent task *\/$/;"	m	struct:redisReadTask	typeref:struct:redisReadTask::redisReadTask	access:public
+redisReadTask::privdata	../hiredis/hiredis.h	/^    void *privdata; \/* user-settable arbitrary field *\/$/;"	m	struct:redisReadTask	access:public
+redisReadTask::type	../hiredis/hiredis.h	/^    int type;$/;"	m	struct:redisReadTask	access:public
+redisReader	../hiredis/hiredis.h	/^typedef struct redisReader {$/;"	s
+redisReader	../hiredis/hiredis.h	/^} redisReader;$/;"	t	typeref:struct:redisReader
+redisReader::buf	../hiredis/hiredis.h	/^    char *buf; \/* Read buffer *\/$/;"	m	struct:redisReader	access:public
+redisReader::err	../hiredis/hiredis.h	/^    int err; \/* Error flags, 0 when there is no error *\/$/;"	m	struct:redisReader	access:public
+redisReader::errstr	../hiredis/hiredis.h	/^    char errstr[128]; \/* String representation of error when applicable *\/$/;"	m	struct:redisReader	access:public
+redisReader::fn	../hiredis/hiredis.h	/^    redisReplyObjectFunctions *fn;$/;"	m	struct:redisReader	access:public
+redisReader::len	../hiredis/hiredis.h	/^    size_t len; \/* Buffer length *\/$/;"	m	struct:redisReader	access:public
+redisReader::maxbuf	../hiredis/hiredis.h	/^    size_t maxbuf; \/* Max length of unused buffer *\/$/;"	m	struct:redisReader	access:public
+redisReader::pos	../hiredis/hiredis.h	/^    size_t pos; \/* Buffer cursor *\/$/;"	m	struct:redisReader	access:public
+redisReader::privdata	../hiredis/hiredis.h	/^    void *privdata;$/;"	m	struct:redisReader	access:public
+redisReader::reply	../hiredis/hiredis.h	/^    void *reply; \/* Temporary reply pointer *\/$/;"	m	struct:redisReader	access:public
+redisReader::ridx	../hiredis/hiredis.h	/^    int ridx; \/* Index of current read task *\/$/;"	m	struct:redisReader	access:public
+redisReader::rstack	../hiredis/hiredis.h	/^    redisReadTask rstack[9];$/;"	m	struct:redisReader	access:public
+redisReaderCreate	../hiredis/hiredis.c	/^redisReader *redisReaderCreate(void) {$/;"	f	signature:(void)
+redisReaderCreate	../hiredis/hiredis.h	/^redisReader *redisReaderCreate(void);$/;"	p	signature:(void)
+redisReaderFeed	../hiredis/hiredis.c	/^int redisReaderFeed(redisReader *r, const char *buf, size_t len) {$/;"	f	signature:(redisReader *r, const char *buf, size_t len)
+redisReaderFeed	../hiredis/hiredis.h	/^int redisReaderFeed(redisReader *r, const char *buf, size_t len);$/;"	p	signature:(redisReader *r, const char *buf, size_t len)
+redisReaderFree	../hiredis/hiredis.c	/^void redisReaderFree(redisReader *r) {$/;"	f	signature:(redisReader *r)
+redisReaderFree	../hiredis/hiredis.h	/^void redisReaderFree(redisReader *r);$/;"	p	signature:(redisReader *r)
+redisReaderGetReply	../hiredis/hiredis.c	/^int redisReaderGetReply(redisReader *r, void **reply) {$/;"	f	signature:(redisReader *r, void **reply)
+redisReaderGetReply	../hiredis/hiredis.h	/^int redisReaderGetReply(redisReader *r, void **reply);$/;"	p	signature:(redisReader *r, void **reply)
+redisReply	../hiredis/hiredis.h	/^typedef struct redisReply {$/;"	s
+redisReply	../hiredis/hiredis.h	/^} redisReply;$/;"	t	typeref:struct:redisReply
+redisReply::element	../hiredis/hiredis.h	/^    struct redisReply **element; \/* elements vector for REDIS_REPLY_ARRAY *\/$/;"	m	struct:redisReply	typeref:struct:redisReply::redisReply	access:public
+redisReply::elements	../hiredis/hiredis.h	/^    size_t elements; \/* number of elements, for REDIS_REPLY_ARRAY *\/$/;"	m	struct:redisReply	access:public
+redisReply::integer	../hiredis/hiredis.h	/^    long long integer; \/* The integer when type is REDIS_REPLY_INTEGER *\/$/;"	m	struct:redisReply	access:public
+redisReply::len	../hiredis/hiredis.h	/^    int len; \/* Length of string *\/$/;"	m	struct:redisReply	access:public
+redisReply::str	../hiredis/hiredis.h	/^    char *str; \/* Used for both REDIS_REPLY_ERROR and REDIS_REPLY_STRING *\/$/;"	m	struct:redisReply	access:public
+redisReply::type	../hiredis/hiredis.h	/^    int type; \/* REDIS_REPLY_* *\/$/;"	m	struct:redisReply	access:public
+redisReplyObjectFunctions	../hiredis/hiredis.h	/^typedef struct redisReplyObjectFunctions {$/;"	s
+redisReplyObjectFunctions	../hiredis/hiredis.h	/^} redisReplyObjectFunctions;$/;"	t	typeref:struct:redisReplyObjectFunctions
+redisReplyObjectFunctions::createArray	../hiredis/hiredis.h	/^    void *(*createArray)(const redisReadTask*, int);$/;"	m	struct:redisReplyObjectFunctions	access:public
+redisReplyObjectFunctions::createInteger	../hiredis/hiredis.h	/^    void *(*createInteger)(const redisReadTask*, long long);$/;"	m	struct:redisReplyObjectFunctions	access:public
+redisReplyObjectFunctions::createNil	../hiredis/hiredis.h	/^    void *(*createNil)(const redisReadTask*);$/;"	m	struct:redisReplyObjectFunctions	access:public
+redisReplyObjectFunctions::createString	../hiredis/hiredis.h	/^    void *(*createString)(const redisReadTask*, char*, size_t);$/;"	m	struct:redisReplyObjectFunctions	access:public
+redisReplyObjectFunctions::freeObject	../hiredis/hiredis.h	/^    void (*freeObject)(void*);$/;"	m	struct:redisReplyObjectFunctions	access:public
+redisReplyReaderCreate	../hiredis/hiredis.h	147;"	d
+redisReplyReaderFeed	../hiredis/hiredis.h	149;"	d
+redisReplyReaderFree	../hiredis/hiredis.h	148;"	d
+redisReplyReaderGetError	../hiredis/hiredis.h	153;"	d
+redisReplyReaderGetObject	../hiredis/hiredis.h	152;"	d
+redisReplyReaderGetReply	../hiredis/hiredis.h	150;"	d
+redisReplyReaderSetPrivdata	../hiredis/hiredis.h	151;"	d
+redisSetBlocking	../hiredis/net.c	/^static int redisSetBlocking(redisContext *c, int fd, int blocking) {$/;"	f	file:	signature:(redisContext *c, int fd, int blocking)
+redisSetReuseAddr	../hiredis/net.c	/^static int redisSetReuseAddr(redisContext *c, int fd) {$/;"	f	file:	signature:(redisContext *c, int fd)
+redisSetTcpNoDelay	../hiredis/net.c	/^static int redisSetTcpNoDelay(redisContext *c, int fd) {$/;"	f	file:	signature:(redisContext *c, int fd)
+redisSetTimeout	../hiredis/hiredis.c	/^int redisSetTimeout(redisContext *c, struct timeval tv) {$/;"	f	signature:(redisContext *c, struct timeval tv)
+redisSetTimeout	../hiredis/hiredis.h	/^int redisSetTimeout(redisContext *c, struct timeval tv);$/;"	p	signature:(redisContext *c, struct timeval tv)
+redis_cache_cmd	../cache.h	/^static struct stone_cache_command_s redis_cache_cmd = { .read = redis_read, .write = redis_write, .delete = redis_delete };$/;"	v	typeref:struct:stone_cache_command_s
+redis_delete	../cache.c	/^char * redis_delete ( ngx_command_t *cmd, void *arg )$/;"	f	signature:( ngx_command_t *cmd, void *arg )
+redis_delete	../cache.h	/^char	*redis_delete(ngx_command_t *cmd, void *arg);$/;"	p	signature:(ngx_command_t *cmd, void *arg)
+redis_read	../cache.c	/^char *redis_read( ngx_command_t *cmd, void *arg )$/;"	f	signature:( ngx_command_t *cmd, void *arg )
+redis_read	../cache.h	/^char	*redis_read(ngx_command_t *cmd, void *arg);$/;"	p	signature:(ngx_command_t *cmd, void *arg)
+redis_write	../cache.c	/^char * redis_write( ngx_command_t *cmd, void *arg )$/;"	f	signature:( ngx_command_t *cmd, void *arg )
+redis_write	../cache.h	/^char	*redis_write(ngx_command_t *cmd, void *arg);$/;"	p	signature:(ngx_command_t *cmd, void *arg)
+redisvAppendCommand	../hiredis/hiredis.c	/^int redisvAppendCommand(redisContext *c, const char *format, va_list ap) {$/;"	f	signature:(redisContext *c, const char *format, va_list ap)
+redisvAppendCommand	../hiredis/hiredis.h	/^int redisvAppendCommand(redisContext *c, const char *format, va_list ap);$/;"	p	signature:(redisContext *c, const char *format, va_list ap)
+redisvAsyncCommand	../hiredis/async.c	/^int redisvAsyncCommand(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, const char *format, va_list ap) {$/;"	f	signature:(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, const char *format, va_list ap)
+redisvAsyncCommand	../hiredis/async.h	/^int redisvAsyncCommand(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, const char *format, va_list ap);$/;"	p	signature:(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, const char *format, va_list ap)
+redisvCommand	../hiredis/hiredis.c	/^void *redisvCommand(redisContext *c, const char *format, va_list ap) {$/;"	f	signature:(redisContext *c, const char *format, va_list ap)
+redisvCommand	../hiredis/hiredis.h	/^void *redisvCommand(redisContext *c, const char *format, va_list ap);$/;"	p	signature:(redisContext *c, const char *format, va_list ap)
+redisvFormatCommand	../hiredis/hiredis.c	/^int redisvFormatCommand(char **target, const char *format, va_list ap) {$/;"	f	signature:(char **target, const char *format, va_list ap)
+redisvFormatCommand	../hiredis/hiredis.h	/^int redisvFormatCommand(char **target, const char *format, va_list ap);$/;"	p	signature:(char **target, const char *format, va_list ap)
+regex	../handler.h	/^    regex_t regex;$/;"	m	struct:handler	access:public
+regex_str	../handler.h	/^    const char *regex_str;$/;"	m	struct:handler	access:public
+replies	../hiredis/async.h	/^    redisCallbackList replies;$/;"	m	struct:redisAsyncContext	access:public
+reply	../hiredis/hiredis.h	/^    void *reply; \/* Temporary reply pointer *\/$/;"	m	struct:redisReader	access:public
+req	../app.h	/^	stone_request_t *req;$/;"	m	struct:stone_server_s	access:public
+request_empty	../request.c	/^stone_request_t *request_empty(ngx_pool_t *pool) {$/;"	f	signature:(ngx_pool_t *pool)
+request_empty	../request.h	/^stone_request_t *request_empty(ngx_pool_t *pool);$/;"	p	signature:(ngx_pool_t *pool)
+res	../app.h	/^	stone_response_t *res;$/;"	m	struct:stone_server_s	access:public
+resource	../command.h	/^	void *resource;$/;"	m	struct:ngx_command_s	access:public
+response_add_header	../response.c	/^void response_add_header(stone_response_t *res, ngx_pool_t *pool, char *name, char *val) {$/;"	f	signature:(stone_response_t *res, ngx_pool_t *pool, char *name, char *val)
+response_add_header	../response.h	/^void response_add_header(stone_response_t *res, ngx_pool_t *pool, char *, char *);$/;"	p	signature:(stone_response_t *res, ngx_pool_t *pool, char *, char *)
+response_empty	../response.c	/^stone_response_t *response_empty(ngx_pool_t *pool) {$/;"	f	signature:(ngx_pool_t *pool)
+response_empty	../response.h	/^stone_response_t *response_empty(ngx_pool_t *pool);$/;"	p	signature:(ngx_pool_t *pool)
+response_send	../response.c	/^void response_send(stone_response_t *res) {$/;"	f	signature:(stone_response_t *res)
+response_send	../response.h	/^void response_send(stone_response_t *);$/;"	p	signature:(stone_response_t *)
+response_write	../response.c	/^void response_write(stone_response_t *res, ngx_pool_t *pool, char *text) {$/;"	f	signature:(stone_response_t *res, ngx_pool_t *pool, char *text)
+response_write	../response.h	/^void response_write(stone_response_t *res, ngx_pool_t *pool, char *);$/;"	p	signature:(stone_response_t *res, ngx_pool_t *pool, char *)
+rev	../hiredis/adapters/libev.h	/^    ev_io rev, wev;$/;"	m	struct:redisLibevEvents	access:public
+rev	../hiredis/adapters/libevent.h	/^    struct event rev, wev;$/;"	m	struct:redisLibeventEvents	typeref:struct:redisLibeventEvents::event	access:public
+ridx	../hiredis/hiredis.h	/^    int ridx; \/* Index of current read task *\/$/;"	m	struct:redisReader	access:public
+rstack	../hiredis/hiredis.h	/^    redisReadTask rstack[9];$/;"	m	struct:redisReader	access:public
+rstring_code	../json.c	/^typedef enum rui_string_error_codes rstring_code;$/;"	t	typeref:enum:rui_string_error_codes	file:
+rui_cstring	../json.c	/^struct rui_cstring$/;"	s	file:
+rui_cstring::max	../json.c	/^	size_t max;	\/*<! usable memory allocated to text minus the space for the nul character *\/$/;"	m	struct:rui_cstring	file:	access:public
+rui_cstring::text	../json.c	/^	char *text;	\/*<! char c-string *\/$/;"	m	struct:rui_cstring	file:	access:public
+rui_string_error_codes	../json.c	/^enum rui_string_error_codes$/;"	g	file:
+save	../tree.h	/^	void * ( *save ) ( ngx_command_t *cmd, stone_node_t *node, char  * name, void * value );$/;"	m	struct:stone_node_command_s	access:public
+sds	../hiredis/sds.h	/^typedef char *sds;$/;"	t
+sdsMakeRoomFor	../hiredis/sds.c	/^static sds sdsMakeRoomFor(sds s, size_t addlen) {$/;"	f	file:	signature:(sds s, size_t addlen)
+sdsOomAbort	../hiredis/sds.c	/^static void sdsOomAbort(void) {$/;"	f	file:	signature:(void)
+sdsavail	../hiredis/sds.h	/^size_t sdsavail(sds s);$/;"	p	signature:(sds s)
+sdsavail	../hiredis/sds.h	/^static inline size_t sdsavail(const sds s) {$/;"	f	signature:(const sds s)
+sdscat	../hiredis/sds.c	/^sds sdscat(sds s, const char *t) {$/;"	f	signature:(sds s, const char *t)
+sdscat	../hiredis/sds.h	/^sds sdscat(sds s, const char *t);$/;"	p	signature:(sds s, const char *t)
+sdscatlen	../hiredis/sds.c	/^sds sdscatlen(sds s, const void *t, size_t len) {$/;"	f	signature:(sds s, const void *t, size_t len)
+sdscatlen	../hiredis/sds.h	/^sds sdscatlen(sds s, const void *t, size_t len);$/;"	p	signature:(sds s, const void *t, size_t len)
+sdscatprintf	../hiredis/sds.c	/^sds sdscatprintf(sds s, const char *fmt, ...) {$/;"	f	signature:(sds s, const char *fmt, ...)
+sdscatprintf	../hiredis/sds.h	/^sds sdscatprintf(sds s, const char *fmt, ...)$/;"	p	signature:(sds s, const char *fmt, ...)
+sdscatprintf	../hiredis/sds.h	/^sds sdscatprintf(sds s, const char *fmt, ...);$/;"	p	signature:(sds s, const char *fmt, ...)
+sdscatrepr	../hiredis/sds.c	/^sds sdscatrepr(sds s, char *p, size_t len) {$/;"	f	signature:(sds s, char *p, size_t len)
+sdscatrepr	../hiredis/sds.h	/^sds sdscatrepr(sds s, char *p, size_t len);$/;"	p	signature:(sds s, char *p, size_t len)
+sdscatvprintf	../hiredis/sds.c	/^sds sdscatvprintf(sds s, const char *fmt, va_list ap) {$/;"	f	signature:(sds s, const char *fmt, va_list ap)
+sdscatvprintf	../hiredis/sds.h	/^sds sdscatvprintf(sds s, const char *fmt, va_list ap);$/;"	p	signature:(sds s, const char *fmt, va_list ap)
+sdscmp	../hiredis/sds.c	/^int sdscmp(sds s1, sds s2) {$/;"	f	signature:(sds s1, sds s2)
+sdscmp	../hiredis/sds.h	/^int sdscmp(sds s1, sds s2);$/;"	p	signature:(sds s1, sds s2)
+sdscpy	../hiredis/sds.c	/^sds sdscpy(sds s, char *t) {$/;"	f	signature:(sds s, char *t)
+sdscpy	../hiredis/sds.h	/^sds sdscpy(sds s, char *t);$/;"	p	signature:(sds s, char *t)
+sdscpylen	../hiredis/sds.c	/^sds sdscpylen(sds s, char *t, size_t len) {$/;"	f	signature:(sds s, char *t, size_t len)
+sdscpylen	../hiredis/sds.h	/^sds sdscpylen(sds s, char *t, size_t len);$/;"	p	signature:(sds s, char *t, size_t len)
+sdsdup	../hiredis/sds.c	/^sds sdsdup(const sds s) {$/;"	f	signature:(const sds s)
+sdsdup	../hiredis/sds.h	/^sds sdsdup(const sds s);$/;"	p	signature:(const sds s)
+sdsempty	../hiredis/sds.c	/^sds sdsempty(void) {$/;"	f	signature:(void)
+sdsempty	../hiredis/sds.h	/^sds sdsempty(void);$/;"	p	signature:(void)
+sdsfree	../hiredis/sds.c	/^void sdsfree(sds s) {$/;"	f	signature:(sds s)
+sdsfree	../hiredis/sds.h	/^void sdsfree(sds s);$/;"	p	signature:(sds s)
+sdsfreesplitres	../hiredis/sds.c	/^void sdsfreesplitres(sds *tokens, int count) {$/;"	f	signature:(sds *tokens, int count)
+sdsfreesplitres	../hiredis/sds.h	/^void sdsfreesplitres(sds *tokens, int count);$/;"	p	signature:(sds *tokens, int count)
+sdsfromlonglong	../hiredis/sds.c	/^sds sdsfromlonglong(long long value) {$/;"	f	signature:(long long value)
+sdsfromlonglong	../hiredis/sds.h	/^sds sdsfromlonglong(long long value);$/;"	p	signature:(long long value)
+sdsgrowzero	../hiredis/sds.c	/^sds sdsgrowzero(sds s, size_t len) {$/;"	f	signature:(sds s, size_t len)
+sdsgrowzero	../hiredis/sds.h	/^sds sdsgrowzero(sds s, size_t len);$/;"	p	signature:(sds s, size_t len)
+sdshdr	../hiredis/sds.h	/^struct sdshdr {$/;"	s
+sdshdr::buf	../hiredis/sds.h	/^    char buf[];$/;"	m	struct:sdshdr	access:public
+sdshdr::free	../hiredis/sds.h	/^    int free;$/;"	m	struct:sdshdr	access:public
+sdshdr::len	../hiredis/sds.h	/^    int len;$/;"	m	struct:sdshdr	access:public
+sdslen	../hiredis/sds.h	/^size_t sdslen(const sds s);$/;"	p	signature:(const sds s)
+sdslen	../hiredis/sds.h	/^static inline size_t sdslen(const sds s) {$/;"	f	signature:(const sds s)
+sdsnew	../hiredis/sds.c	/^sds sdsnew(const char *init) {$/;"	f	signature:(const char *init)
+sdsnew	../hiredis/sds.h	/^sds sdsnew(const char *init);$/;"	p	signature:(const char *init)
+sdsnewlen	../hiredis/sds.c	/^sds sdsnewlen(const void *init, size_t initlen) {$/;"	f	signature:(const void *init, size_t initlen)
+sdsnewlen	../hiredis/sds.h	/^sds sdsnewlen(const void *init, size_t initlen);$/;"	p	signature:(const void *init, size_t initlen)
+sdsrange	../hiredis/sds.c	/^sds sdsrange(sds s, int start, int end) {$/;"	f	signature:(sds s, int start, int end)
+sdsrange	../hiredis/sds.h	/^sds sdsrange(sds s, int start, int end);$/;"	p	signature:(sds s, int start, int end)
+sdssplitargs	../hiredis/sds.c	/^sds *sdssplitargs(char *line, int *argc) {$/;"	f	signature:(char *line, int *argc)
+sdssplitargs	../hiredis/sds.h	/^sds *sdssplitargs(char *line, int *argc);$/;"	p	signature:(char *line, int *argc)
+sdssplitlen	../hiredis/sds.c	/^sds *sdssplitlen(char *s, int len, char *sep, int seplen, int *count) {$/;"	f	signature:(char *s, int len, char *sep, int seplen, int *count)
+sdssplitlen	../hiredis/sds.h	/^sds *sdssplitlen(char *s, int len, char *sep, int seplen, int *count);$/;"	p	signature:(char *s, int len, char *sep, int seplen, int *count)
+sdstolower	../hiredis/sds.c	/^void sdstolower(sds s) {$/;"	f	signature:(sds s)
+sdstolower	../hiredis/sds.h	/^void sdstolower(sds s);$/;"	p	signature:(sds s)
+sdstoupper	../hiredis/sds.c	/^void sdstoupper(sds s) {$/;"	f	signature:(sds s)
+sdstoupper	../hiredis/sds.h	/^void sdstoupper(sds s);$/;"	p	signature:(sds s)
+sdstrim	../hiredis/sds.c	/^sds sdstrim(sds s, const char *cset) {$/;"	f	signature:(sds s, const char *cset)
+sdstrim	../hiredis/sds.h	/^sds sdstrim(sds s, const char *cset);$/;"	p	signature:(sds s, const char *cset)
+sdsupdatelen	../hiredis/sds.c	/^void sdsupdatelen(sds s) {$/;"	f	signature:(sds s)
+sdsupdatelen	../hiredis/sds.h	/^void sdsupdatelen(sds s);$/;"	p	signature:(sds s)
+search	../tree.h	/^	stone_node_t * ( *search ) ( stone_node_t *node, char *name );$/;"	m	struct:stone_node_command_s	access:public
+seekNewline	../hiredis/hiredis.c	/^static char *seekNewline(char *s, size_t len) {$/;"	f	file:	signature:(char *s, size_t len)
+segment_head	../response.h	/^    text_segment *segment_head;$/;"	m	struct:stone_response_s	access:public
+segment_tail	../response.h	/^    text_segment *segment_tail;$/;"	m	struct:stone_response_s	access:public
+select_database	../hiredis/test.c	/^static redisContext *select_database(redisContext *c) {$/;"	f	file:	signature:(redisContext *c)
+session	../app.h	/^	struct list_head *session;$/;"	m	struct:stone_server_s	typeref:struct:stone_server_s::list_head	access:public
+session_destroy	../session.c	/^int session_destroy ( stone_server_t *server, ngx_command_t *cmd )$/;"	f	signature:( stone_server_t *server, ngx_command_t *cmd )
+session_destroy	../session.h	/^int session_destroy ( stone_server_t *server, ngx_command_t *cd );$/;"	p	signature:( stone_server_t *server, ngx_command_t *cd )
+session_init	../session.c	/^int session_init ( stone_server_t *server, ngx_command_t *cmd )$/;"	f	signature:( stone_server_t *server, ngx_command_t *cmd )
+session_init	../session.h	/^int session_init ( stone_server_t *server, ngx_command_t *cmd );$/;"	p	signature:( stone_server_t *server, ngx_command_t *cmd )
+session_rand	../session.c	/^char * session_rand ( stone_server_t *server, ngx_command_t *cmd )$/;"	f	signature:( stone_server_t *server, ngx_command_t *cmd )
+session_save	../session.c	/^int session_save ( stone_server_t * server, ngx_command_t *cmd )$/;"	f	signature:( stone_server_t * server, ngx_command_t *cmd )
+session_save	../session.h	/^int session_save ( stone_server_t * server, ngx_command_t *cmd );$/;"	p	signature:( stone_server_t * server, ngx_command_t *cmd )
+session_to_json	../session.c	/^int session_to_json ( ngx_pool_t *pool, struct list_head *session, char **text )$/;"	f	signature:( ngx_pool_t *pool, struct list_head *session, char **text )
+session_to_json	../session.h	/^int session_to_json ( ngx_pool_t *pool, struct list_head *session, char **text );$/;"	p	signature:( ngx_pool_t *pool, struct list_head *session, char **text )
+set	../tree.h	/^	void * ( *set ) ( ngx_command_t *cmd, stone_node_t *node ); $/;"	m	struct:stone_node_command_s	access:public
+setcookie	../util.c	/^void setcookie ( stone_server_t *server, char *name, char *value, int expires )$/;"	f	signature:( stone_server_t *server, char *name, char *value, int expires )
+setcookie	../util.h	/^void setcookie ( stone_server_t *server, char *name, char *value, int expires );$/;"	p	signature:( stone_server_t *server, char *name, char *value, int expires )
+sibling_separator	../json.h	/^		int (*sibling_separator) ();$/;"	m	struct:json_saxy_functions	access:public
+simple_func	../simple.c	/^void simple_func(stone_server_t *);$/;"	p	file:	signature:(stone_server_t *)
+simple_func	../simple.c	/^void simple_func(stone_server_t *server){$/;"	f	signature:(stone_server_t *server)
+size	../hiredis/dict.h	/^    unsigned long size;$/;"	m	struct:dict	access:public
+size	../nginx.h	/^    size_t            size;$/;"	m	struct:__anon5	access:public
+size	../nginx.h	/^    size_t       size;$/;"	m	struct:__anon9	access:public
+size	../nginx.h	/^    size_t       size;$/;"	m	struct:ngx_array_s	access:public
+sizemask	../hiredis/dict.h	/^    unsigned long sizemask;$/;"	m	struct:dict	access:public
+spawn_worker	../framework.c	/^int spawn_worker(void *data, void (*proc)(void *)){$/;"	f	signature:(void *data, void (*proc)(void *))
+spawn_worker	../framework.h	/^int spawn_worker(void *data, void (*proc)(void *));$/;"	p	signature:(void *data, void (*proc)(void *))
+start	../appsql.h	/^	char *start;$/;"	m	struct:app_sql_value_t	access:public
+start	../nginx.h	/^    uchar          *start;         \/* start of buffer *\/$/;"	m	struct:ngx_buf_s	access:public
+state	../json.h	/^		unsigned int state;	\/*!< current parser state *\/$/;"	m	struct:json_saxy_parser_status	access:public
+state	../json.h	/^		unsigned int state;	\/*!< the state where the parsing was left on the last parser run *\/$/;"	m	struct:json_parsing_info	access:public
+stone_app_start	../app.c	/^stone_server_t * stone_app_start(void){$/;"	f	signature:(void)
+stone_app_start	../app.h	/^stone_server_t * stone_app_start(void);$/;"	p	signature:(void)
+stone_app_stop	../app.c	/^int stone_app_stop(stone_server_t *server){$/;"	f	signature:(stone_server_t *server)
+stone_app_stop	../app.h	/^int stone_app_stop(stone_server_t *);$/;"	p	signature:(stone_server_t *)
+stone_cache_command_s	../command.h	/^struct stone_cache_command_s {$/;"	s
+stone_cache_command_s::read	../command.h	/^	char           	*(*read)(ngx_command_t *cmd, void *arg);$/;"	m	struct:stone_cache_command_s	access:public
+stone_cache_command_s::write	../command.h	/^	char           	*(*write)(ngx_command_t *cmd, void *arg);$/;"	m	struct:stone_cache_command_s	access:public
+stone_cache_command_t	../command.h	/^typedef struct stone_cache_command_s stone_cache_command_t;$/;"	t	typeref:struct:stone_cache_command_s
+stone_file_s	../request.h	/^struct stone_file_s {$/;"	s
+stone_file_s::filename	../request.h	/^	char *filename;$/;"	m	struct:stone_file_s	access:public
+stone_file_s::filepath	../request.h	/^	char *filepath;$/;"	m	struct:stone_file_s	access:public
+stone_file_s::len	../request.h	/^	uint len;$/;"	m	struct:stone_file_s	access:public
+stone_file_t	../request.h	/^typedef struct stone_file_s stone_file_t;$/;"	t	typeref:struct:stone_file_s
+stone_item_s	../app.h	/^struct stone_item_s{$/;"	s
+stone_item_s::name	../app.h	/^	char *name;$/;"	m	struct:stone_item_s	access:public
+stone_item_s::ptr	../app.h	/^	struct list_head ptr;$/;"	m	struct:stone_item_s	typeref:struct:stone_item_s::list_head	access:public
+stone_item_s::value	../app.h	/^	void *value;$/;"	m	struct:stone_item_s	access:public
+stone_item_t	../app.h	/^typedef struct stone_item_s stone_item_t;$/;"	t	typeref:struct:stone_item_s
+stone_node_command_s	../tree.h	/^struct stone_node_command_s {$/;"	s
+stone_node_command_s::append	../tree.h	/^	void * ( *append ) ( stone_node_t *, stone_node_t * );$/;"	m	struct:stone_node_command_s	access:public
+stone_node_command_s::child	../tree.h	/^	void * ( *child ) ( ngx_command_t *cmd ); \/\/ change cmd->data to child$/;"	m	struct:stone_node_command_s	access:public
+stone_node_command_s::create	../tree.h	/^	stone_node_t * ( *create ) ( ngx_command_t *cmd, stone_node_t * root, enum stone_node_type type );$/;"	m	struct:stone_node_command_s	access:public
+stone_node_command_s::get	../tree.h	/^	stone_node_t * ( *get ) ( ngx_command_t *cmd ); $/;"	m	struct:stone_node_command_s	access:public
+stone_node_command_s::name	../tree.h	/^	char * ( *name ) ( stone_node_t *node );$/;"	m	struct:stone_node_command_s	access:public
+stone_node_command_s::next	../tree.h	/^	void * ( *next ) ( ngx_command_t *cmd ); $/;"	m	struct:stone_node_command_s	access:public
+stone_node_command_s::parent	../tree.h	/^	void * ( *parent ) ( ngx_command_t *cmd ); \/\/ change cmd->data to parent$/;"	m	struct:stone_node_command_s	access:public
+stone_node_command_s::save	../tree.h	/^	void * ( *save ) ( ngx_command_t *cmd, stone_node_t *node, char  * name, void * value );$/;"	m	struct:stone_node_command_s	access:public
+stone_node_command_s::search	../tree.h	/^	stone_node_t * ( *search ) ( stone_node_t *node, char *name );$/;"	m	struct:stone_node_command_s	access:public
+stone_node_command_s::set	../tree.h	/^	void * ( *set ) ( ngx_command_t *cmd, stone_node_t *node ); $/;"	m	struct:stone_node_command_s	access:public
+stone_node_command_s::toString	../tree.h	/^	void * ( *toString ) ( ngx_command_t *cmd, stone_node_t *root ); \/\/ root node to string$/;"	m	struct:stone_node_command_s	access:public
+stone_node_command_s::type	../tree.h	/^	enum stone_node_type ( *type ) ( stone_node_t *node );$/;"	m	struct:stone_node_command_s	typeref:enum:stone_node_command_s::type	access:public
+stone_node_command_s::value	../tree.h	/^	void * ( *value ) ( stone_node_t *node );$/;"	m	struct:stone_node_command_s	access:public
+stone_node_command_t	../tree.h	/^typedef struct stone_node_command_s stone_node_command_t;$/;"	t	typeref:struct:stone_node_command_s
+stone_node_s	../tree.h	/^struct stone_node_s {$/;"	s
+stone_node_s::child	../tree.h	/^    stone_node_t *child;$/;"	m	struct:stone_node_s	access:public
+stone_node_s::name	../tree.h	/^	char * name;$/;"	m	struct:stone_node_s	access:public
+stone_node_s::next	../tree.h	/^	stone_node_t *next;$/;"	m	struct:stone_node_s	access:public
+stone_node_s::parent	../tree.h	/^    stone_node_t *parent;$/;"	m	struct:stone_node_s	access:public
+stone_node_s::type	../tree.h	/^	enum stone_node_type type;$/;"	m	struct:stone_node_s	typeref:enum:stone_node_s::stone_node_type	access:public
+stone_node_s::value	../tree.h	/^	void * value;$/;"	m	struct:stone_node_s	access:public
+stone_node_t	../tree.h	/^typedef struct stone_node_s stone_node_t;$/;"	t	typeref:struct:stone_node_s
+stone_node_type	../tree.h	/^enum stone_node_type { NODE_NC = 0, NODE_VALUE = 1, NODE_ARR = 2, NODE_OBJ = 3, NODE_CONDITION = 4 };$/;"	g
+stone_request_init	../request.c	/^int stone_request_init(ngx_pool_t *pool, stone_request_t *req){$/;"	f	signature:(ngx_pool_t *pool, stone_request_t *req)
+stone_request_init	../request.h	/^int stone_request_init(ngx_pool_t *pool, stone_request_t *);$/;"	p	signature:(ngx_pool_t *pool, stone_request_t *)
+stone_request_s	../request.h	/^struct stone_request_s {$/;"	s
+stone_request_s::cookie	../request.h	/^	struct list_head *cookie;$/;"	m	struct:stone_request_s	typeref:struct:stone_request_s::list_head	access:public
+stone_request_s::env	../request.h	/^	struct stone_server_env *env;$/;"	m	struct:stone_request_s	typeref:struct:stone_request_s::stone_server_env	access:public
+stone_request_s::file	../request.h	/^	struct list_head *file;$/;"	m	struct:stone_request_s	typeref:struct:stone_request_s::list_head	access:public
+stone_request_s::get	../request.h	/^	struct list_head *get;$/;"	m	struct:stone_request_s	typeref:struct:stone_request_s::list_head	access:public
+stone_request_s::path	../request.h	/^	char ** path;$/;"	m	struct:stone_request_s	access:public
+stone_request_s::post	../request.h	/^	struct list_head *post;$/;"	m	struct:stone_request_s	typeref:struct:stone_request_s::list_head	access:public
+stone_request_t	../request.h	/^typedef struct stone_request_s stone_request_t;$/;"	t	typeref:struct:stone_request_s
+stone_response_s	../response.h	/^struct stone_response_s {$/;"	s
+stone_response_s::header_head	../response.h	/^    header *header_head;$/;"	m	struct:stone_response_s	access:public
+stone_response_s::header_tail	../response.h	/^    header *header_tail;$/;"	m	struct:stone_response_s	access:public
+stone_response_s::segment_head	../response.h	/^    text_segment *segment_head;$/;"	m	struct:stone_response_s	access:public
+stone_response_s::segment_tail	../response.h	/^    text_segment *segment_tail;$/;"	m	struct:stone_response_s	access:public
+stone_response_t	../response.h	/^typedef struct stone_response_s stone_response_t;$/;"	t	typeref:struct:stone_response_s
+stone_server_env	../request.h	/^struct stone_server_env {$/;"	s
+stone_server_env::Boundary	../request.h	/^	char *Boundary;$/;"	m	struct:stone_server_env	access:public
+stone_server_env::BoundaryLen	../request.h	/^	uint BoundaryLen;$/;"	m	struct:stone_server_env	access:public
+stone_server_env::ContentLength	../request.h	/^	uint ContentLength;$/;"	m	struct:stone_server_env	access:public
+stone_server_env::ContentType	../request.h	/^	char *ContentType;$/;"	m	struct:stone_server_env	access:public
+stone_server_s	../app.h	/^struct stone_server_s {$/;"	s
+stone_server_s::pool	../app.h	/^	ngx_pool_t *pool;$/;"	m	struct:stone_server_s	access:public
+stone_server_s::req	../app.h	/^	stone_request_t *req;$/;"	m	struct:stone_server_s	access:public
+stone_server_s::res	../app.h	/^	stone_response_t *res;$/;"	m	struct:stone_server_s	access:public
+stone_server_s::session	../app.h	/^	struct list_head *session;$/;"	m	struct:stone_server_s	typeref:struct:stone_server_s::list_head	access:public
+stone_server_s::tpl	../app.h	/^    tpl_data_table *tpl;$/;"	m	struct:stone_server_s	access:public
+stone_server_t	../app.h	/^typedef struct stone_server_s stone_server_t;$/;"	t	typeref:struct:stone_server_s
+store_path_info	../request.c	/^void store_path_info (stone_server_t * server, char *path_info, regmatch_t *matches, size_t n )$/;"	f	signature:(stone_server_t * server, char *path_info, regmatch_t *matches, size_t n )
+str	../hiredis/hiredis.h	/^    char *str; \/* Used for both REDIS_REPLY_ERROR and REDIS_REPLY_STRING *\/$/;"	m	struct:redisReply	access:public
+string_length_limit_reached	../json.h	/^		int string_length_limit_reached;	\/*!< flag informing if the string limit length defined by JSON_MAX_STRING_LENGTH was reached *\/$/;"	m	struct:json_parsing_info	access:public
+string_length_limit_reached	../json.h	/^		int string_length_limit_reached;	\/*!< flag informing if the string limit length defined by JSON_MAX_STRING_LENGTH was reached *\/$/;"	m	struct:json_saxy_parser_status	access:public
+sub	../hiredis/async.h	/^    } sub;$/;"	m	struct:redisAsyncContext	typeref:struct:redisAsyncContext::__anon2	access:public
+table	../hiredis/dict.h	/^    dictEntry **table;$/;"	m	struct:dict	access:public
+tag	../nginx.h	/^    ngx_buf_tag_t    tag;$/;"	m	struct:ngx_buf_s	access:public
+tail	../hiredis/async.h	/^    redisCallback *head, *tail;$/;"	m	struct:redisCallbackList	access:public
+tcp	../hiredis/test.c	/^    } tcp;$/;"	m	struct:config	typeref:struct:config::__anon3	file:	access:public
+temp	../json.h	/^		void *temp;	\/*!< temporary string which will be used to build up parsed strings between parser runs. *\/$/;"	m	struct:json_saxy_parser_status	access:public
+test	../hiredis/test.c	34;"	d	file:
+test_blocking_connection	../hiredis/test.c	/^static void test_blocking_connection(struct config config) {$/;"	f	file:	signature:(struct config config)
+test_blocking_connection_errors	../hiredis/test.c	/^static void test_blocking_connection_errors(void) {$/;"	f	file:	signature:(void)
+test_blocking_io_errors	../hiredis/test.c	/^static void test_blocking_io_errors(struct config config) {$/;"	f	file:	signature:(struct config config)
+test_cond	../hiredis/sds.c	509;"	d	file:
+test_cond	../hiredis/test.c	35;"	d	file:
+test_format_commands	../hiredis/test.c	/^static void test_format_commands(void) {$/;"	f	file:	signature:(void)
+test_reply_reader	../hiredis/test.c	/^static void test_reply_reader(void) {$/;"	f	file:	signature:(void)
+test_report	../hiredis/sds.c	513;"	d	file:
+test_throughput	../hiredis/test.c	/^static void test_throughput(struct config config) {$/;"	f	file:	signature:(struct config config)
+tests	../hiredis/test.c	/^static int tests = 0, fails = 0;$/;"	v	file:
+text	../json.c	/^	char *text;	\/*<! char c-string *\/$/;"	m	struct:rui_cstring	file:	access:public
+text	../json.h	/^		char *text;	\/*!< The text stored by the node. It stores UTF-8 strings and is used exclusively by the JSON_STRING and JSON_NUMBER node types *\/$/;"	m	struct:json_value	access:public
+text	../response.h	/^    char *text;$/;"	m	struct:text_segment	access:public
+text_segment	../response.h	/^struct text_segment {$/;"	s
+text_segment	../response.h	/^typedef struct text_segment text_segment;$/;"	t	typeref:struct:text_segment
+text_segment::next	../response.h	/^    struct text_segment *next;$/;"	m	struct:text_segment	typeref:struct:text_segment::text_segment	access:public
+text_segment::text	../response.h	/^    char *text;$/;"	m	struct:text_segment	access:public
+toString	../tree.h	/^	void * ( *toString ) ( ngx_command_t *cmd, stone_node_t *root ); \/\/ root node to string$/;"	m	struct:stone_node_command_s	access:public
+tpl	../app.h	/^    hasht_table *tpl;$/;"	m	struct:GLOBAL_RAPHTERS	access:public
+tpl	../app.h	/^    tpl_data_table *tpl;$/;"	m	struct:stone_server_s	access:public
+tpl_assign_tag	../tpl.h	24;"	d
+tpl_data_node	../tpl.h	38;"	d
+tpl_data_table	../tpl.h	37;"	d
+tpl_find_tag	../tpl.h	22;"	d
+tpl_hash	../tpl.h	21;"	d
+tpl_init	../tpl.c	/^int tpl_init ( void )$/;"	f	signature:( void )
+tpl_init	../tpl.h	/^int tpl_init ( void );$/;"	p	signature:( void )
+tpl_init_data_table	../tpl.h	29;"	d
+tpl_load	../tpl.c	/^char * tpl_load ( ngx_command_t *cmd, char *fname )$/;"	f	signature:( ngx_command_t *cmd, char *fname )
+tpl_load	../tpl.h	/^char * tpl_load ( ngx_command_t *cmd, char *fname );$/;"	p	signature:( ngx_command_t *cmd, char *fname )
+tpl_loop_s	../tpl.h	/^struct tpl_loop_s {$/;"	s
+tpl_loop_s::key	../tpl.h	/^	char *key;$/;"	m	struct:tpl_loop_s	access:public
+tpl_loop_s::name	../tpl.h	/^	char *name;$/;"	m	struct:tpl_loop_s	access:public
+tpl_loop_s::value	../tpl.h	/^	char *value;$/;"	m	struct:tpl_loop_s	access:public
+tpl_output	../tpl.c	/^char *tpl_output ( ngx_pool_t *pool, tpl_data_table *table, char *name )$/;"	f	signature:( ngx_pool_t *pool, tpl_data_table *table, char *name )
+tpl_output	../tpl.h	/^char *tpl_output ( ngx_pool_t *pool, tpl_data_table *table, char *name );$/;"	p	signature:( ngx_pool_t *pool, tpl_data_table *table, char *name )
+tpl_render	../tpl.c	/^char * tpl_render ( ngx_command_t *cmd, ngx_command_t *dcmd, ngx_buf_t *buf, tpl_data_table *data )$/;"	f	signature:( ngx_command_t *cmd, ngx_command_t *dcmd, ngx_buf_t *buf, tpl_data_table *data )
+tpl_render	../tpl.h	/^char * tpl_render ( ngx_command_t *cmd, ngx_command_t *dcmd, ngx_buf_t *buf, tpl_data_table * );$/;"	p	signature:( ngx_command_t *cmd, ngx_command_t *dcmd, ngx_buf_t *buf, tpl_data_table * )
+tpl_resize_data_table	../tpl.h	23;"	d
+tpl_unset_tag	../tpl.h	26;"	d
+tpl_update_tag	../tpl.h	27;"	d
+type	../command.h	/^    enum ngx_command_type	type;$/;"	m	struct:ngx_command_s	typeref:enum:ngx_command_s::ngx_command_type	access:public
+type	../hiredis/dict.h	/^    dictType *type;$/;"	m	struct:dict	access:public
+type	../hiredis/hiredis.h	/^    int type; \/* REDIS_REPLY_* *\/$/;"	m	struct:redisReply	access:public
+type	../hiredis/hiredis.h	/^    int type;$/;"	m	struct:redisReadTask	access:public
+type	../hiredis/test.c	/^    enum connection_type type;$/;"	m	struct:config	typeref:enum:config::connection_type	file:	access:public
+type	../json.h	/^		enum json_value_type type;	\/*!< the type of node *\/$/;"	m	struct:json_value	typeref:enum:json_value::json_value_type	access:public
+type	../tree.h	/^	enum stone_node_type ( *type ) ( stone_node_t *node );$/;"	m	struct:stone_node_command_s	typeref:enum:stone_node_command_s::type	access:public
+type	../tree.h	/^	enum stone_node_type type;$/;"	m	struct:stone_node_s	typeref:enum:stone_node_s::stone_node_type	access:public
+uchar	../nginx.h	/^typedef unsigned char 	uchar;$/;"	t
+uname_S	../hiredis/Makefile	/^uname_S := $(shell sh -c 'uname -s 2>\/dev\/null || echo not')$/;"	m
+unix	../hiredis/test.c	/^    } unix;$/;"	m	struct:config	typeref:struct:config::__anon4	file:	access:public
+usec	../hiredis/test.c	/^static long long usec(void) {$/;"	f	file:	signature:(void)
+used	../hiredis/dict.h	/^    unsigned long used;$/;"	m	struct:dict	access:public
+val	../hiredis/dict.h	/^    void *val;$/;"	m	struct:dictEntry	access:public
+valDestructor	../hiredis/dict.h	/^    void (*valDestructor)(void *privdata, void *obj);$/;"	m	struct:dictType	access:public
+valDup	../hiredis/dict.h	/^    void *(*valDup)(void *privdata, const void *obj);$/;"	m	struct:dictType	access:public
+value	../app.h	/^	void *value;$/;"	m	struct:stone_item_s	access:public
+value	../response.h	/^    char *value;$/;"	m	struct:header	access:public
+value	../tpl.h	/^	char *value;$/;"	m	struct:tpl_loop_s	access:public
+value	../tree.h	/^	void * ( *value ) ( stone_node_t *node );$/;"	m	struct:stone_node_command_s	access:public
+value	../tree.h	/^	void * value;$/;"	m	struct:stone_node_s	access:public
+wev	../hiredis/adapters/libev.h	/^    ev_io rev, wev;$/;"	m	struct:redisLibevEvents	access:public
+wev	../hiredis/adapters/libevent.h	/^    struct event rev, wev;$/;"	m	struct:redisLibeventEvents	typeref:struct:redisLibeventEvents::	access:public
+worker_process	../framework.c	/^void worker_process(void *data){$/;"	f	signature:(void *data)
+worker_process	../framework.h	/^void worker_process(void *data);$/;"	p	signature:(void *data)
+write	../command.h	/^	char           	*(*write)(ngx_command_t *cmd, void *arg);$/;"	m	struct:stone_cache_command_s	access:public
+writing	../hiredis/adapters/ae.h	/^    int reading, writing;$/;"	m	struct:redisAeEvents	access:public
+writing	../hiredis/adapters/libev.h	/^    int reading, writing;$/;"	m	struct:redisLibevEvents	access:public

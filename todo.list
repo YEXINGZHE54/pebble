@@ -1,0 +1,36 @@
+1. hash_list for tpl #done
+2. include grammer #done
+3. notification linklist #done
+4. db_pool, thread_pool #done
+5. tpl full parse not return before end #done
+6. tpl parse cache and render cache? #done
+7. thread high performance? I know, maybe because mysql not thread safe #done
+8. IO LOOP by thread or process, not a good idea if I rewrite fcgi library
+9. should I add resource to threadInfo struct, like globals_r? or triger(THREAD_SRART, threadInfo) #done 
+10.config file support
+11.split files into directories
+12.now is per thread per connection(only one); 
+another framework: main thread accept and child deal with 1(communicate by pipe; but, it is not well fit with libfcgi because it finish_r in accept, so we need a malloc a new one?);
+another framework: child thread accept(need lock, like now) many(now is one), it need malloc a new request struct;
+if so, consider libevent? #done with main accept and child deal
+13.why under siege the longest transaction is 1 more seconds? shall we consider asyn program to avoid block? #done;long transaction is because db/redis read is long. it can not be shortened, unless we abort current connection;
+14.event pool and connection pool #done event pool is ok, but connection pool seems useless, because accept is not in our controll
+15.move redis to threadinfo #done
+16.add asynchrom io support #too complex, isn't it?how about nodejs?
+17.I found libfcgi always lock while accept, should I move accept to threads?
+in nginx, only one process accept with epoll, avoiding thunder-hurd by lock.
+#done . main accept and call child
+18.log + db/redis/file async thread
+//log struct(base on globals_r.pool) contains:1 opool(resie,nolock), 2
+//pool(exchange while work), 1lock;thread sleep 60s then write
+//the same to async thread; or, combine them together? 1fd,1string,1fn
+#done async-thread. but not perfect, because it sleep
+#19.add timer and sock error deal
+#20.SIGPIPE(mysql api?)
+#21.not lock in IO
+#22.object pool request/all has bug:memory leak and may be changed unexpectly
+when request and release called, because it always change the head. the correct
+way should be to add a tail pointer
+and what's worse, request_all not always is all, is busy needed?maybe we can
+maintain only one que, move free,busy,tail ptrs also works;
+#23.It seems to be bad in hash functiion if 2/4/8/16/32?
